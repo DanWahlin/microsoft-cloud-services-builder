@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+      fill: #FFFFFF;
+      }
+      .cls-2 {
+      fill: #28a745;
+      }
+    </style>
+  </defs>
+  <title>logo_vs-mobile-center</title>
+  <g id="Names">
+    <g id="iconBg">
+      <path xmlns="http://www.w3.org/2000/svg" class="cls-1" d="M -1 0 h 50 v 50 H -1 v -650 V 0 Z" />
+      <path xmlns="http://www.w3.org/2000/svg" class="cls-2" fill-rule="evenodd" d="M 9.75 7 h 15 v 7.5 l 7.5 -7.5 h 12.5 v 7.5 l -10 10 l 10 10 V 42 h -12.5 l -7.5 -7.5 V 42 h -15 V 24.5 H 3.5 V 22 h 13.75 v -2.5 h -7.5 v -5 H 6 V 12 h 10 V 9.5 H 9.75 V 7 Z m 5 22.5 h 7.5 V 27 h -7.5 v 2.5 Z m -7.5 5 H 1 V 32 h 6.25 v 2.5 Z" />
+    </g>
+  </g>
+</svg>

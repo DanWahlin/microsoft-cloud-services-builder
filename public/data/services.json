@@ -1,0 +1,874 @@
+[
+  {
+    "id": 1,
+    "category": "AI + Machine Learning",
+    "services": [
+      {
+        "id": 1,
+        "name": "Applied AI Services",
+        "desciption": "Specialized services that enable organizations to accelerate time to value in applying AI to solve common scenarios",
+        "image": "azure-applied-ai-services.svg"
+      },
+      {
+        "id": 14,
+        "name": "Bot Service",
+        "desciption": "Intelligent, serverless bot service that scales on demand",
+        "image": "bot-service.svg"
+      },
+      {
+        "id": 27,
+        "name": "Cognitive Search",
+        "desciption": "AI-powered cloud search service for mobile and web app development",
+        "image": "search.svg"
+      },
+      {
+        "id": 40,
+        "name": "Cognitive Services",
+        "desciption": "Add smart API capabilities to enable contextual interactions",
+        "image": "cognitive-services.svg"
+      },
+      {
+        "id": 53,
+        "name": "Machine Learning",
+        "desciption": "Bring AI to everyone with an end-to-end, scalable, trusted platform with experimentation and model management",
+        "image": "machine-learning-service.svg"
+      },
+      {
+        "id": 66,
+        "name": "Microsoft Genomics",
+        "desciption": "Power genome sequencing and research insights",
+        "image": "genomics.svg"
+      },
+      {
+        "id": 79,
+        "name": "Open Datasets",
+        "desciption": "Cloud platform to host and share curated open datasets to accelerate development of machine learning models",
+        "image": "open-datasets.svg"
+      },
+      {
+        "id": 92,
+        "name": "Project Bonsai",
+        "desciption": "Create intelligent industrial control systems using simulations",
+        "image": "project-bonsai.svg"
+      }
+    ],
+    "className": "bg-ai"
+  },
+  {
+    "id": 2,
+    "category": "Analytics",
+    "services": [
+      {
+        "id": 2,
+        "name": "Analysis Services",
+        "desciption": "Enterprise-grade analytics engine as a service",
+        "image": "analysis-services.svg"
+      },
+      {
+        "id": 15,
+        "name": "Azure Purview",
+        "desciption": "Maximize business value with unified data governance",
+        "image": "purview.svg"
+      },
+      {
+        "id": 28,
+        "name": "Data Catalog",
+        "desciption": "Get more value from your enterprise data assets",
+        "image": "data-catalog.svg"
+      },
+      {
+        "id": 41,
+        "name": "Data Explorer",
+        "desciption": "Fast and highly scalable data exploration service",
+        "image": "data-explorer.svg"
+      },
+      {
+        "id": 54,
+        "name": "Data Factory",
+        "desciption": "Hybrid data integration at enterprise scale, made easy",
+        "image": "data-factory.svg"
+      },
+      {
+        "id": 67,
+        "name": "Data Lake Analytics",
+        "desciption": "Distributed analytics service that makes big data easy",
+        "image": "data-lake-analytics.svg"
+      },
+      {
+        "id": 80,
+        "name": "Databricks",
+        "desciption": "Fast, easy, and collaborative Apache Spark-based analytics platform",
+        "image": "databricks.svg"
+      },
+      {
+        "id": 93,
+        "name": "Event Hubs",
+        "desciption": "Receive telemetry from millions of devices",
+        "image": "event-hubs.svg"
+      },
+      {
+        "id": 106,
+        "name": "HDInsight",
+        "desciption": "Provision cloud Hadoop, Spark, R Server, HBase, and Storm clusters",
+        "image": "hdinsight.svg"
+      },
+      {
+        "id": 119,
+        "name": "Power BI Embedded",
+        "desciption": "Embed fully interactive, stunning data visualizations in your applications",
+        "image": "power-bi-embedded.svg"
+      },
+      {
+        "id": 132,
+        "name": "Stream Analytics",
+        "desciption": "Real-time data stream processing from millions of IoT devices",
+        "image": "stream-analytics.svg"
+      },
+      {
+        "id": 145,
+        "name": "Synapse Analytics",
+        "desciption": "Limitless analytics service with unmatched time to insight",
+        "image": "synapse-analytics.svg"
+      }
+    ],
+    "className": "bg-an"
+  },
+  {
+    "id": 3,
+    "category": "Compute",
+    "services": [
+      {
+        "id": 3,
+        "name": "App Service",
+        "desciption": "Quickly create powerful cloud apps for web and mobile",
+        "image": "app-service.svg"
+      },
+      {
+        "id": 16,
+        "name": "App Service (Linux)",
+        "desciption": "Quickly create powerful Linux cloud apps for web and mobile",
+        "image": "app-service-linux.svg"
+      },
+      {
+        "id": 29,
+        "name": "Azure Batch",
+        "desciption": "Cloud-scale job scheduling and compute management",
+        "image": "batch.svg"
+      },
+      {
+        "id": 42,
+        "name": "Azure Functions",
+        "desciption": "Process events with serverless code",
+        "image": "functions.svg"
+      },
+      {
+        "id": 55,
+        "name": "Azure Quantum",
+        "desciption": "Experience quantum impact today on Azure",
+        "image": "quantum.svg"
+      },
+      {
+        "id": 68,
+        "name": "Azure Red Hat OpenShift",
+        "desciption": "Fully managed OpenShift service, jointly operated with Red Hat",
+        "image": "openshift.svg"
+      },
+      {
+        "id": 81,
+        "name": "Azure VMware Solution",
+        "desciption": "Run your VMware workloads natively on Azure",
+        "image": "azure-vmware-solutions.svg"
+      },
+      {
+        "id": 94,
+        "name": "Cloud Services",
+        "desciption": "Create highly-available, infinitely-scalable cloud applications and APIs",
+        "image": "cloud-services.svg"
+      },
+      {
+        "id": 107,
+        "name": "Container Apps",
+        "desciption": "Build and deploy modern apps and microservices using serverless containers",
+        "image": "container-apps.svg"
+      },
+      {
+        "id": 120,
+        "name": "Container Instances",
+        "desciption": "Easily run containers on Azure without managing servers",
+        "image": "container-instances.svg"
+      },
+      {
+        "id": 133,
+        "name": "Container Registry",
+        "desciption": "Store and manage container images across all types of Azure deployments",
+        "image": "container-registry.svg"
+      },
+      {
+        "id": 146,
+        "name": "CycleCloud",
+        "desciption": "Create, manage, operate, and optimize HPC and big compute clusters of any scale",
+        "image": "cyclecloud.svg"
+      },
+      {
+        "id": 159,
+        "name": "Dedicated Host",
+        "desciption": "A dedicated physical server to host your Azure VMs for Windows and Linux",
+        "image": "dedicated-host.svg"
+      },
+      {
+        "id": 172,
+        "name": "Kubernetes Service",
+        "desciption": "Simplify the deployment, management, and operations of Kubernetes",
+        "image": "kubernetes-service.svg"
+      },
+      {
+        "id": 185,
+        "name": "Service Fabric",
+        "desciption": "Develop microservices and orchestrate containers on Windows or Linux",
+        "image": "service-fabric.svg"
+      },
+      {
+        "id": 198,
+        "name": "Virtual Desktop",
+        "desciption": "Deliver a virtual desktop experience to any device at cloud scale",
+        "image": "virtual-desktop.svg"
+      },
+      {
+        "id": 211,
+        "name": "Virtual Machines",
+        "desciption": "Provision Windows and Linux virtual machines in seconds",
+        "image": "virtual-machines.svg"
+      },
+      {
+        "id": 224,
+        "name": "VM Scale Sets",
+        "desciption": "Manage and scale up to thousands of Linux and Windows virtual machines",
+        "image": "virtual-machine-scale-sets.svg"
+      }
+    ],
+    "className": "bg-cmp"
+  },
+  {
+    "id": 4,
+    "category": "Databases",
+    "services": [
+      {
+        "id": 4,
+        "name": "Apache Cassandra MI",
+        "desciption": "Managed Apache Cassandra instance in the cloud",
+        "image": "managed-instance-apache-cassandra.svg"
+      },
+      {
+        "id": 17,
+        "name": "Cosmos DB",
+        "desciption": "Globally distributed, multi-model database for any scale",
+        "image": "cosmos-db.svg"
+      },
+      {
+        "id": 30,
+        "name": "Database for MariaDB",
+        "desciption": "Managed MariaDB database service for app developers",
+        "image": "mariadb.svg"
+      },
+      {
+        "id": 43,
+        "name": "Database for MySQL",
+        "desciption": "Managed MySQL database service for app developers",
+        "image": "mysql.svg"
+      },
+      {
+        "id": 56,
+        "name": "Database for PostgreSQL",
+        "desciption": "Managed PostgreSQL database service for app developers",
+        "image": "postgresql.svg"
+      },
+      {
+        "id": 69,
+        "name": "Redis Cache",
+        "desciption": "Power applications with high-throughput, low-latency data access",
+        "image": "redis-cache.svg"
+      },
+      {
+        "id": 82,
+        "name": "SQL Database",
+        "desciption": "Managed, intelligent SQL in the cloud",
+        "image": "sql-database.svg"
+      },
+      {
+        "id": 95,
+        "name": "SQL Server Stretch DB",
+        "desciption": "Dynamically stretch on-premises SQL Server databases to Azure",
+        "image": "sql-server-stretch-database.svg"
+      }
+    ],
+    "className": "bg-db"
+  },
+  {
+    "id": 5,
+    "category": "Development",
+    "services": [
+      {
+        "id": 5,
+        "name": "App Configuration",
+        "desciption": "Fast, scalable parameter storage for app configuration",
+        "image": "app-configuration.svg"
+      },
+      {
+        "id": 18,
+        "name": "Azure DevOps",
+        "desciption": "Services for teams to share code, track work, and ship software",
+        "image": "azure-devops.svg"
+      },
+      {
+        "id": 31,
+        "name": "Azure Spring Cloud",
+        "desciption": "A fully managed Spring Cloud service, built and operated with Pivotal",
+        "image": "spring-cloud.svg"
+      },
+      {
+        "id": 44,
+        "name": "DevTest Labs",
+        "desciption": "Quickly create environments using reusable templates and artifacts",
+        "image": "devtest-lab.svg"
+      },
+      {
+        "id": 57,
+        "name": "Lab Services",
+        "desciption": "Set up labs for classrooms, trials, development and testing, and other scenarios",
+        "image": "lab-services.svg"
+      },
+      {
+        "id": 70,
+        "name": "Load Testing",
+        "desciption": "Optimize app performance with high-scale load testing",
+        "image": "load-testing.svg"
+      },
+      {
+        "id": 83,
+        "name": "SignalR Service",
+        "desciption": "Add real-time web functionalities easily",
+        "image": "signalr-service.svg"
+      },
+      {
+        "id": 96,
+        "name": "Visual Studio App Center",
+        "desciption": "Continuously build, test, release, and monitor your apps",
+        "image": "app-center.svg"
+      }
+    ],
+    "className": "bg-dev"
+  },
+  {
+    "id": 6,
+    "category": "Identity + Security",
+    "services": [
+      {
+        "id": 6,
+        "name": "Azure Active Directory",
+        "desciption": "Synchronize on-premises directories and enable single sign-on",
+        "image": "active-directory.svg"
+      },
+      {
+        "id": 19,
+        "name": "Azure AD B2C",
+        "desciption": "Consumer identity and access management in the cloud",
+        "image": "active-directory-b2c.svg"
+      },
+      {
+        "id": 32,
+        "name": "Azure AD DS",
+        "desciption": "Join Azure virtual machines to a domain without domain controllers",
+        "image": "active-directory-ds.svg"
+      },
+      {
+        "id": 45,
+        "name": "Azure Defender",
+        "desciption": "Protect hybrid cloud workloads",
+        "image": "azure-defender.svg"
+      },
+      {
+        "id": 58,
+        "name": "Azure Key Vault",
+        "desciption": "Safeguard and maintain control of keys and other secrets",
+        "image": "key-vault.svg"
+      },
+      {
+        "id": 71,
+        "name": "Azure Sentinel",
+        "desciption": "Standing watch, by your side. Intelligent security analytics for your entire enterprise",
+        "image": "azure-sentinel.svg"
+      },
+      {
+        "id": 84,
+        "name": "DDoS Protection",
+        "desciption": "Protect your applications from Distributed Denial of Service (DDoS) attacks",
+        "image": "ddos-protection.svg"
+      },
+      {
+        "id": 97,
+        "name": "Dedicated HSM",
+        "desciption": "Manage hardware security modules that you use in the cloud",
+        "image": "dedicated-hsm.svg"
+      },
+      {
+        "id": 110,
+        "name": "Information Protection",
+        "desciption": "Better protect your sensitive information—anytime, anywhere",
+        "image": "information-protection.svg"
+      },
+      {
+        "id": 123,
+        "name": "Security Center",
+        "desciption": "Unify security management and enable advanced threat protection across hybrid cloud workloads",
+        "image": "security-center.svg"
+      }
+    ],
+    "className": "bg-sec"
+  },
+  {
+    "id": 7,
+    "category": "IoT + MR",
+    "services": [
+      {
+        "id": 7,
+        "name": "Azure Maps",
+        "desciption": "Simple and secure location APIs provide geospatial context to data",
+        "image": "azure-maps.svg"
+      },
+      {
+        "id": 20,
+        "name": "Azure Sphere",
+        "desciption": "Securely connect MCU-powered devices from the silicon to the cloud",
+        "image": "azure-sphere.svg"
+      },
+      {
+        "id": 33,
+        "name": "Digital Twins",
+        "desciption": "Build next-generation IoT spatial intelligence solutions",
+        "image": "digital-twins.svg"
+      },
+      {
+        "id": 46,
+        "name": "IoT Central",
+        "desciption": "Experience the simplicity of SaaS for IoT, with no cloud expertise required",
+        "image": "iot-central.svg"
+      },
+      {
+        "id": 59,
+        "name": "IoT Edge",
+        "desciption": "Extend cloud intelligence and analytics to edge devices",
+        "image": "iot-edge.svg"
+      },
+      {
+        "id": 72,
+        "name": "IoT Hub",
+        "desciption": "Connect, monitor and manage billions of IoT assets",
+        "image": "iot-hub.svg"
+      },
+      {
+        "id": 85,
+        "name": "Object Anchors",
+        "desciption": "Automatically align and anchor 3D content to objects in the physical world",
+        "image": "object-anchors.svg"
+      },
+      {
+        "id": 98,
+        "name": "Remote Rendering",
+        "desciption": "Render high-quality, interactive 3D content, and stream it to your devices in real time",
+        "image": "remote-rendering.svg"
+      },
+      {
+        "id": 111,
+        "name": "Spatial Anchors",
+        "desciption": "Create multi-user, spatially aware mixed reality experiences",
+        "image": "spatial-anchors.svg"
+      },
+      {
+        "id": 124,
+        "name": "Time Series Insights",
+        "desciption": "Explore and analyze time-series data from IoT devices",
+        "image": "time-series-insights.svg"
+      }
+    ],
+    "className": "bg-iot"
+  },
+  {
+    "id": 8,
+    "category": "Integration",
+    "services": [
+      {
+        "id": 8,
+        "name": "API Management",
+        "desciption": "Publish APIs to developers, partners, and employees securely and at scale",
+        "image": "api-management.svg"
+      },
+      {
+        "id": 21,
+        "name": "Event Grid",
+        "desciption": "Get reliable event delivery at massive scale",
+        "image": "event-grid.svg"
+      },
+      {
+        "id": 34,
+        "name": "Healthcare APIs",
+        "desciption": "Easily create and deploy a FHIR service for health data solutions and interoperability",
+        "image": "azure-api-for-fhir.svg"
+      },
+      {
+        "id": 47,
+        "name": "Logic Apps",
+        "desciption": "Automate the access and use of data across clouds without writing code",
+        "image": "logic-apps.svg"
+      },
+      {
+        "id": 60,
+        "name": "Notification Hubs",
+        "desciption": "Send push notifications to any platform from any back end",
+        "image": "notification-hubs.svg"
+      },
+      {
+        "id": 73,
+        "name": "Service Bus",
+        "desciption": "Connect across private and public cloud environments",
+        "image": "service-bus.svg"
+      },
+      {
+        "id": 86,
+        "name": "Web PubSub",
+        "desciption": "Easily build real-time messaging web applications using WebSockets and the publish-subscribe pattern",
+        "image": "web-pubsub.svg"
+      }
+    ],
+    "className": "bg-int"
+  },
+  {
+    "id": 9,
+    "category": "Management + Governance",
+    "services": [
+      {
+        "id": 9,
+        "name": "Automation",
+        "desciption": "Simplify cloud management with process automation",
+        "image": "automation.svg"
+      },
+      {
+        "id": 22,
+        "name": "Azure Advisor",
+        "desciption": "Your personalized Azure best practices recommendation engine",
+        "image": "advisor.svg"
+      },
+      {
+        "id": 35,
+        "name": "Azure Arc",
+        "desciption": "Bring Azure services and management to any infrastructure",
+        "image": "azure-arc.svg"
+      },
+      {
+        "id": 48,
+        "name": "Azure Automanage",
+        "desciption": "Simplify management of Windows Server virtual machines",
+        "image": "azure-automanage.svg"
+      },
+      {
+        "id": 61,
+        "name": "Azure Backup",
+        "desciption": "Simplify data protection and protect against ransomware",
+        "image": "backup.svg"
+      },
+      {
+        "id": 74,
+        "name": "Azure Blueprints",
+        "desciption": "Enabling quick, repeatable creation of governed environments",
+        "image": "blueprints.svg"
+      },
+      {
+        "id": 87,
+        "name": "Azure Lighthouse",
+        "desciption": "Empowering service providers to manage customers at scale and with precision",
+        "image": "azure-lighthouse.svg"
+      },
+      {
+        "id": 100,
+        "name": "Azure Monitor",
+        "desciption": "Full observability into your applications, infrastructure, and network",
+        "image": "monitor.svg"
+      },
+      {
+        "id": 113,
+        "name": "Azure Policy",
+        "desciption": "Implement corporate governance and standards at scale for Azure resources",
+        "image": "azure-policy.svg"
+      },
+      {
+        "id": 126,
+        "name": "Azure Portal",
+        "desciption": "Build, manage, and monitor all Azure products in a single, unified console",
+        "image": "azure-portal.svg"
+      },
+      {
+        "id": 139,
+        "name": "Cloud Shell",
+        "desciption": "Streamline Azure administration with a browser-based shell",
+        "image": "cloud-shell.svg"
+      },
+      {
+        "id": 152,
+        "name": "Cost Management",
+        "desciption": "Optimize what you spend on the cloud, while maximizing cloud potential",
+        "image": "cost-management.svg"
+      },
+      {
+        "id": 165,
+        "name": "Managed Apps",
+        "desciption": "Simplify management of cloud offerings",
+        "image": "managed-applications.svg"
+      },
+      {
+        "id": 178,
+        "name": "Scheduler",
+        "desciption": "Run your jobs on simple or complex recurring schedules",
+        "image": "scheduler.svg"
+      }
+    ],
+    "className": "bg-mgmt"
+  },
+  {
+    "id": 10,
+    "category": "Media + Comms",
+    "services": [
+      {
+        "id": 10,
+        "name": "Azure CDN",
+        "desciption": "Ensure secure, reliable content delivery with broad global reach",
+        "image": "cdn.svg"
+      },
+      {
+        "id": 23,
+        "name": "Communication Services",
+        "desciption": "Build rich communication experiences with the same secure platform used by Microsoft Teams",
+        "image": "comms-services.svg"
+      },
+      {
+        "id": 36,
+        "name": "Media Services",
+        "desciption": "Encode, store, and stream video and audio at scale",
+        "image": "media-services.svg"
+      }
+    ],
+    "className": "bg-md"
+  },
+  {
+    "id": 11,
+    "category": "Migration",
+    "services": [
+      {
+        "id": 11,
+        "name": "Azure Migrate",
+        "desciption": "Easily discover, assess, right-size, and migrate your on-premises VMs to Azure",
+        "image": "azure-migrate.svg"
+      },
+      {
+        "id": 24,
+        "name": "Data Box",
+        "desciption": "Appliances and solutions for data transfer to Azure and edge compute",
+        "image": "data-box.svg"
+      },
+      {
+        "id": 37,
+        "name": "DB Migration Service",
+        "desciption": "Simplify on-premises database migration to the cloud",
+        "image": "database-migration.svg"
+      },
+      {
+        "id": 50,
+        "name": "Site Recovery",
+        "desciption": "Keep your business running with built-in disaster recovery service",
+        "image": "site-recovery.svg"
+      }
+    ],
+    "className": "bg-mg"
+  },
+  {
+    "id": 12,
+    "category": "Networking",
+    "services": [
+      {
+        "id": 12,
+        "name": "Application Gateway",
+        "desciption": "Build secure, scalable, and highly available web front ends in Azure",
+        "image": "application-gateway.svg"
+      },
+      {
+        "id": 25,
+        "name": "Azure Bastion",
+        "desciption": "Private and fully managed RDP and SSH access to your virtual machines",
+        "image": "azure-bastion.svg"
+      },
+      {
+        "id": 38,
+        "name": "Azure DNS",
+        "desciption": "Host your DNS domain in Azure",
+        "image": "dns.svg"
+      },
+      {
+        "id": 51,
+        "name": "Azure Firewall",
+        "desciption": "Native firewalling capabilities with built-in high availability, unrestricted cloud scalability, and zero maintenance",
+        "image": "azure-firewall.svg"
+      },
+      {
+        "id": 64,
+        "name": "Azure Front Door",
+        "desciption": "Scalable, security-enhanced delivery point for global, microservice-based web applications",
+        "image": "frontdoor.svg"
+      },
+      {
+        "id": 77,
+        "name": "Azure Orbital",
+        "desciption": "Satellite ground station and scheduling service connected to Azure for fast downlinking of data",
+        "image": "azure-orbital.svg"
+      },
+      {
+        "id": 90,
+        "name": "ExpressRoute",
+        "desciption": "Dedicated private network fiber connections to Azure",
+        "image": "expressroute.svg"
+      },
+      {
+        "id": 103,
+        "name": "Internet Analyzer",
+        "desciption": "Test how networking infrastructure changes will impact your customers performance",
+        "image": "internet-analyzer.svg"
+      },
+      {
+        "id": 116,
+        "name": "Load Balancer",
+        "desciption": "Deliver high availability and network performance to your applications",
+        "image": "load-balancer.svg"
+      },
+      {
+        "id": 129,
+        "name": "Network Watcher",
+        "desciption": "Network performance monitoring and diagnostics solution",
+        "image": "network-watcher.svg"
+      },
+      {
+        "id": 142,
+        "name": "Private Link",
+        "desciption": "Private access to services hosted on the Azure platform, keeping your data on the Microsoft network",
+        "image": "private-link.svg"
+      },
+      {
+        "id": 155,
+        "name": "Route Server",
+        "desciption": "Enable network appliances to exchange routes dynamically with virtual networks in Azure",
+        "image": "route-server.svg"
+      },
+      {
+        "id": 168,
+        "name": "Traffic Manager",
+        "desciption": "Route incoming traffic for high performance and availability",
+        "image": "traffic-manager.svg"
+      },
+      {
+        "id": 181,
+        "name": "Virtual Network",
+        "desciption": "Provision private networks, optionally connect to on-premises datacenters",
+        "image": "virtual-network.svg"
+      },
+      {
+        "id": 194,
+        "name": "Virtual WAN",
+        "desciption": "Optimize and automate branch to branch connectivity through Azure",
+        "image": "virtual-wan.svg"
+      },
+      {
+        "id": 207,
+        "name": "VNet Manager",
+        "desciption": "Centrally manage virtual networks in Azure from a single pane of glass",
+        "image": "virtual-network-manager.svg"
+      },
+      {
+        "id": 220,
+        "name": "VPN Gateway",
+        "desciption": "Establish secure, cross-premises connectivity",
+        "image": "vpn-gateway.svg"
+      }
+    ],
+    "className": "bg-nw"
+  },
+  {
+    "id": 13,
+    "category": "Storage",
+    "services": [
+      {
+        "id": 13,
+        "name": "Avere vFXT",
+        "desciption": "Run high-performance, file-based workloads in the cloud",
+        "image": "avere-vfxt.svg"
+      },
+      {
+        "id": 26,
+        "name": "Azure NetApp Files",
+        "desciption": "Enterprise-grade Azure file shares, powered by NetApp",
+        "image": "netapp-files.svg"
+      },
+      {
+        "id": 39,
+        "name": "Azure Storage",
+        "desciption": "Durable, highly available, and massively scalable cloud storage",
+        "image": "storage.svg"
+      },
+      {
+        "id": 52,
+        "name": "Confidential Ledger",
+        "desciption": "Easily use a REST API managed service to store your unstructured metadata in a blockchain structure",
+        "image": "confidential-ledger.svg"
+      },
+      {
+        "id": 65,
+        "name": "Data Lake Storage",
+        "desciption": "Massively scalable, secure data lake functionality built on Azure Blob Storage",
+        "image": "data-lake-storage.svg"
+      },
+      {
+        "id": 78,
+        "name": "Data Share",
+        "desciption": "A simple and safe service for sharing big data with external organizations",
+        "image": "data-share.svg"
+      },
+      {
+        "id": 91,
+        "name": "HPC Cache",
+        "desciption": "File caching for high-performance computing (HPC)",
+        "image": "hpc-cache.svg"
+      },
+      {
+        "id": 104,
+        "name": "Managed Disks",
+        "desciption": "Persistent, secured disk storage for Azure virtual machines",
+        "image": "managed-disks.svg"
+      },
+      {
+        "id": 117,
+        "name": "StorSimple",
+        "desciption": "Lower costs with an enterprise hybrid cloud storage solution",
+        "image": "storsimple.svg"
+      }
+    ],
+    "className": "bg-st"
+  },
+  {
+    "id": 14,
+    "category": "Microsoft 365",
+    "services": [
+      {
+        "id": 225,
+        "name": "Microsoft Graph",
+        "desciption": "Secure, unified API for accessing organizational data and intelligence",
+        "image": "cdn.svg"
+      }
+    ],
+    "className": "bg-365"
+  }
+]

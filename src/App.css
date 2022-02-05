@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  margin: 15px;
 }
 
 .App-logo {
@@ -35,4 +35,131 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.back-button {
+  font-size: 20pt;
+  cursor: pointer;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-drag-drop {
+  cursor: move;
+}
+
+div.service-picker {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  margin-bottom: 20px;
+  color: #fff;
+  box-sizing: border-box;
+  width: 100%;
+  height: 225px;
+  align-items: center;
+}
+
+div.service-picker div.service-picker-item {
+  width: 200px;
+  height: 65px;
+  text-align: center;
+  font-size: 13pt;
+  font-weight: bold;
+  display: grid;
+	align-items: center;
+  justify-content: center;
+}
+
+.react-flow-container {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  height: 75vh;
+}
+
+.floatingedges {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.bg-ai {
+  background-color: #007bff !important;
+}
+
+.bg-an {
+  background-color: #28a745 !important;
+}
+
+.bg-cmp {
+  background-color: #ffc107 !important;
+}
+
+.bg-db {
+  background-color: #dc3545 !important;
+}
+
+.bg-dev {
+  background-color: #17a2b8 !important;
+}
+
+.bg-sec {
+  background-color: #4528a7 !important;
+}
+
+.bg-iot {
+  background-color: #a74528 !important;
+}
+
+.bg-int {
+  background-color: #c107ff !important;
+}
+
+.bg-mgmt {
+  background-color: #6c757d !important;
+}
+
+.bg-md {
+  background-color: #ff007b !important;
+}
+
+.bg-mg {
+  background-color: #ff4507 !important;
+}
+
+.bg-nw {
+  background-color: #b817a2 !important;
+}
+
+.bg-st {
+  background-color: #a2b817 !important;
+}
+
+.bg-365 {
+  background-color: #172fb8 !important;
+}
+
+.service-picker div {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translate(-50px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+  margin: auto;
 }
