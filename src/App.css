@@ -98,7 +98,7 @@ div.service-picker {
 }
 
 .bg-cmp {
-  background-color: #ffc107 !important;
+  background-color: #ffb007 !important;
   color: #fff !important;
 }
 
@@ -149,12 +149,12 @@ div.service-picker {
 
 .bg-st {
   background-color: #a2b817 !important;
-  color: #fff;
+  color: #fff !important;
 }
 
 .bg-365 {
   background-color: #172fb8 !important;
-  color: #fff;
+  color: #fff !important;
 }
 
 .service-picker div {
@@ -177,6 +177,12 @@ div.service-picker {
 .icon {
   height: 20px;
   width: 20px;
+  margin: auto;
+}
+
+.icon-react-flow {
+  height: 10px;
+  width: 10px;
   margin: auto;
 }
 

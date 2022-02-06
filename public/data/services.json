@@ -866,7 +866,7 @@
         "id": 225,
         "name": "Microsoft Graph",
         "desciption": "Secure, unified API for accessing organizational data and intelligence",
-        "image": "cdn.svg"
+        "image": "microsoft-logo.svg"
       }
     ],
     "cssClass": "bg-365"

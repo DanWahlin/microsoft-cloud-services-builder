@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 import ReactFlow from './Components/ReactFlow';
-import ServicePicker from './Components/ServicePicker';
+import CloudServicePicker from './Components/CloudServicePicker';
 
 function App() {
   return (
     <div className="App">
-      <ServicePicker />
+      <CloudServicePicker />
       <ReactFlow />
     </div>
   );

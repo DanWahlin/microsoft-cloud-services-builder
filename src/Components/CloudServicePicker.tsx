@@ -3,8 +3,10 @@ import axios from 'axios';
 import { IService, IServiceCategory } from '../shared/interfaces';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import CloudService from './CloudService';
+import CloudServiceCategory from './CloudServiceCategory';
 
-function ServicePicker() {
+function CloudServicePicker() {
     const [serviceCategories, setServiceCategories] = useState<IServiceCategory[]>([]);
     const [serviceCategory, setServiceCategory] = useState<IServiceCategory |  null>();
 
@@ -16,13 +18,6 @@ function ServicePicker() {
 
       getServiceCategories();
     }, []);
-
-    const onDragStart = (event: React.DragEvent, service: IService) => {
-      if (event.dataTransfer) {
-        event.dataTransfer.setData('application/reactflow', JSON.stringify(service));
-        event.dataTransfer.effectAllowed = 'move';
-      }
-    };
 
     const filterCategories = (event: React.MouseEvent<HTMLDivElement, MouseEvent>, svcCat: IServiceCategory) => {
       setServiceCategory(svcCat);
@@ -41,29 +36,18 @@ function ServicePicker() {
           </div>
         )}
         <div className="service-picker">
-            {/* Render service categories */}
             {!serviceCategory && serviceCategories.map(svcCat => (
-              <div key={svcCat.id} 
-                   className={`${svcCat.cssClass} cloud-block-grid cloud-block-size cursor-pointer`}
-                   onClick={(event) => filterCategories(event, svcCat)}
-              >
-                {svcCat.category}
-              </div>
+                <CloudServiceCategory key={svcCat.id} 
+                  serviceCategory={svcCat} 
+                  filterCategories={filterCategories} 
+                />
             ))}
 
-            {/* Render services in service category */}
-            {serviceCategory && serviceCategory.services.map((svc: IService) => (
-              <div key={svc.id} 
-                  className={`${serviceCategory.cssClass} cloud-block-grid cloud-block-size cursor-drag-drop`}
-                  onDragStart={(event) => onDragStart(event, { 
-                    ...svc, 
-                    category: serviceCategory.category,
-                    cssClass: serviceCategory.cssClass 
-                  })} draggable
-              >
-                  <img src={`/images/${svc.image}`} alt="icon" className="icon"></img>
-                  {svc.name}
-              </div>
+            {serviceCategory && serviceCategory.services.map((service: IService) => (
+                <CloudService key={service.id} 
+                  serviceCategory={serviceCategory} 
+                  service={service} 
+                />
             ))}   
 
         </div>
@@ -71,4 +55,4 @@ function ServicePicker() {
     );
   }
   
-  export default ServicePicker;
+  export default CloudServicePicker;
