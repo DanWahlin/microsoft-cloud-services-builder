@@ -55,22 +55,24 @@ div.service-picker {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
   margin-bottom: 20px;
-  color: #fff;
   box-sizing: border-box;
   width: 100%;
   height: 225px;
   align-items: center;
 }
 
-div.service-picker div.service-picker-item {
-  width: 200px;
-  height: 65px;
+.cloud-block-grid {
   text-align: center;
-  font-size: 13pt;
   font-weight: bold;
   display: grid;
 	align-items: center;
   justify-content: center;
+}
+
+.cloud-block-size {
+  font-size: 13pt;
+  width: 200px;
+  height: 65px;
 }
 
 .react-flow-container {
@@ -87,58 +89,72 @@ div.service-picker div.service-picker-item {
 
 .bg-ai {
   background-color: #007bff !important;
+  color: #fff !important;
 }
 
 .bg-an {
   background-color: #28a745 !important;
+  color: #fff !important;
 }
 
 .bg-cmp {
   background-color: #ffc107 !important;
+  color: #fff !important;
 }
 
 .bg-db {
   background-color: #dc3545 !important;
+  color: #fff !important;
 }
 
 .bg-dev {
   background-color: #17a2b8 !important;
+  color: #fff !important;
 }
 
 .bg-sec {
   background-color: #4528a7 !important;
+  color: #fff !important;
 }
 
 .bg-iot {
   background-color: #a74528 !important;
+  color: #fff !important;
 }
 
 .bg-int {
   background-color: #c107ff !important;
+  color: #fff !important;
 }
 
 .bg-mgmt {
   background-color: #6c757d !important;
+  color: #fff !important;
 }
 
 .bg-md {
   background-color: #ff007b !important;
+  color: #fff !important;
 }
 
 .bg-mg {
   background-color: #ff4507 !important;
+  color: #fff !important;
 }
 
 .bg-nw {
   background-color: #b817a2 !important;
+  color: #fff !important;
 }
 
 .bg-st {
   background-color: #a2b817 !important;
+  color: #fff;
 }
 
 .bg-365 {
   background-color: #172fb8 !important;
+  color: #fff;
 }
 
 .service-picker div {
@@ -162,4 +178,12 @@ div.service-picker div.service-picker-item {
   height: 20px;
   width: 20px;
   margin: auto;
+}
+
+.react-flow__node-default.selectable:hover, .react-flow__node-input.selectable:hover, .react-flow__node-output.selectable:hover {
+  box-shadow: 0 0 0 1.0px #000 !important;
+}
+
+.react-flow__node-default.selected, .react-flow__node-default.selected:hover {
+  box-shadow: 0 0 0 1.5px yellow !important;
 }

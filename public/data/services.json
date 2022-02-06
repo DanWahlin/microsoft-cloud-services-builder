@@ -52,7 +52,7 @@
         "image": "project-bonsai.svg"
       }
     ],
-    "className": "bg-ai"
+    "cssClass": "bg-ai"
   },
   {
     "id": 2,
@@ -131,7 +131,7 @@
         "image": "synapse-analytics.svg"
       }
     ],
-    "className": "bg-an"
+    "cssClass": "bg-an"
   },
   {
     "id": 3,
@@ -246,7 +246,7 @@
         "image": "virtual-machine-scale-sets.svg"
       }
     ],
-    "className": "bg-cmp"
+    "cssClass": "bg-cmp"
   },
   {
     "id": 4,
@@ -301,7 +301,7 @@
         "image": "sql-server-stretch-database.svg"
       }
     ],
-    "className": "bg-db"
+    "cssClass": "bg-db"
   },
   {
     "id": 5,
@@ -356,7 +356,7 @@
         "image": "app-center.svg"
       }
     ],
-    "className": "bg-dev"
+    "cssClass": "bg-dev"
   },
   {
     "id": 6,
@@ -423,7 +423,7 @@
         "image": "security-center.svg"
       }
     ],
-    "className": "bg-sec"
+    "cssClass": "bg-sec"
   },
   {
     "id": 7,
@@ -490,7 +490,7 @@
         "image": "time-series-insights.svg"
       }
     ],
-    "className": "bg-iot"
+    "cssClass": "bg-iot"
   },
   {
     "id": 8,
@@ -539,7 +539,7 @@
         "image": "web-pubsub.svg"
       }
     ],
-    "className": "bg-int"
+    "cssClass": "bg-int"
   },
   {
     "id": 9,
@@ -630,7 +630,7 @@
         "image": "scheduler.svg"
       }
     ],
-    "className": "bg-mgmt"
+    "cssClass": "bg-mgmt"
   },
   {
     "id": 10,
@@ -655,7 +655,7 @@
         "image": "media-services.svg"
       }
     ],
-    "className": "bg-md"
+    "cssClass": "bg-md"
   },
   {
     "id": 11,
@@ -686,7 +686,7 @@
         "image": "site-recovery.svg"
       }
     ],
-    "className": "bg-mg"
+    "cssClass": "bg-mg"
   },
   {
     "id": 12,
@@ -795,7 +795,7 @@
         "image": "vpn-gateway.svg"
       }
     ],
-    "className": "bg-nw"
+    "cssClass": "bg-nw"
   },
   {
     "id": 13,
@@ -856,7 +856,7 @@
         "image": "storsimple.svg"
       }
     ],
-    "className": "bg-st"
+    "cssClass": "bg-st"
   },
   {
     "id": 14,
@@ -869,6 +869,6 @@
         "image": "cdn.svg"
       }
     ],
-    "className": "bg-365"
+    "cssClass": "bg-365"
   }
 ]

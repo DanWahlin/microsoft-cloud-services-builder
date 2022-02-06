@@ -1,24 +1,26 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 import ReactFlow, {
   removeElements,
   addEdge,
   Background,
-  OnLoadParams,
   EdgeTypesType,
   Elements,
   Connection,
   Edge,
+  Node,
   ArrowHeadType,
   FlowElement,
+  Position,
+  isEdge,
+  getConnectedEdges
 } from 'react-flow-renderer';
 
 import FloatingEdge from './FloatingEdge';
 import FloatingConnectionLine from './FloatingConnectionLine';
 import { createElements } from './utils';
-import { Service } from '../shared/interfaces';
-
-const onLoad = (reactFlowInstance: OnLoadParams) => reactFlowInstance.fitView();
+import { IService } from '../shared/interfaces';
+import CloudBlock from './CloudBlock';
 
 const initialElements: Elements = createElements();
 
@@ -30,17 +32,33 @@ const NodeAsHandleFlow = () => {
   const reactFlowWrapper = useRef<HTMLDivElement>(null);
   const [reactFlowInstance, setReactFlowInstance] = useState<any>(null);
   const [elements, setElements] = useState<Elements>(initialElements);
+  // useRef needed since using useState() creates stale closure issue due to keydown binding
+  const selectedElement = useRef<Node | Edge>();
 
-  const onLoad = (_reactFlowInstance: any) =>
+  const onLoad = (_reactFlowInstance: any) => {
     setReactFlowInstance(_reactFlowInstance);
+    _reactFlowInstance.fitView();
+  }
+
+  useEffect(() => {
+    document.addEventListener('keydown', onKeyDown);
+    // Clean up
+    return () => document.addEventListener('keydown', onKeyDown);
+  }, []);
+
+  const onKeyDown = (event: KeyboardEvent) => {
+    const currentSelectedElement = selectedElement.current;
+    if (event.key === 'Delete' && currentSelectedElement) {
+      const edges = elements.filter((element: Node | Edge) => isEdge(currentSelectedElement)) as Edge[];
+      const edgesToRemove = getConnectedEdges([currentSelectedElement as Node], edges);
+      onElementsRemove([currentSelectedElement, ...edgesToRemove]);
+    }
+  };
 
   const onElementsRemove = (elementsToRemove: Elements) => setElements((els) => removeElements(elementsToRemove, els));
 
   const onConnect = (params: Connection | Edge) =>
     setElements((els) => addEdge({ ...params, type: 'floating', arrowHeadType: ArrowHeadType.Arrow }, els));
-
-  let id = 0;
-  const getId = () => `dndnode_${id++}`;
 
   const onDragOver = (event: React.DragEvent) => {
     event.preventDefault();
@@ -49,29 +67,38 @@ const NodeAsHandleFlow = () => {
     
   const onDrop = (event: React.DragEvent) => {
         event.preventDefault();
-    
-        const reactFlowBounds = reactFlowWrapper.current?.getBoundingClientRect() as DOMRect;
-        const service: Service = JSON.parse(event.dataTransfer.getData('application/reactflow'));
-        const type = 'input';
-        const position = reactFlowInstance?.project({
-          x: event.clientX - reactFlowBounds.left,
-          y: event.clientY - reactFlowBounds.top,
-        });
-        const newNode: FlowElement = {
-          id: service.id.toString(),
-          type,
-          position,
-          data: { label: `${service.name}` },
-        };
-    
-        setElements((es) => es.concat(newNode));
-      };
+        const data = event.dataTransfer.getData('application/reactflow');
+        if (data) {
+          const service: IService = JSON.parse(data);
+          const reactFlowBounds = reactFlowWrapper.current?.getBoundingClientRect() as DOMRect;
+          const position = reactFlowInstance?.project({
+            x: event.clientX - reactFlowBounds.left,
+            y: event.clientY - reactFlowBounds.top,
+          });
+          const newNode: FlowElement = {
+            id: service.id.toString(),
+            // type: 'input',
+            position,
+            className: service.cssClass,
+            sourcePosition: Position.Left, 
+            targetPosition: Position.Right,
+            data: { label: <CloudBlock name={service.name} description={service.desciption} image={service.image} /> }
+          };
+      
+          setElements((es) => es.concat(newNode));
+        }
+  };
+
+  const onElementClick = (event: React.MouseEvent, element: Node | Edge) => {
+    selectedElement.current = element;
+  };
 
   return (
     <div className="react-flow-container floatingedges" ref={reactFlowWrapper}>
       <ReactFlow
         elements={elements}
-        onElementsRemove={onElementsRemove}
+        snapToGrid
+        onElementClick={onElementClick}
         onConnect={onConnect}
         onLoad={onLoad}
         edgeTypes={edgeTypes}

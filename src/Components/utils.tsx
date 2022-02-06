@@ -1,5 +1,5 @@
 import { Position, ArrowHeadType, Node, XYPosition } from 'react-flow-renderer';
-import FlowBlock from './FlowBlock';
+import FlowBlock from './CloudBlock';
 
 // this helper function returns the intersection point
 // of the line between the center of the intersectionNode and the target node
