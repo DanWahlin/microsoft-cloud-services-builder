@@ -144,12 +144,6 @@
         "image": "app-service.svg"
       },
       {
-        "id": 16,
-        "name": "App Service (Linux)",
-        "desciption": "Quickly create powerful Linux cloud apps for web and mobile",
-        "image": "app-service-linux.svg"
-      },
-      {
         "id": 29,
         "name": "Azure Batch",
         "desciption": "Cloud-scale job scheduling and compute management",
@@ -638,7 +632,7 @@
     "services": [
       {
         "id": 10,
-        "name": "Azure CDN",
+        "name": "CDN",
         "desciption": "Ensure secure, reliable content delivery with broad global reach",
         "image": "cdn.svg"
       },
@@ -647,12 +641,6 @@
         "name": "Communication Services",
         "desciption": "Build rich communication experiences with the same secure platform used by Microsoft Teams",
         "image": "comms-services.svg"
-      },
-      {
-        "id": 36,
-        "name": "Media Services",
-        "desciption": "Encode, store, and stream video and audio at scale",
-        "image": "media-services.svg"
       }
     ],
     "cssClass": "bg-md"
@@ -870,5 +858,48 @@
       }
     ],
     "cssClass": "bg-365"
+  },
+  {
+    "id": 15,
+    "category": "Web",
+    "services": [
+      {
+        "id": "226",
+        "name": "API Management",
+        "desciption": "Publish APIs to developers, partners, and employees securely and at scale",
+        "image": "api-management.svg"
+      },
+      {
+        "id": "227",
+        "name": "CDN",
+        "desciption": "Ensure secure, reliable content delivery with broad global reach",
+        "image": "cdn.svg"
+      },
+      {
+        "id": "228",
+        "name": "Communication Services",
+        "desciption": "Build rich communication experiences with the same secure platform used by Microsoft Teams",
+        "image": "comms-services.svg"
+      },
+      {
+        "id": 229,
+        "name": "Static Web App",
+        "desciption": "Streamlined, highly efficient solution to take your static web app from source code to global high availability",
+        "image": "static-apps.svg"
+      },
+      {
+        "id": 230,
+        "name": "Azure Cognitive Search",
+        "desciption": "AI-powered cloud search service for mobile and web app development",
+        "image": "search.svg"
+      },
+      {
+        "id": 231,
+        "name": "Media Services",
+        "desciption": "Encode, store, and stream video and audio at scale",
+        "image": "media-services.svg"
+      }
+    ],
+    "cssClass": "bg-web"
   }
 ]
