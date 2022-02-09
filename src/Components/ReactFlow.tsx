@@ -33,11 +33,23 @@ const NodeAsHandleFlow = () => {
   const [reactFlowInstance, setReactFlowInstance] = useState<any>(null);
   const [elements, setElements] = useState<Elements>(initialElements);
   // useRef needed since using useState() creates stale closure issue due to keydown binding
+  const services = useRef<IService[]>([]);
   const selectedElement = useRef<Node | Edge>();
 
-  const onLoad = (_reactFlowInstance: any) => {
-    setReactFlowInstance(_reactFlowInstance);
-    _reactFlowInstance.fitView();
+  const deleteSelectedElement = (key: string) => { 
+    const currentSelectedElement = selectedElement.current;
+    if (key === 'Delete' && currentSelectedElement) {
+      const edges = elements.filter((element: Node | Edge) => isEdge(currentSelectedElement)) as Edge[];
+      const edgesToRemove = getConnectedEdges([currentSelectedElement as Node], edges);
+      onElementsRemove([currentSelectedElement, ...edgesToRemove]);
+      removeServices([currentSelectedElement as Node]);
+    }
+  }
+
+  const removeServices = (removedSvcs: Node[]) => {
+    const removedSvcNames = removedSvcs.map(svc => svc.id);
+    services.current = services.current.filter(svc => !removedSvcNames.includes(svc.name));
+    console.log(services.current);
   }
 
   useEffect(() => {
@@ -46,17 +58,13 @@ const NodeAsHandleFlow = () => {
     return () => document.addEventListener('keydown', onKeyDown);
   }, []);
 
-  const onKeyDown = (event: KeyboardEvent) => {
-    const currentSelectedElement = selectedElement.current;
-    if (event.key === 'Delete' && currentSelectedElement) {
-      const edges = elements.filter((element: Node | Edge) => isEdge(currentSelectedElement)) as Edge[];
-      const edgesToRemove = getConnectedEdges([currentSelectedElement as Node], edges);
-      onElementsRemove([currentSelectedElement, ...edgesToRemove]);
-    }
-  };
+  const onLoad = (_reactFlowInstance: any) => {
+    setReactFlowInstance(_reactFlowInstance);
+    _reactFlowInstance.fitView();
+  }
 
+  const onKeyDown = (event: KeyboardEvent) => deleteSelectedElement(event.key);
   const onElementsRemove = (elementsToRemove: Elements) => setElements((els) => removeElements(elementsToRemove, els));
-
   const onConnect = (params: Connection | Edge) =>
     setElements((els) => addEdge({ ...params, type: 'floating', arrowHeadType: ArrowHeadType.Arrow }, els));
 
@@ -64,27 +72,35 @@ const NodeAsHandleFlow = () => {
     event.preventDefault();
     event.dataTransfer.dropEffect = 'move';
   };
-    
+   
   const onDrop = (event: React.DragEvent) => {
-        event.preventDefault();
         const data = event.dataTransfer.getData('application/reactflow');
         if (data) {
           const service: IService = JSON.parse(data);
+
+          // Make sure they haven't already added the service
+          if (services.current.findIndex(svc => svc.name === service.name) > -1) {
+            return;
+          }
+
+          // Track newly dropped service (drives docs/learn/cli display)
+          services.current = services.current.concat(service);
           const reactFlowBounds = reactFlowWrapper.current?.getBoundingClientRect() as DOMRect;
           const position = reactFlowInstance?.project({
-            x: event.clientX - reactFlowBounds.left,
+            x: event.clientX - reactFlowBounds.left - 15,
             y: event.clientY - reactFlowBounds.top,
           });
           const newNode: FlowElement = {
             id: service.name,
-            // type: 'input',
             position,
             className: service.cssClass,
+            sourcePosition: Position.Left,
             targetPosition: Position.Right,
             data: { label: <CloudBlock name={service.name} description={service.desciption} image={service.image} /> }
           };
       
           setElements((es) => es.concat(newNode));
+          event.preventDefault();
         }
   };
 
@@ -104,8 +120,9 @@ const NodeAsHandleFlow = () => {
         connectionLineComponent={FloatingConnectionLine}
         onDrop={onDrop}
         onDragOver={onDragOver}
+        defaultZoom={1.5}
       >
-        <Background />
+        <Background size={0.5} />
       </ReactFlow>
     </div>
   );

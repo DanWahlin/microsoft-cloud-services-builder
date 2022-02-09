@@ -9,8 +9,27 @@ export interface IService {
     name: string;
     desciption: string;
     image: string;
-    cssClass?: string;
-    category?: string;
+    cssClass: string;
+    category: string;
+    relatedServices: string[];
+    azureCLICommand: string[];
+    document: IDocument[];
+    learnModules: ILearn[]
+}
+
+export interface IDocument {
+    name: string;
+    url: string;
+}
+
+export interface ILearn {
+    type: LearnType;
+    name: string;
+    modules: ILearnModule[]
+}
+
+export interface ILearnModule extends IDocument {
+
 }
 
 export interface ICloudBlockData { 
@@ -19,3 +38,5 @@ export interface ICloudBlockData {
     image?: string, 
     description?: string 
 }
+
+export type LearnType = 'path' | 'module';

@@ -567,7 +567,60 @@
     {
         "name": "Static Web App",
         "desciption": "Streamlined, highly efficient solution to take your static web app from source code to global high availability",
-        "image": "static-apps.svg"
+        "image": "static-apps.svg",
+        "relatedServices": ["Azure Functions", "Cosmos DB"],
+        "azureCLICommand": [
+            "az staticwebapp create \\ ",
+            "  --name my-first-static-web-app \\ ",
+            "  --resource-group my-swa-group \\ ",
+            "  --source https://github.com/$GITHUB_USER_NAME/my-first-static-web-app \\ ",
+            "  --location \"eastus2\" \\ ",
+            "  --branch main \\ ",
+            "  --app-location \"src\" \\ ",
+            "  --login-with-github"
+        ],
+        "documents": [
+            {
+                "name": "What is Azure Static Web Apps?",
+                "url": "https://docs.microsoft.com/azure/static-web-apps/overview"
+            },
+            {
+                "name": "Quickstart: Building your first static site with Azure Static Web Apps",
+                "url": "https://docs.microsoft.com/azure/static-web-apps/getting-started?tabs=vanilla-javascript"
+            },
+            {
+                "name": "Quickstart: Building your first static site using the Azure CLI",
+                "url": "https://docs.microsoft.com/azure/static-web-apps/get-started-cli"
+            }
+        ],
+        "learnModules": [
+            { 
+                "type": "path",
+                "name": "Azure Static Web Apps",
+                "modules": [
+                    {
+                        "name": "Publish an Angular, React, Svelte, or Vue JavaScript app with Azure Static Web Apps",
+                        "url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api/"
+                    },
+                    {
+                        "name": "Publish an API to Azure Static Web Apps",
+                        "url": "https://docs.microsoft.com/learn/modules/publish-static-web-app-api-preview-url/"
+                    },
+                    {
+                        "name": "Authenticate users with Azure Static Web Apps",
+                        "url": "https://docs.microsoft.com/learn/modules/publish-static-web-app-authentication/"
+                    },
+                    {
+                        "name": "Publish a Blazor WebAssembly app and .NET API with Azure Static Web Apps",
+                        "url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api-dotnet/"
+                    },
+                    {
+                        "name": "Create and publish a static web app with Gatsby and Azure Static Web Apps",
+                        "url": "https://docs.microsoft.com/en-us/learn/modules/create-deploy-static-webapp-gatsby-app-service/"
+                    }
+                ]
+            }
+        ]
     },
     {
         "name": "StorSimple",

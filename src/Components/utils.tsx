@@ -1,4 +1,4 @@
-import { Position, ArrowHeadType, Node, XYPosition } from 'react-flow-renderer';
+import { Position, ArrowHeadType, Node, XYPosition, Elements } from 'react-flow-renderer';
 import FlowBlock from './CloudBlock';
 
 // this helper function returns the intersection point
@@ -74,27 +74,27 @@ export function getEdgeParams(source: Node, target: Node) {
 }
 
 export function createElements() {
-  const elements = [];
+  const elements: Elements = [];
   const center = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
 
-  elements.push({ id: 'target', data: { label: <FlowBlock name='Web' /> }, position: center });
+  // elements.push({ id: 'target', data: { label: <FlowBlock name='Web' /> }, position: center });
 
-  for (let i = 0; i < 2; i++) {
-    const degrees = i * (360 / 8);
-    const radians = degrees * (Math.PI / 180);
-    const x = 250 * Math.cos(radians) + center.x;
-    const y = 250 * Math.sin(radians) + center.y;
+  // for (let i = 0; i < 2; i++) {
+  //   const degrees = i * (360 / 8);
+  //   const radians = degrees * (Math.PI / 180);
+  //   const x = 250 * Math.cos(radians) + center.x;
+  //   const y = 250 * Math.sin(radians) + center.y;
 
-    elements.push({ id: `${i}`, data: { label: 'Source' }, position: { x, y } });
+  //   elements.push({ id: `${i}`, data: { label: 'Source' }, position: { x, y } });
 
-    elements.push({
-      id: `edge-${i}`,
-      target: 'target',
-      source: `${i}`,
-      type: 'floating',
-      arrowHeadType: ArrowHeadType.ArrowClosed,
-    });
-  }
+  //   elements.push({
+  //     id: `edge-${i}`,
+  //     target: 'target',
+  //     source: `${i}`,
+  //     type: 'floating',
+  //     arrowHeadType: ArrowHeadType.ArrowClosed,
+  //   });
+  // }
 
   return elements;
 }
