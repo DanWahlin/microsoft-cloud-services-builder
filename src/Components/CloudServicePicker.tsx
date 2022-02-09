@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { ICategoriesServices, IService, IServiceCategory } from '../shared/interfaces';
+import { IService, IServiceCategory } from '../shared/interfaces';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import CloudService from './CloudService';
 import CloudServiceCategory from './CloudServiceCategory';
@@ -12,10 +12,13 @@ function CloudServicePicker() {
 
     useEffect(() => {
       const getServiceCategories = async () => {
-        const res = await axios.get('/data/services.json');
-        const data: ICategoriesServices = res.data;
-        setServiceCategories(data.categories);
-        setServices(data.services);
+        const svcCatsResponse = await axios.get('/data/serviceCategories.json');
+        const svcCats: IServiceCategory[]  = svcCatsResponse.data;
+        setServiceCategories(svcCats);
+
+        const svcsResponse = await axios.get('/data/services.json');
+        const svcs: IService[] = svcsResponse.data;
+        setServices(svcs);
       }
 
       getServiceCategories();
@@ -26,12 +29,13 @@ function CloudServicePicker() {
     };
 
     const getCategoryServices = (svcCat: IServiceCategory) => {
-      let serviceNames = svcCat.serviceNames;
-      svcCat.services = [];
+      let serviceNames = svcCat.services;
+      svcCat.servicesData = [];
       for (let svcName of serviceNames) {
         let svcs = services.filter(svc => svc.name === svcName);
-        svcCat.services.push(...svcs);
+        svcCat.servicesData.push(...svcs);
       }
+      return svcCat;
     };
 
     const goBack = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
@@ -59,7 +63,7 @@ function CloudServicePicker() {
                   filterCategories={filterCategories} />
             ))}
 
-            {serviceCategory && serviceCategory.services?.map((service: IService) => (
+            {serviceCategory && getCategoryServices(serviceCategory).servicesData?.map((service: IService) => (
                 <CloudService key={service.name} 
                   serviceCategory={serviceCategory} 
                   service={service} 

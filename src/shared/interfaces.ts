@@ -1,13 +1,8 @@
-export interface ICategoriesServices {
-    categories: IServiceCategory[];
-    services: IService [];
-}
-
 export interface IServiceCategory {
     name: string;
-    serviceNames: string[];
+    services: string[];
     cssClass: string;
-    services?: IService[];
+    servicesData?: IService[];
 }
 
 export interface IService {

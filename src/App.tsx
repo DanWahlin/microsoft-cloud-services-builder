@@ -27,8 +27,8 @@ function App() {
         <div className="app-top-row">
           <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-              <Tab label="Categories" />
-              <Tab label="Scenarios" />
+              <Tab label="Cloud Categories" />
+              <Tab label="Cloud Scenarios" />
             </Tabs>
           </Box>
           <TabPanel value={value} index={0}>

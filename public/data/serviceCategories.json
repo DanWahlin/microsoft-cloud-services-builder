@@ -1,0 +1,225 @@
+[
+  {
+    "name": "AI + Machine Learning",
+    "cssClass": "bg-ai",
+    "services": [
+      "Applied AI Services",
+      "Bot Service",
+      "Cognitive Search",
+      "Cognitive Services",
+      "Machine Learning",
+      "Microsoft Genomics",
+      "Open Datasets",
+      "Project Bonsai"
+    ]
+  },
+  {
+    "name": "Analytics",
+    "cssClass": "bg-an",
+    "services": [
+      "Analysis Services",
+      "Azure Purview",
+      "Data Catalog",
+      "Data Explorer",
+      "Data Factory",
+      "Data Lake Analytics",
+      "Databricks",
+      "Event Hubs",
+      "HDInsight",
+      "Power BI Embedded",
+      "Stream Analytics",
+      "Synapse Analytics"
+    ]
+  },
+  {
+    "name": "Compute",
+    "cssClass": "bg-cmp",
+    "services": [
+      "App Service",
+      "Azure Batch",
+      "Azure Functions",
+      "Azure Quantum",
+      "Azure Red Hat OpenShift",
+      "Azure VMware Solution",
+      "Cloud Services",
+      "Container Apps",
+      "Container Instances",
+      "Container Registry",
+      "CycleCloud",
+      "Dedicated Host",
+      "Kubernetes Service",
+      "Service Fabric",
+      "Virtual Desktop",
+      "Virtual Machines",
+      "VM Scale Sets"
+    ]
+  },
+  {
+    "name": "Databases",
+    "cssClass": "bg-db",
+    "services": [
+      "Apache Cassandra MI",
+      "Cosmos DB",
+      "Database for MariaDB",
+      "Database for MySQL",
+      "Database for PostgreSQL",
+      "Redis Cache",
+      "SQL Database",
+      "SQL Server Stretch DB"
+    ]
+  },
+  {
+    "name": "Development",
+    "cssClass": "bg-dev",
+    "services": [
+      "App Configuration",
+      "Azure DevOps",
+      "Azure Spring Cloud",
+      "DevTest Labs",
+      "Lab Services",
+      "Load Testing",
+      "SignalR Service",
+      "Visual Studio App Center"
+    ]
+  },
+  {
+    "name": "Identity + Security",
+    "cssClass": "bg-sec",
+    "services": [
+      "Azure Active Directory",
+      "Azure AD B2C",
+      "Azure AD DS",
+      "Azure Defender",
+      "Azure Key Vault",
+      "Azure Sentinel",
+      "DDoS Protection",
+      "Dedicated HSM",
+      "Information Protection",
+      "Security Center"
+    ]
+  },
+  {
+    "name": "IoT + MR",
+    "cssClass": "bg-iot",
+    "services": [
+      "Azure Maps",
+      "Azure Sphere",
+      "Digital Twins",
+      "IoT Central",
+      "IoT Edge",
+      "IoT Hub",
+      "Object Anchors",
+      "Remote Rendering",
+      "Spatial Anchors",
+      "Time Series Insights"
+    ]
+  },
+  {
+    "name": "Integration",
+    "cssClass": "bg-int",
+    "services": [
+      "API Management",
+      "Event Grid",
+      "Healthcare APIs",
+      "Logic Apps",
+      "Notification Hubs",
+      "Service Bus",
+      "Web PubSub"
+    ]
+  },
+  {
+    "name": "Management + Governance",
+    "cssClass": "bg-mgmt",
+    "services": [
+      "Automation",
+      "Azure Advisor",
+      "Azure Arc",
+      "Azure Automanage",
+      "Azure Backup",
+      "Azure Blueprints",
+      "Azure Lighthouse",
+      "Azure Monitor",
+      "Azure Policy",
+      "Azure Portal",
+      "Cloud Shell",
+      "Cost Management",
+      "Managed Apps",
+      "Scheduler"
+    ]
+  },
+  {
+    "name": "Media + Comms",
+    "cssClass": "bg-md",
+    "services": [
+      "CDN",
+      "Communication Services"
+    ]
+  },
+  {
+    "name": "Migration",
+    "cssClass": "bg-mg",
+    "services": [
+      "Azure Migrate",
+      "Data Box",
+      "DB Migration Service",
+      "Site Recovery"
+    ]
+  },
+  {
+    "name": "Networking",
+    "cssClass": "bg-nw",
+    "services": [
+      "Application Gateway",
+      "Azure Bastion",
+      "Azure DNS",
+      "Azure Firewall",
+      "Azure Front Door",
+      "Azure Orbital",
+      "ExpressRoute",
+      "Internet Analyzer",
+      "Load Balancer",
+      "Network Watcher",
+      "Private Link",
+      "Route Server",
+      "Traffic Manager",
+      "Virtual Network",
+      "Virtual WAN",
+      "VNet Manager",
+      "VPN Gateway"
+    ]
+  },
+  {
+    "name": "Storage",
+    "cssClass": "bg-st",
+    "services": [
+      "Avere vFXT",
+      "Azure NetApp Files",
+      "Azure Storage",
+      "Confidential Ledger",
+      "Data Lake Storage",
+      "Data Share",
+      "HPC Cache",
+      "Managed Disks",
+      "StorSimple"
+    ]
+  },
+  {
+    "name": "Microsoft 365",
+    "cssClass": "bg-365",
+    "services": [
+      "Microsoft Graph"
+    ]
+  },
+  {
+    "name": "Web",
+    "cssClass": "bg-web",
+    "services": [
+      "API Management",
+      "CDN",
+      "Communication Services",
+      "Static Web App",
+      "Azure Cognitive Search",
+      "Media Services"
+    ]
+  }
+]
