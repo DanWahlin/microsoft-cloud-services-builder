@@ -76,11 +76,10 @@ const NodeAsHandleFlow = () => {
             y: event.clientY - reactFlowBounds.top,
           });
           const newNode: FlowElement = {
-            id: service.id.toString(),
+            id: service.name,
             // type: 'input',
             position,
             className: service.cssClass,
-            sourcePosition: Position.Left, 
             targetPosition: Position.Right,
             data: { label: <CloudBlock name={service.name} description={service.desciption} image={service.image} /> }
           };

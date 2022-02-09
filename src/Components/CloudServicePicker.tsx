@@ -1,25 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { IService, IServiceCategory } from '../shared/interfaces';
+import { ICategoriesServices, IService, IServiceCategory } from '../shared/interfaces';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import CloudService from './CloudService';
 import CloudServiceCategory from './CloudServiceCategory';
-import { Autocomplete, TextField } from '@mui/material';
 
 function CloudServicePicker() {
     const [serviceCategories, setServiceCategories] = useState<IServiceCategory[]>([]);
-    const [options, setOptions] = useState<{label: string}[]>([]);
+    const [services, setServices] = useState<IService[]>([]);
     const [serviceCategory, setServiceCategory] = useState<IServiceCategory |  null>();
 
     useEffect(() => {
       const getServiceCategories = async () => {
         const res = await axios.get('/data/services.json');
-        const data: IServiceCategory[] = res.data;
-        setServiceCategories(data);
-        const svcs = data.map((svcCat: IServiceCategory) => svcCat.services)
-                         .reduce((prev, current) => [...prev, ...current])
-                         .map((e, i) => ({ label: e.name }));
-        setOptions(svcs);
+        const data: ICategoriesServices = res.data;
+        setServiceCategories(data.categories);
+        setServices(data.services);
       }
 
       getServiceCategories();
@@ -27,11 +23,20 @@ function CloudServicePicker() {
 
     const filterCategories = (event: React.MouseEvent<HTMLDivElement, MouseEvent>, svcCat: IServiceCategory) => {
       setServiceCategory(svcCat);
-    }
+    };
+
+    const getCategoryServices = (svcCat: IServiceCategory) => {
+      let serviceNames = svcCat.serviceNames;
+      svcCat.services = [];
+      for (let svcName of serviceNames) {
+        let svcs = services.filter(svc => svc.name === svcName);
+        svcCat.services.push(...svcs);
+      }
+    };
 
     const goBack = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
       setServiceCategory(null);
-    }
+    };
 
     return (
       <>
@@ -49,13 +54,13 @@ function CloudServicePicker() {
                   renderInput={(params) => <TextField {...params} label="Search services" />} />
             )} */}
             {!serviceCategory && serviceCategories.map(svcCat => (
-                <CloudServiceCategory key={svcCat.id}
+                <CloudServiceCategory key={svcCat.name}
                   serviceCategory={svcCat}
                   filterCategories={filterCategories} />
             ))}
 
-            {serviceCategory && serviceCategory.services.map((service: IService) => (
-                <CloudService key={service.id} 
+            {serviceCategory && serviceCategory.services?.map((service: IService) => (
+                <CloudService key={service.name} 
                   serviceCategory={serviceCategory} 
                   service={service} 
                 />

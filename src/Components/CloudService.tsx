@@ -13,11 +13,11 @@ function CloudService(props: { serviceCategory: IServiceCategory, service: IServ
     };
 
     return (
-        <div key={service.id} 
+        <div key={service.name} 
             className={`${serviceCategory.cssClass} cloud-block-grid cloud-block-size cursor-drag-drop`}
             onDragStart={(event) => onDragStart(event, { 
             ...service, 
-            category: serviceCategory.category,
+            category: serviceCategory.name,
             cssClass: serviceCategory.cssClass 
             })} draggable
         >

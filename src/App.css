@@ -23,9 +23,8 @@ main {
 }
 
 .app-bottom-row {
-  grid-column: 1;
+  grid-column: 1 / 1;
   grid-row: 2 / 2;
-  margin-top: 15px;
 }
 
 .back-button {
@@ -47,6 +46,7 @@ main {
   grid-template-rows: 1fr 1fr;
   box-sizing: border-box;
   height: 225px;
+  gap: 10px;
   align-items: center;
 }
 
@@ -68,7 +68,7 @@ main {
 .react-flow-container {
   background-color: #fff;
   border: 1px solid #ccc;
-  height: 75vh;
+  height: 65vh;
   width: 98vw;
 }
 
@@ -161,7 +161,7 @@ main {
 @keyframes slidein {
   from {
     opacity: 0;
-    transform: translate(-50px, 0);
+    transform: translate(-25px, 0);
   }
 
   to {
