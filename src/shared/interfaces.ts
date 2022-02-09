@@ -1,8 +1,8 @@
 export interface IServiceCategory {
     name: string;
-    services: string[];
+    serviceNames: string[];
     cssClass: string;
-    servicesData?: IService[];
+    services: IService[];
 }
 
 export interface IService {

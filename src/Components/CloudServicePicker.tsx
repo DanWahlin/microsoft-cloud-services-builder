@@ -29,11 +29,11 @@ function CloudServicePicker() {
     };
 
     const getCategoryServices = (svcCat: IServiceCategory) => {
-      let serviceNames = svcCat.services;
-      svcCat.servicesData = [];
+      let serviceNames = svcCat.serviceNames;
+      svcCat.services = [];
       for (let svcName of serviceNames) {
         let svcs = services.filter(svc => svc.name === svcName);
-        svcCat.servicesData.push(...svcs);
+        svcCat.services.push(...svcs);
       }
       return svcCat;
     };
@@ -63,7 +63,7 @@ function CloudServicePicker() {
                   filterCategories={filterCategories} />
             ))}
 
-            {serviceCategory && getCategoryServices(serviceCategory).servicesData?.map((service: IService) => (
+            {serviceCategory && getCategoryServices(serviceCategory).services.map((service: IService) => (
                 <CloudService key={service.name} 
                   serviceCategory={serviceCategory} 
                   service={service} 
