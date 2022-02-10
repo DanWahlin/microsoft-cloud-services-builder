@@ -1,5 +1,4 @@
-import { Position, ArrowHeadType, Node, XYPosition, Elements } from 'react-flow-renderer';
-import FlowBlock from './CloudBlock';
+import { Position, Node, XYPosition, Elements } from 'react-flow-renderer';
 
 // this helper function returns the intersection point
 // of the line between the center of the intersectionNode and the target node
@@ -75,7 +74,7 @@ export function getEdgeParams(source: Node, target: Node) {
 
 export function createElements() {
   const elements: Elements = [];
-  const center = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+  // const center = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
 
   // elements.push({ id: 'target', data: { label: <FlowBlock name='Web' /> }, position: center });
 

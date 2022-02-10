@@ -7,14 +7,14 @@ export interface IServiceCategory {
 
 export interface IService {
     name: string;
-    desciption: string;
+    description: string;
     image: string;
     cssClass: string;
     category: string;
     relatedServices: string[];
     azureCLICommand: string[];
-    document: IDocument[];
-    learnModules: ILearn[]
+    documents: IDocument[];
+    learnContent: ILearnContent[]
 }
 
 export interface IDocument {
@@ -22,9 +22,9 @@ export interface IDocument {
     url: string;
 }
 
-export interface ILearn {
+export interface ILearnContent extends IDocument {
     type: LearnType;
-    name: string;
+    image: string;
     modules: ILearnModule[]
 }
 

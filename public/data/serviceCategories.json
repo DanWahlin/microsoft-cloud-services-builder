@@ -189,6 +189,17 @@
     ]
   },
   {
+    "name": "Power Platform",
+    "cssClass": "bg-pp",
+    "serviceNames": [
+      "Dataverse",
+      "Power Apps",
+      "Power Automate",
+      "Power BI",
+      "Power Virtual Agents"
+    ]
+  },
+  {
     "name": "Storage",
     "cssClass": "bg-st",
     "serviceNames": [
@@ -217,7 +228,7 @@
       "API Management",
       "CDN",
       "Communication Services",
-      "Static Web App",
+      "Static Web Apps",
       "Azure Cognitive Search",
       "Media Services"
     ]

@@ -5,6 +5,8 @@ import './App.css';
 import ReactFlow from './Components/ReactFlow';
 import CloudServicePicker from './Components/CloudServicePicker';
 import TabPanel from './Components/TabPanel';
+import Docs from './Components/Docs';
+import { RecoilRoot } from 'recoil';
 
 function App() {
   const [value, setValue] = React.useState(0);
@@ -16,32 +18,38 @@ function App() {
   return (
     <main>
       <AppBar position="fixed">
-        <Toolbar>
+        <Toolbar className="toolbar">
           <Typography variant="h6" noWrap component="div">
-            <img src="/images/microsoft-logo.svg" alt="icon" className="icon"></img> Microsoft Cloud Blocks
+            <div className="image-title-container">
+              <img src="/images/microsoft-logo.svg" alt="icon" className="icon"></img> 
+              <span>Microsoft Cloud Services Builder</span>
+            </div>
           </Typography>
         </Toolbar>
       </AppBar>
 
-      <div className="App app-grid">
-        <div className="app-top-row">
-          <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-            <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-              <Tab label="Cloud Categories" />
-              <Tab label="Cloud Scenarios" />
-            </Tabs>
-          </Box>
-          <TabPanel value={value} index={0}>
-            <CloudServicePicker />
-          </TabPanel>
-          <TabPanel value={value} index={1}>
-            Scenarios
-          </TabPanel>
+      <RecoilRoot>
+        <div className="App app-grid">
+          <div className="app-top-row">
+            <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+              <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+                <Tab label="Cloud Categories" />
+                <Tab label="Cloud Scenarios" />
+              </Tabs>
+            </Box>
+            <TabPanel value={value} index={0}>
+              <CloudServicePicker />
+            </TabPanel>
+            <TabPanel value={value} index={1}>
+              Scenarios
+            </TabPanel>
+          </div>
+          <div className="app-bottom-row">
+            <ReactFlow />
+            <Docs />
+          </div>
         </div>
-        <div className="app-bottom-row">
-          <ReactFlow />
-        </div>
-      </div>
+      </RecoilRoot>
     </main>
   );
 }

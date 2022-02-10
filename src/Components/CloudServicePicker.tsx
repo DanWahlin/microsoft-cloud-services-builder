@@ -50,13 +50,6 @@ function CloudServicePicker() {
           </div>
         )}
         <div className="service-picker">
-            {/* {!serviceCategory && (
-                <Autocomplete
-                  id="combo-box-options"
-                  options={options}
-                  sx={{ width: 300 }}
-                  renderInput={(params) => <TextField {...params} label="Search services" />} />
-            )} */}
             {!serviceCategory && serviceCategories.map(svcCat => (
                 <CloudServiceCategory key={svcCat.name}
                   serviceCategory={svcCat}

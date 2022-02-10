@@ -21,6 +21,8 @@ import FloatingConnectionLine from './FloatingConnectionLine';
 import { createElements } from './utils';
 import { IService } from '../shared/interfaces';
 import CloudBlock from './CloudBlock';
+import { servicesAtom } from '../Atoms/servicesAtom';
+import { useSetRecoilState } from 'recoil';
 
 const initialElements: Elements = createElements();
 
@@ -35,6 +37,7 @@ const NodeAsHandleFlow = () => {
   // useRef needed since using useState() creates stale closure issue due to keydown binding
   const services = useRef<IService[]>([]);
   const selectedElement = useRef<Node | Edge>();
+  const setServices = useSetRecoilState(servicesAtom);
 
   const deleteSelectedElement = (key: string) => { 
     const currentSelectedElement = selectedElement.current;
@@ -49,7 +52,7 @@ const NodeAsHandleFlow = () => {
   const removeServices = (removedSvcs: Node[]) => {
     const removedSvcNames = removedSvcs.map(svc => svc.id);
     services.current = services.current.filter(svc => !removedSvcNames.includes(svc.name));
-    console.log(services.current);
+    setServices(services.current);
   }
 
   useEffect(() => {
@@ -85,18 +88,21 @@ const NodeAsHandleFlow = () => {
 
           // Track newly dropped service (drives docs/learn/cli display)
           services.current = services.current.concat(service);
+          setServices(services.current);
+
           const reactFlowBounds = reactFlowWrapper.current?.getBoundingClientRect() as DOMRect;
           const position = reactFlowInstance?.project({
-            x: event.clientX - reactFlowBounds.left - 15,
-            y: event.clientY - reactFlowBounds.top,
+            x: (event.clientX - reactFlowBounds.left),
+            y: (event.clientY - reactFlowBounds.top),
           });
+          console.log(event.clientX, reactFlowBounds.left);
           const newNode: FlowElement = {
             id: service.name,
             position,
             className: service.cssClass,
             sourcePosition: Position.Left,
             targetPosition: Position.Right,
-            data: { label: <CloudBlock name={service.name} description={service.desciption} image={service.image} /> }
+            data: { label: <CloudBlock name={service.name} description={service.description} image={service.image} /> }
           };
       
           setElements((es) => es.concat(newNode));
@@ -109,22 +115,26 @@ const NodeAsHandleFlow = () => {
   };
 
   return (
-    <div className="react-flow-container floatingedges" ref={reactFlowWrapper}>
-      <ReactFlow
-        elements={elements}
-        snapToGrid
-        onElementClick={onElementClick}
-        onConnect={onConnect}
-        onLoad={onLoad}
-        edgeTypes={edgeTypes}
-        connectionLineComponent={FloatingConnectionLine}
-        onDrop={onDrop}
-        onDragOver={onDragOver}
-        defaultZoom={1.5}
-      >
-        <Background size={0.5} />
-      </ReactFlow>
-    </div>
+    <>
+      <div className="heading">Selected Cloud Services</div>
+      <div className="react-flow-container floatingedges" ref={reactFlowWrapper}>
+        <ReactFlow
+          elements={elements}
+          snapToGrid
+          onElementClick={onElementClick}
+          onConnect={onConnect}
+          onLoad={onLoad}
+          edgeTypes={edgeTypes}
+          connectionLineComponent={FloatingConnectionLine}
+          onDrop={onDrop}
+          onDragOver={onDragOver}
+          defaultZoom={1.5}
+          zoomOnScroll={false}
+        >
+          <Background size={0.5} />
+        </ReactFlow>
+      </div>
+    </>
   );
 };
 

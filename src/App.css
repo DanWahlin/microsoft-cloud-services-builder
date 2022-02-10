@@ -3,7 +3,21 @@
 }
 
 main {
-  margin-top: 85px;
+  margin-top: 55px;
+}
+
+.heading {
+  text-transform: uppercase;
+  color: #1976d2;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.25;
+  min-height: 30px;
+  margin-top: 5px;
+}
+
+.toolbar {
+  min-height: 45px !important;
 }
 
 .app-grid {
@@ -28,11 +42,11 @@ main {
 }
 
 div[role=tabpanel] {
-  min-height: 275px;
+  min-height: 285px;
 }
 
 .back-button {
-  font-size: 20pt;
+  font-size: 2rem !important;
   cursor: pointer;
 }
 
@@ -47,33 +61,52 @@ div[role=tabpanel] {
 .service-picker {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto;
   box-sizing: border-box;
-  height: 225px;
+  height: 200px;
   gap: 10px;
   align-items: center;
+}
+
+.service-picker div {
+  animation-duration: 0.7s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    opacity: .8;
+    transform: translate(-15px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }
 
 .cloud-block-grid {
   text-align: center;
   font-weight: bold;
   display: grid;
+  gap: 5px;
 	align-items: center;
   justify-content: center;
 }
 
 .cloud-block-size {
   font-size: 13pt;
-  width: 200px;
-  height: 65px;
+  width: 225px;
+  height: 62px;
   border-radius: 6px;
 }
 
 .react-flow-container {
   background-color: #fff;
-  border: 1px solid #ccc;
-  height: 65vh;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  height: 35vh;
   width: 98vw;
+  margin-bottom: 25px;
 }
 
 .floatingedges {
@@ -93,7 +126,7 @@ div[role=tabpanel] {
 }
 
 .bg-cmp {
-  background-color: #ffb007 !important;
+  background-color: #ff9c07 !important;
   color: #fff !important;
 }
 
@@ -157,21 +190,9 @@ div[role=tabpanel] {
   color: #fff !important;
 }
 
-.service-picker div {
-  animation-duration: 1s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    opacity: 0;
-    transform: translate(-25px, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
+.bg-pp {
+  background-color: #8b19d2 !important;
+  color: #fff !important;
 }
 
 .icon {
@@ -192,6 +213,89 @@ div[role=tabpanel] {
 
 .react-flow__node-default.selected, .react-flow__node-default.selected:hover {
   box-shadow: 0 0 0 1.5px #000 !important;
+}
+
+.image-title-container {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  align-items: center;
+  justify-items: left;
+}
+
+.bg-light-gray {
+  background-color: var(--theme-light-gray-color);
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.microsoft-image {
+  width: 30px;
+  margin-top: 5px;
+}
+
+.docs-learn-title {
+  font-size: 1.2rem;
+  font-weight: bold !important;
+  border-left: 0px solid transparent !important;
+  padding-left: 0px !important;
+}
+
+.bg-main {
+  background-color: var(--theme-highlight-color);
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.list h3 {
+  margin: 0
+}
+
+.list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list ol {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.list ul > li, .list ol > li {
+  margin-bottom: 8px;
+}
+
+.list ul > li a, .list ol > li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  border-left: 6px solid var(--theme-gray-color);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.list ul > li a:hover, .list ol > li a:hover {
+  border-color: var(--theme-highlight-color);
+}
+
+.console {
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
+}
+
+.comment {
+  color: #15ff00;
+}
+
+.azure-cli-command {
+  margin-bottom: 15px;
 }
 
 
