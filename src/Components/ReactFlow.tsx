@@ -30,7 +30,7 @@ const edgeTypes: EdgeTypesType = {
   floating: FloatingEdge,
 };
 
-const NodeAsHandleFlow = () => {
+const ServicesReactFlow = () => {
   const reactFlowWrapper = useRef<HTMLDivElement>(null);
   const [reactFlowInstance, setReactFlowInstance] = useState<any>(null);
   const [elements, setElements] = useState<Elements>(initialElements);
@@ -39,7 +39,7 @@ const NodeAsHandleFlow = () => {
   const selectedElement = useRef<Node | Edge>();
   const setServices = useSetRecoilState(servicesAtom);
 
-  const deleteSelectedElement = (key: string) => { 
+  function deleteSelectedElement(key: string) { 
     const currentSelectedElement = selectedElement.current;
     if (key === 'Delete' && currentSelectedElement) {
       const edges = elements.filter((element: Node | Edge) => isEdge(currentSelectedElement)) as Edge[];
@@ -49,13 +49,15 @@ const NodeAsHandleFlow = () => {
     }
   }
 
-  const removeServices = (removedSvcs: Node[]) => {
+  function removeServices(removedSvcs: Node[]) {
     const removedSvcNames = removedSvcs.map(svc => svc.id);
     services.current = services.current.filter(svc => !removedSvcNames.includes(svc.name));
     setServices(services.current);
   }
 
-  const onKeyDown = (event: KeyboardEvent) => deleteSelectedElement(event.key);
+  function onKeyDown(event: KeyboardEvent) {
+    deleteSelectedElement(event.key);
+  } 
 
   useEffect(() => {
     document.addEventListener('keydown', onKeyDown);
@@ -63,21 +65,23 @@ const NodeAsHandleFlow = () => {
     return () => document.addEventListener('keydown', onKeyDown);
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const onLoad = (_reactFlowInstance: any) => {
+  function onLoad(_reactFlowInstance: any) {
     setReactFlowInstance(_reactFlowInstance);
     _reactFlowInstance.fitView();
   }
 
   const onElementsRemove = (elementsToRemove: Elements) => setElements((els) => removeElements(elementsToRemove, els));
-  const onConnect = (params: Connection | Edge) =>
-    setElements((els) => addEdge({ ...params, type: 'floating', arrowHeadType: ArrowHeadType.Arrow }, els));
 
-  const onDragOver = (event: React.DragEvent) => {
+  function onConnect(params: Connection | Edge) {
+    setElements((els) => addEdge({ ...params, type: 'floating', arrowHeadType: ArrowHeadType.Arrow }, els));
+  }
+
+  function onDragOver(event: React.DragEvent) {
     event.preventDefault();
     event.dataTransfer.dropEffect = 'move';
-  };
+  }
    
-  const onDrop = (event: React.DragEvent) => {
+  function onDrop(event: React.DragEvent){
         const data = event.dataTransfer.getData('application/reactflow');
         if (data) {
           const service: IService = JSON.parse(data);
@@ -109,11 +113,11 @@ const NodeAsHandleFlow = () => {
           setElements((es) => es.concat(newNode));
           event.preventDefault();
         }
-  };
+  }
 
-  const onElementClick = (event: React.MouseEvent, element: Node | Edge) => {
+  function onElementClick(event: React.MouseEvent, element: Node | Edge) {
     selectedElement.current = element;
-  };
+  }
 
   return (
     <>
@@ -139,37 +143,4 @@ const NodeAsHandleFlow = () => {
   );
 };
 
-export default NodeAsHandleFlow;
-
-// import React, { useState } from 'react';
-// import ReactFlow, { Background, FlowElement, Position, updateEdge, addEdge } from 'react-flow-renderer';
-// import FlowBlock from './FlowBlock';
-
-// const initialElements: FlowElement[] = [
-//   { id: '1', type: 'input', data: { label: <FlowBlock name='Web'/> }, position: { x: 25, y: 25 }, sourcePosition: Position.Right },
-//   { id: '2', data: { label: <FlowBlock name='Queue'/> }, position: { x: 250, y: 25 }, sourcePosition: Position.Left, targetPosition: Position.Left },
-//   { id: '3', data: { label: <FlowBlock name='Database'/> }, position: { x: 450, y: 25 }, sourcePosition: Position.Left, targetPosition: Position.Left },
-//   { id: 'e1-2', source: '1', target: '2', animated: false },
-//   { id: 'e2-3', source: '2', target: '3', animated: false }
-// ];
-
-// export function Flow() { 
-//     const [elements, setElements] = useState(initialElements);
-
-//     // gets called after end of edge gets dragged to another source or target
-//     const onEdgeUpdate = (oldEdge: any, newConnection: any) => setElements((els) => updateEdge(oldEdge, newConnection, els));
-//     const onConnect = (params: any) => setElements((els) => addEdge(params, els));
-
-//     return ( 
-//         <div className="react-flow-container">
-//             <ReactFlow 
-//                 elements={elements} 
-//                 snapToGrid={true} 
-//                 onEdgeUpdate={onEdgeUpdate}
-//                 onConnect={onConnect}
-//             >
-//                 <Background />
-//             </ReactFlow>
-//         </div>
-//     );
-// }
+export default ServicesReactFlow;

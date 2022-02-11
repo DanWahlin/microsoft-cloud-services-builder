@@ -1,9 +1,9 @@
 import React from 'react';
 import { ILearnContent, ILearnModule, IService } from '../shared/interfaces';
 
-function LearnContent(props: {selectedServices: IService[]}) {
+function LearnContent(props: { selectedServices: IService[] }) {
     const { selectedServices } = props;
-    
+
     return (
         <>
             {selectedServices.length > 0 && selectedServices.map((service: IService) => (

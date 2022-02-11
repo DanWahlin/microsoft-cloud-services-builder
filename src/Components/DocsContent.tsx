@@ -3,6 +3,7 @@ import { IDocument, IService } from '../shared/interfaces';
 
 function DocsContent(props: {selectedServices: IService[]}) {
     const { selectedServices } = props;
+    
     return (
         <>
             {selectedServices.length > 0 && selectedServices.map((service: IService) => (

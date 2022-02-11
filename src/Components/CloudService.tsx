@@ -9,7 +9,7 @@ import CloudBlock from './CloudBlock';
 function CloudService(props: { serviceCategory: IServiceCategory, service: IService  }) {
     const {serviceCategory, service} = props;
 
-    const onDragStart = (event: React.DragEvent, service: IService) => {
+    function onDragStart(event: React.DragEvent, service: IService) {
         let dragData = { 
             ...service, 
             category: serviceCategory.name,
@@ -19,7 +19,7 @@ function CloudService(props: { serviceCategory: IServiceCategory, service: IServ
           event.dataTransfer.setData('application/reactflow', JSON.stringify(dragData));
           event.dataTransfer.effectAllowed = 'move';
         }
-    };
+    }
 
     const HtmlTooltip = styled(({ className, ...props }: TooltipProps) => (
         <Tooltip {...props} arrow classes={{ popper: className }} />

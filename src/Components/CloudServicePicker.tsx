@@ -24,11 +24,11 @@ function CloudServicePicker() {
       getServiceCategories();
     }, []);
 
-    const filterCategories = (event: React.MouseEvent<HTMLDivElement, MouseEvent>, svcCat: IServiceCategory) => {
+    function filterCategories(event: React.MouseEvent<HTMLDivElement, MouseEvent>, svcCat: IServiceCategory) {
       setServiceCategory(svcCat);
-    };
+    }
 
-    const getCategoryServices = (svcCat: IServiceCategory) => {
+    function getCategoryServices(svcCat: IServiceCategory) {
       let serviceNames = svcCat.serviceNames;
       svcCat.services = [];
       for (let svcName of serviceNames) {
@@ -36,9 +36,9 @@ function CloudServicePicker() {
         svcCat.services.push(...svcs);
       }
       return svcCat;
-    };
+    }
 
-    const goBack = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    function goBack(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
       setServiceCategory(null);
     };
 

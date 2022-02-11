@@ -13,7 +13,7 @@ function DocsLearnCLI(props: any) {
     const [value, setValue] = useState(0);
     const selectedServices = useRecoilValue<IService[]>(servicesAtom);
 
-    const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+    function handleChange(event: React.SyntheticEvent, newValue: number) {
         setValue(newValue);
     };
 
