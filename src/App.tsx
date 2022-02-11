@@ -5,7 +5,7 @@ import './App.css';
 import ReactFlow from './Components/ReactFlow';
 import CloudServicePicker from './Components/CloudServicePicker';
 import TabPanel from './Components/TabPanel';
-import Docs from './Components/Docs';
+import DocsLearnCLI from './Components/DocsLearnCLI';
 import { RecoilRoot } from 'recoil';
 
 function App() {
@@ -46,7 +46,7 @@ function App() {
           </div>
           <div className="app-bottom-row">
             <ReactFlow />
-            <Docs />
+            <DocsLearnCLI />
           </div>
         </div>
       </RecoilRoot>

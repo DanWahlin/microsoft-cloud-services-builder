@@ -102,7 +102,7 @@ div[role=tabpanel] {
 }
 
 .react-flow-container {
-  background-color: #fff;
+  background-color: #f7f7f7;
   border: 1px solid rgba(0, 0, 0, 0.12);
   height: 35vh;
   width: 98vw;
