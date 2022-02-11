@@ -156,29 +156,77 @@
         "learnContent": [
             { 
                 "type": "path",
-                "name": "Azure Static Web Apps",
+                "name": "AZ-204: Implement Azure Functions",
+                "url": "https://docs.microsoft.com/learn/paths/implement-azure-functions/",
+                "image": "https://docs.microsoft.com/learn/achievements/az-204-implement-azure-functions.svg",
                 "modules": [
                     {
-                        "name": "Publish an Angular, React, Svelte, or Vue JavaScript app with Azure Static Web Apps",
-                        "url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api/"
+                        "name": "Explore Azure functions",
+                        "url": "https://docs.microsoft.com/learn/modules/explore-azure-functions/"
                     },
                     {
-                        "name": "Publish an API to Azure Static Web Apps",
-                        "url": "https://docs.microsoft.com/learn/modules/publish-static-web-app-api-preview-url/"
+                        "name": "Develop Azure Functions",
+                        "url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/"
                     },
                     {
-                        "name": "Authenticate users with Azure Static Web Apps",
-                        "url": "https://docs.microsoft.com/learn/modules/publish-static-web-app-authentication/"
-                    },
-                    {
-                        "name": "Publish a Blazor WebAssembly app and .NET API with Azure Static Web Apps",
-                        "url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api-dotnet/"
-                    },
-                    {
-                        "name": "Create and publish a static web app with Gatsby and Azure Static Web Apps",
-                        "url": "https://docs.microsoft.com/en-us/learn/modules/create-deploy-static-webapp-gatsby-app-service/"
+                        "name": "Implement Durable Functions",
+                        "url": "https://docs.microsoft.com/learn/modules/implement-durable-functions/"
                     }
                 ]
+            },
+            { 
+                "type": "path",
+                "name": "Create serverless applications",
+                "url": "https://docs.microsoft.com/learn/paths/create-serverless-applications/",
+                "image": "https://docs.microsoft.com/learn/achievements/create-serverless-applications.svg",
+                "modules": [
+                    {
+                        "name": "Choose the best Azure service to automate your business processes",
+                        "url": "https://docs.microsoft.com/learn/modules/choose-azure-service-to-integrate-and-automate-business-processes/"
+                    },
+                    { 
+                        "name": "Create serverless logic with Azure Functions",
+                        "url": "https://docs.microsoft.com/learn/modules/create-serverless-logic-with-azure-functions/"
+                    },
+                    {
+                        "name": "Execute an Azure Function with triggers",
+                        "url": "https://docs.microsoft.com/learn/modules/execute-azure-function-with-triggers/"
+                    },
+                    {
+                        "name": "Chain Azure Functions together using input and output bindings",
+                        "url": "https://docs.microsoft.com/learn/modules/chain-azure-functions-data-using-bindings/"
+                    },
+                    {
+                        "name": "Create a long-running serverless workflow with Durable Functions",
+                        "url": "https://docs.microsoft.com/learn/modules/create-long-running-serverless-workflow-with-durable-functions/"
+                    },
+                    {
+                        "name": "Develop, test, and deploy an Azure Function with Visual Studio",
+                        "url": "https://docs.microsoft.com/learn/modules/develop-test-deploy-azure-functions-with-visual-studio/"
+                    },
+                    {
+                        "name": "Monitor GitHub events by using a webhook with Azure Functions",
+                        "url": "https://docs.microsoft.com/learn/modules/monitor-github-events-with-a-function-triggered-by-a-webhook/"
+                    },
+                    {
+                        "name": "Enable automatic updates in a web application using Azure Functions and SignalR Service",
+                        "url": "https://docs.microsoft.com/learn/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/"
+                    },
+                    {
+                        "name": "Expose multiple Azure Function apps as a consistent API by using Azure API Management",
+                        "url": "https://docs.microsoft.com/learn/modules/build-serverless-api-with-functions-api-management/"
+                    },
+                    {
+                        "name": "Build serverless apps with Go",
+                        "url": "https://docs.microsoft.com/learn/modules/serverless-go/"
+                    }
+                ]
+            },
+            { 
+                "type": "module",
+                "name": "Build Serverless APIs with Azure Functions",
+                "url": "https://docs.microsoft.com/learn/modules/build-api-azure-functions/",
+                "image": "https://docs.microsoft.com/learn/achievements/build-api-azure-functions.svg"
             }
         ]
     },

@@ -68,7 +68,7 @@ div[role=tabpanel] {
   align-items: center;
 }
 
-.service-picker div {
+.service-picker div, .list div, .list ul {
   animation-duration: 0.7s;
   animation-name: slidein;
 }

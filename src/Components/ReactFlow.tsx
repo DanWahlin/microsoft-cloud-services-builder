@@ -55,18 +55,19 @@ const NodeAsHandleFlow = () => {
     setServices(services.current);
   }
 
+  const onKeyDown = (event: KeyboardEvent) => deleteSelectedElement(event.key);
+
   useEffect(() => {
     document.addEventListener('keydown', onKeyDown);
     // Clean up
     return () => document.addEventListener('keydown', onKeyDown);
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const onLoad = (_reactFlowInstance: any) => {
     setReactFlowInstance(_reactFlowInstance);
     _reactFlowInstance.fitView();
   }
 
-  const onKeyDown = (event: KeyboardEvent) => deleteSelectedElement(event.key);
   const onElementsRemove = (elementsToRemove: Elements) => setElements((els) => removeElements(elementsToRemove, els));
   const onConnect = (params: Connection | Edge) =>
     setElements((els) => addEdge({ ...params, type: 'floating', arrowHeadType: ArrowHeadType.Arrow }, els));
