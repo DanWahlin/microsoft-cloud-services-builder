@@ -16,20 +16,20 @@ export default function CloudService(props: { serviceCategory: IServiceCategory,
             cssClass: serviceCategory.cssClass 
         };
         if (event.dataTransfer) {
-          event.dataTransfer.setData('application/reactflow', JSON.stringify(dragData));
-          event.dataTransfer.effectAllowed = 'move';
+            event.dataTransfer.setData('application/reactflow', JSON.stringify(dragData));
+            event.dataTransfer.effectAllowed = 'move';
         }
     }
 
     const HtmlTooltip = styled(({ className, ...props }: TooltipProps) => (
         <Tooltip {...props} arrow classes={{ popper: className }} />
-      ))(() => ({
+    ))(() => ({
         [`& .${tooltipClasses.arrow}`]: {
-          color: '#4b4b4b',
+            color: '#4b4b4b',
         },
         [`& .${tooltipClasses.tooltip}`]: {
-          backgroundColor: '#4b4b4b',
-          fontSize: '12px',
+            backgroundColor: '#4b4b4b',
+            fontSize: '12px',
         },
     }));
 

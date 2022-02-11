@@ -1,10 +1,10 @@
 'use strict';
 
 const   fs = require('fs'),
-        request = require('request'),
-        cheerio = require('cheerio'),
-        download = require('image-downloader'),
-        userArgs = process.argv.slice(2);
+    request = require('request'),
+    cheerio = require('cheerio'),
+    download = require('image-downloader'),
+    userArgs = process.argv.slice(2);
 
 let url = (userArgs.length === 0) ? 'https://azurecharts.com/overview' : userArgs[0];
 
@@ -14,8 +14,8 @@ function getHtml() {
     var options = {
         url: url,
         header: {
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.1 Safari/537.36",
-            "Accept": "*/*"
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.1 Safari/537.36',
+            'Accept': '*/*'
         }
     };
     
@@ -52,7 +52,7 @@ function parseData(html) {
             const serviceName = serviceTd.children[3].data.trim();
             const className = serviceTd.attribs.class.split(' ')[0];
             const imgSrc = serviceTd.children[1].attribs.src;
-            const imgFileName = serviceTd.children[1].attribs.src.split("/").pop();
+            const imgFileName = serviceTd.children[1].attribs.src.split('/').pop();
             // console.log(serviceName, counter);
             output[counter].className = className;
             output[counter].services.push({ 
@@ -80,11 +80,11 @@ function downloadImage(url, filepath) {
     return download.image({
         url,
         dest: filepath 
-     });
+    });
 }
 
 
-    /*for (var i = 0; i < data.length; i++) {
+/*for (var i = 0; i < data.length; i++) {
     	var item =  data[i];
     	var text = (item.excerptText !== undefined) ? item.excerptText : '';
   		outputHtml += '<li class="flipBoardItem">' +
