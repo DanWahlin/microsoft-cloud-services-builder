@@ -107,6 +107,9 @@ function Docs(props: any) {
                                         {service.azureCLICommand.join('\n')}
                                     </div>
                                 )}
+                                {!service.azureCLICommand && (
+                                    <span className="comment"># No Azure CLI command for {service.name}</span>
+                                )}
                             </div>
                         ))}
                     </pre>

@@ -93,8 +93,8 @@ const NodeAsHandleFlow = () => {
 
           const reactFlowBounds = reactFlowWrapper.current?.getBoundingClientRect() as DOMRect;
           const position = reactFlowInstance?.project({
-            x: (event.clientX - reactFlowBounds.left),
-            y: (event.clientY - reactFlowBounds.top),
+            x: (event.clientX - reactFlowBounds.left) - 120,
+            y: (event.clientY - reactFlowBounds.top) - 40,
           });
           console.log(event.clientX, reactFlowBounds.left);
           const newNode: FlowElement = {
@@ -132,7 +132,7 @@ const NodeAsHandleFlow = () => {
           defaultZoom={1.5}
           zoomOnScroll={false}
         >
-          <Background size={0.5} />
+          {/* <Background size={0.5} /> */}
         </ReactFlow>
       </div>
     </>

@@ -131,7 +131,7 @@ div[role=tabpanel] {
 }
 
 .bg-db {
-  background-color: #dc3545 !important;
+  background-color: #454545 !important;
   color: #fff !important;
 }
 
@@ -186,7 +186,7 @@ div[role=tabpanel] {
 }
 
 .bg-web {
-  background-color: #454545 !important;
+  background-color: #dc3545  !important;
   color: #fff !important;
 }
 
@@ -257,6 +257,7 @@ div[role=tabpanel] {
 .list ul {
   list-style-type: none;
   padding: 0;
+  margin-left: 15px;
 }
 
 .list ol {

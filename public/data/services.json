@@ -573,7 +573,44 @@
     {
         "name": "Microsoft Graph",
         "description": "Secure, unified API for accessing organizational data and intelligence",
-        "image": "microsoft-logo.svg"
+        "relatedServices": ["Azure Active Directory"],
+        "image": "microsoft-logo.svg",
+        "documents": [
+            {
+                "name": "What is Microsoft Graph?",
+                "url": "https://docs.microsoft.com/graph/overview"
+            },
+            {
+                "name": "Microsoft Graph SDKs",
+                "url": "https://docs.microsoft.com/graph/sdks/sdks-overview"
+            },
+            {
+                "name": "Microsoft Graph Explorer",
+                "url": "https://developer.microsoft.com/graph/graph-explorer"
+            }
+        ],
+        "learnContent": [
+            { 
+                "type": "path",
+                "name": "Microsoft Graph Fundamentals",
+                "url": "https://docs.microsoft.com/learn/paths/m365-msgraph-fundamentals/",
+                "image": "https://docs.microsoft.com/learn/achievements/graph-fundamentals.svg",
+                "modules": [
+                    {
+                        "name": "What is Microsoft Graph?",
+                        "url": "https://docs.microsoft.com/learn/modules/msgraph-intro-overview/"
+                    },
+                    {
+                        "name": "Configure a JavaScript application to retrieve Microsoft 365 data by using Microsoft Graph",
+                        "url": "https://docs.microsoft.com/learn/modules/msgraph-javascript-app/"
+                    },
+                    {
+                        "name": "Access user photo information by using Microsoft Graph",
+                        "url": "https://docs.microsoft.com/learn/modules/msgraph-user-photo-information/"
+                    }
+                ]
+            }
+        ]
     },
     {
         "name": "Network Watcher",

@@ -156,6 +156,13 @@
     ]
   },
   {
+    "name": "Microsoft 365",
+    "cssClass": "bg-365",
+    "serviceNames": [
+      "Microsoft Graph"
+    ]
+  },
+  {
     "name": "Migration",
     "cssClass": "bg-mg",
     "serviceNames": [
@@ -212,13 +219,6 @@
       "HPC Cache",
       "Managed Disks",
       "StorSimple"
-    ]
-  },
-  {
-    "name": "Microsoft 365",
-    "cssClass": "bg-365",
-    "serviceNames": [
-      "Microsoft Graph"
     ]
   },
   {
