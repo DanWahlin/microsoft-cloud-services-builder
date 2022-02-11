@@ -2,20 +2,20 @@ import React, { useState } from 'react';
 import { Box, Tab, Tabs } from '@mui/material';
 import { useRecoilValue } from 'recoil';
 
-import { servicesAtom } from '../Atoms/servicesAtom';
-import { IService } from '../shared/interfaces';
-import TabPanel from './TabPanel';
+import { servicesAtom } from 'atoms/servicesAtom';
+import { IService } from 'shared/interfaces';
+import TabPanel from 'shared/TabPanel';
 import DocsContent from './DocsContent';
 import LearnContent from './LearnContent';
 import CLIContent from './CLIContent';
 
-function DocsLearnCLI(props: any) {
+export default function DocumentList() {
     const [value, setValue] = useState(0);
     const selectedServices = useRecoilValue<IService[]>(servicesAtom);
 
     function handleChange(event: React.SyntheticEvent, newValue: number) {
         setValue(newValue);
-    };
+    }
 
     return (
         <>
@@ -39,5 +39,3 @@ function DocsLearnCLI(props: any) {
         </>
     );
 }
-
-export default DocsLearnCLI;

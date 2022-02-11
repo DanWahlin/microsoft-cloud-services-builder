@@ -2,10 +2,10 @@ import React from 'react';
 import { AppBar, Box, Tab, Tabs, Toolbar, Typography } from '@mui/material';
 
 import './App.css';
-import ReactFlow from './Components/ReactFlow';
-import CloudServicePicker from './Components/CloudServicePicker';
-import TabPanel from './Components/TabPanel';
-import DocsLearnCLI from './Components/DocsLearnCLI';
+import ServicesDiagram from 'components/Diagram/ServicesDiagram';
+import CloudServicePicker from 'components/CloudServices/CloudServicePicker';
+import TabPanel from 'shared/TabPanel';
+import DocumentList from 'components/Docs/DocumentList';
 import { RecoilRoot } from 'recoil';
 
 function App() {
@@ -45,8 +45,8 @@ function App() {
             </TabPanel>
           </div>
           <div className="app-bottom-row">
-            <ReactFlow />
-            <DocsLearnCLI />
+            <ServicesDiagram />
+            <DocumentList />
           </div>
         </div>
       </RecoilRoot>

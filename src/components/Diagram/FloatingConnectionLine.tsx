@@ -1,7 +1,7 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 import { getBezierPath, ConnectionLineComponentProps, Node } from 'react-flow-renderer';
 
-import { getEdgeParams } from './utils';
+import { getEdgeParams } from './diagramUtils';
 
 const FloatingConnectionLine: FC<ConnectionLineComponentProps> = ({
   targetX,

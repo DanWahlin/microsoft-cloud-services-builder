@@ -1,7 +1,7 @@
 import React from 'react';
-import { IService } from '../shared/interfaces';
+import { IService } from 'shared/interfaces';
 
-function CLIContent(props: {selectedServices: IService[]}) {
+export default function CLIContent(props: {selectedServices: IService[]}) {
     const { selectedServices } = props;
 
     return (
@@ -28,7 +28,5 @@ function CLIContent(props: {selectedServices: IService[]}) {
                 <div>No services selected</div>
             )}
         </>
-    )
+    );
 }
-
-export default CLIContent;

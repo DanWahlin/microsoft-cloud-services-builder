@@ -3,14 +3,14 @@ import { styled } from '@mui/material/styles';
 import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
 
-import { IService, IServiceCategory } from '../shared/interfaces';
+import { IService, IServiceCategory } from 'shared/interfaces';
 import CloudBlock from './CloudBlock';
 
-function CloudService(props: { serviceCategory: IServiceCategory, service: IService  }) {
+export default function CloudService(props: { serviceCategory: IServiceCategory, service: IService  }) {
     const {serviceCategory, service} = props;
 
     function onDragStart(event: React.DragEvent, service: IService) {
-        let dragData = { 
+        const dragData = { 
             ...service, 
             category: serviceCategory.name,
             cssClass: serviceCategory.cssClass 
@@ -23,7 +23,7 @@ function CloudService(props: { serviceCategory: IServiceCategory, service: IServ
 
     const HtmlTooltip = styled(({ className, ...props }: TooltipProps) => (
         <Tooltip {...props} arrow classes={{ popper: className }} />
-      ))(({ theme }) => ({
+      ))(() => ({
         [`& .${tooltipClasses.arrow}`]: {
           color: '#4b4b4b',
         },
@@ -55,5 +55,3 @@ function CloudService(props: { serviceCategory: IServiceCategory, service: IServ
         </HtmlTooltip>
     );
 }
-
-export default CloudService;

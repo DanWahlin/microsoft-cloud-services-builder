@@ -1,7 +1,7 @@
 import React from 'react';
-import { ILearnContent, ILearnModule, IService } from '../shared/interfaces';
+import { IDocument, ILearnContent, IService } from 'shared/interfaces';
 
-function LearnContent(props: { selectedServices: IService[] }) {
+export default function LearnContent(props: { selectedServices: IService[] }) {
     const { selectedServices } = props;
 
     return (
@@ -28,7 +28,7 @@ function LearnContent(props: { selectedServices: IService[] }) {
 
                                         {learnContent.modules && (
                                             <ol>
-                                                {learnContent.modules && learnContent.modules.map((module: ILearnModule) => (
+                                                {learnContent.modules && learnContent.modules.map((module: IDocument) => (
                                                     <li key={module.name}>
                                                         <a href={module.url} target="_blank" rel="noopener noreferrer">{module.name}</a>
                                                     </li>
@@ -48,7 +48,5 @@ function LearnContent(props: { selectedServices: IService[] }) {
                 <div>No services selected</div>
             )}
         </>
-    )
+    );
 }
-
-export default LearnContent;

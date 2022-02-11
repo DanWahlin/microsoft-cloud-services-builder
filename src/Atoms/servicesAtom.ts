@@ -1,5 +1,5 @@
-import { atom, RecoilState } from "recoil";
-import { IService } from "../shared/interfaces";
+import { atom, RecoilState } from 'recoil';
+import { IService } from '../shared/interfaces';
 
 const initialState: IService[] = [];
 

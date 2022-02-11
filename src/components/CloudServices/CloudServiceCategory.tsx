@@ -1,8 +1,8 @@
 import React from 'react';
-import { IServiceCategory } from '../shared/interfaces';
+import { IServiceCategory } from 'shared/interfaces';
 import CloudBlock from './CloudBlock';
 
-function CloudServiceCategory(props: { serviceCategory: IServiceCategory, 
+export default function CloudServiceCategory(props: { serviceCategory: IServiceCategory, 
   filterCategories: (event: React.MouseEvent<HTMLDivElement, MouseEvent>, svcCat: IServiceCategory) => void }) {
     const { serviceCategory, filterCategories } = props;
     
@@ -13,7 +13,5 @@ function CloudServiceCategory(props: { serviceCategory: IServiceCategory,
         >
             <CloudBlock name={serviceCategory.name} />                
         </div>
-    )
+    );
 }
-
-export default CloudServiceCategory;

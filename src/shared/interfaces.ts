@@ -25,11 +25,7 @@ export interface IDocument {
 export interface ILearnContent extends IDocument {
     type: LearnType;
     image: string;
-    modules: ILearnModule[]
-}
-
-export interface ILearnModule extends IDocument {
-
+    modules: IDocument[]
 }
 
 export interface ICloudBlockData { 

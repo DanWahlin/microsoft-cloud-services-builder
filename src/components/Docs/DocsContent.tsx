@@ -1,7 +1,7 @@
 import React from 'react';
-import { IDocument, IService } from '../shared/interfaces';
+import { IDocument, IService } from 'shared/interfaces';
 
-function DocsContent(props: {selectedServices: IService[]}) {
+export default function DocsContent(props: {selectedServices: IService[]}) {
     const { selectedServices } = props;
     
     return (
@@ -33,7 +33,5 @@ function DocsContent(props: {selectedServices: IService[]}) {
                 <div>No services selected</div>
             )}
         </>
-    )
+    );
 }
-
-export default DocsContent;

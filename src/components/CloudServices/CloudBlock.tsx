@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { ICloudBlockData } from '../shared/interfaces';
+import { ICloudBlockData } from 'shared/interfaces';
 
-function CloudBlock(props: ICloudBlockData) {
-    let { name, cssClass, image } = props;
+export default function CloudBlock(props: ICloudBlockData) {
+    const { name, cssClass, image } = props;
     
     return ( 
         <div className={`cloud-block-grid ${cssClass}`}>
@@ -13,5 +13,3 @@ function CloudBlock(props: ICloudBlockData) {
         </div>
     );
 }
-
-export default CloudBlock;

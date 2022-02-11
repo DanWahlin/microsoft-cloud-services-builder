@@ -1,7 +1,7 @@
-import { FC, useMemo, CSSProperties } from 'react';
+import React, { FC, useMemo, CSSProperties } from 'react';
 import { EdgeProps, getMarkerEnd, useStoreState, getBezierPath } from 'react-flow-renderer';
 
-import { getEdgeParams } from './utils';
+import { getEdgeParams } from './diagramUtils';
 
 const FloatingEdge: FC<EdgeProps> = ({ id, source, target, arrowHeadType, markerEndId, style }) => {
   const nodes = useStoreState((state) => state.nodes);

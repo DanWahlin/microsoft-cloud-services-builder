@@ -18,10 +18,10 @@ import ReactFlow, {
 
 import FloatingEdge from './FloatingEdge';
 import FloatingConnectionLine from './FloatingConnectionLine';
-import { createElements } from './utils';
-import { IService } from '../shared/interfaces';
-import CloudBlock from './CloudBlock';
-import { servicesAtom } from '../Atoms/servicesAtom';
+import { createElements } from './diagramUtils';
+import { IService } from 'shared/interfaces';
+import CloudBlock from 'components/CloudServices/CloudBlock';
+import { servicesAtom } from 'atoms/servicesAtom';
 import { useSetRecoilState } from 'recoil';
 
 const initialElements: Elements = createElements();
@@ -30,8 +30,9 @@ const edgeTypes: EdgeTypesType = {
   floating: FloatingEdge,
 };
 
-const ServicesReactFlow = () => {
+export default function ServicesDiagram(){
   const reactFlowWrapper = useRef<HTMLDivElement>(null);
+  /* eslint-disable @typescript-eslint/no-explicit-any */
   const [reactFlowInstance, setReactFlowInstance] = useState<any>(null);
   const [elements, setElements] = useState<Elements>(initialElements);
   // useRef needed since using useState() creates stale closure issue due to keydown binding
@@ -42,6 +43,7 @@ const ServicesReactFlow = () => {
   function deleteSelectedElement(key: string) { 
     const currentSelectedElement = selectedElement.current;
     if (key === 'Delete' && currentSelectedElement) {
+      //eslint-disable-next-line
       const edges = elements.filter((element: Node | Edge) => isEdge(currentSelectedElement)) as Edge[];
       const edgesToRemove = getConnectedEdges([currentSelectedElement as Node], edges);
       onElementsRemove([currentSelectedElement, ...edgesToRemove]);
@@ -63,7 +65,7 @@ const ServicesReactFlow = () => {
     document.addEventListener('keydown', onKeyDown);
     // Clean up
     return () => document.addEventListener('keydown', onKeyDown);
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, []); // eslint-disable-line
 
   function onLoad(_reactFlowInstance: any) {
     setReactFlowInstance(_reactFlowInstance);
@@ -141,6 +143,4 @@ const ServicesReactFlow = () => {
       </div>
     </>
   );
-};
-
-export default ServicesReactFlow;
+}
