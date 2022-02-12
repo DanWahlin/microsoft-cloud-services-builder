@@ -1,906 +1,943 @@
 [
-    {
-        "name": "API Management",
-        "description": "Publish APIs to developers, partners, and employees securely and at scale",
-        "image": "api-management.svg"
-    },
-    {
-        "name": "Analysis Services",
-        "description": "Enterprise-grade analytics engine as a service",
-        "image": "analysis-services.svg"
-    },
-    {
-        "name": "Apache Cassandra MI",
-        "description": "Managed Apache Cassandra instance in the cloud",
-        "image": "managed-instance-apache-cassandra.svg"
-    },
-    {
-        "name": "App Configuration",
-        "description": "Fast, scalable parameter storage for app configuration",
-        "image": "app-configuration.svg"
-    },
-    {
-        "name": "App Service",
-        "description": "Quickly create powerful cloud apps for web and mobile",
-        "image": "app-service.svg"
-    },
-    {
-        "name": "Application Gateway",
-        "description": "Build secure, scalable, and highly available web front ends in Azure",
-        "image": "application-gateway.svg"
-    },
-    {
-        "name": "Applied AI Services",
-        "description": "Specialized services that enable organizations to accelerate time to value in applying AI to solve common scenarios",
-        "image": "azure-applied-ai-services.svg"
-    },
-    {
-        "name": "Automation",
-        "description": "Simplify cloud management with process automation",
-        "image": "automation.svg"
-    },
-    {
-        "name": "Avere vFXT",
-        "description": "Run high-performance, file-based workloads in the cloud",
-        "image": "avere-vfxt.svg"
-    },
-    {
-        "name": "Azure AD B2C",
-        "description": "Consumer identity and access management in the cloud",
-        "image": "active-directory-b2c.svg"
-    },
-    {
-        "name": "Azure AD DS",
-        "description": "Join Azure virtual machines to a domain without domain controllers",
-        "image": "active-directory-ds.svg"
-    },
-    {
-        "name": "Azure Active Directory",
-        "description": "Synchronize on-premises directories and enable single sign-on",
-        "image": "active-directory.svg"
-    },
-    {
-        "name": "Azure Advisor",
-        "description": "Your personalized Azure best practices recommendation engine",
-        "image": "advisor.svg"
-    },
-    {
-        "name": "Azure Arc",
-        "description": "Bring Azure services and management to any infrastructure",
-        "image": "azure-arc.svg"
-    },
-    {
-        "name": "Azure Automanage",
-        "description": "Simplify management of Windows Server virtual machines",
-        "image": "azure-automanage.svg"
-    },
-    {
-        "name": "Azure Backup",
-        "description": "Simplify data protection and protect against ransomware",
-        "image": "backup.svg"
-    },
-    {
-        "name": "Azure Bastion",
-        "description": "Private and fully managed RDP and SSH access to your virtual machines",
-        "image": "azure-bastion.svg"
-    },
-    {
-        "name": "Azure Batch",
-        "description": "Cloud-scale job scheduling and compute management",
-        "image": "batch.svg"
-    },
-    {
-        "name": "Azure Blueprints",
-        "description": "Enabling quick, repeatable creation of governed environments",
-        "image": "blueprints.svg"
-    },
-    {
-        "name": "Azure Cognitive Search",
-        "description": "AI-powered cloud search service for mobile and web app development",
-        "image": "search.svg"
-    },
-    {
-        "name": "Azure DNS",
-        "description": "Host your DNS domain in Azure",
-        "image": "dns.svg"
-    },
-    {
-        "name": "Azure Defender",
-        "description": "Protect hybrid cloud workloads",
-        "image": "azure-defender.svg"
-    },
-    {
-        "name": "Azure DevOps",
-        "description": "Services for teams to share code, track work, and ship software",
-        "image": "azure-devops.svg"
-    },
-    {
-        "name": "Azure Firewall",
-        "description": "Native firewalling capabilities with built-in high availability, unrestricted cloud scalability, and zero maintenance",
-        "image": "azure-firewall.svg"
-    },
-    {
-        "name": "Azure Front Door",
-        "description": "Scalable, security-enhanced delivery point for global, microservice-based web applications",
-        "image": "frontdoor.svg"
-    },
-    {
-        "name": "Azure Functions",
-        "description": "Process events with serverless code",
-        "image": "functions.svg",
-        "relatedServices": ["Static Web App", "Event Hubs", "Azure Storage", "Cosmos DB", "Event Grid", "Service Bus", "Signal Service"],
-        "azureCLICommand": [
-            "az staticwebapp create \\ ",
-            "  --name my-first-static-web-app \\ ",
-            "  --resource-group my-swa-group \\ ",
-            "  --source https://github.com/$GITHUB_USER_NAME/my-first-static-web-app \\ ",
-            "  --location \"eastus2\" \\ ",
-            "  --branch main \\ ",
-            "  --app-location \"src\" \\ ",
-            "  --login-with-github"
-        ],
-        "documents": [
-            {
-                "name": "What is Azure Static Web Apps?",
-                "url": "https://docs.microsoft.com/azure/static-web-apps/overview"
-            },
-            {
-                "name": "Quickstart: Building your first static site with Azure Static Web Apps",
-                "url": "https://docs.microsoft.com/azure/static-web-apps/getting-started?tabs=vanilla-javascript"
-            },
-            {
-                "name": "Quickstart: Building your first static site using the Azure CLI",
-                "url": "https://docs.microsoft.com/azure/static-web-apps/get-started-cli"
-            }
-        ],
-        "learnContent": [
-            { 
-                "type": "path",
-                "name": "AZ-204: Implement Azure Functions",
-                "url": "https://docs.microsoft.com/learn/paths/implement-azure-functions/",
-                "image": "https://docs.microsoft.com/learn/achievements/az-204-implement-azure-functions.svg",
-                "modules": [
-                    {
-                        "name": "Explore Azure functions",
-                        "url": "https://docs.microsoft.com/learn/modules/explore-azure-functions/"
-                    },
-                    {
-                        "name": "Develop Azure Functions",
-                        "url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/"
-                    },
-                    {
-                        "name": "Implement Durable Functions",
-                        "url": "https://docs.microsoft.com/learn/modules/implement-durable-functions/"
-                    }
-                ]
-            },
-            { 
-                "type": "path",
-                "name": "Create serverless applications",
-                "url": "https://docs.microsoft.com/learn/paths/create-serverless-applications/",
-                "image": "https://docs.microsoft.com/learn/achievements/create-serverless-applications.svg",
-                "modules": [
-                    {
-                        "name": "Choose the best Azure service to automate your business processes",
-                        "url": "https://docs.microsoft.com/learn/modules/choose-azure-service-to-integrate-and-automate-business-processes/"
-                    },
-                    { 
-                        "name": "Create serverless logic with Azure Functions",
-                        "url": "https://docs.microsoft.com/learn/modules/create-serverless-logic-with-azure-functions/"
-                    },
-                    {
-                        "name": "Execute an Azure Function with triggers",
-                        "url": "https://docs.microsoft.com/learn/modules/execute-azure-function-with-triggers/"
-                    },
-                    {
-                        "name": "Chain Azure Functions together using input and output bindings",
-                        "url": "https://docs.microsoft.com/learn/modules/chain-azure-functions-data-using-bindings/"
-                    },
-                    {
-                        "name": "Create a long-running serverless workflow with Durable Functions",
-                        "url": "https://docs.microsoft.com/learn/modules/create-long-running-serverless-workflow-with-durable-functions/"
-                    },
-                    {
-                        "name": "Develop, test, and deploy an Azure Function with Visual Studio",
-                        "url": "https://docs.microsoft.com/learn/modules/develop-test-deploy-azure-functions-with-visual-studio/"
-                    },
-                    {
-                        "name": "Monitor GitHub events by using a webhook with Azure Functions",
-                        "url": "https://docs.microsoft.com/learn/modules/monitor-github-events-with-a-function-triggered-by-a-webhook/"
-                    },
-                    {
-                        "name": "Enable automatic updates in a web application using Azure Functions and SignalR Service",
-                        "url": "https://docs.microsoft.com/learn/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/"
-                    },
-                    {
-                        "name": "Expose multiple Azure Function apps as a consistent API by using Azure API Management",
-                        "url": "https://docs.microsoft.com/learn/modules/build-serverless-api-with-functions-api-management/"
-                    },
-                    {
-                        "name": "Build serverless apps with Go",
-                        "url": "https://docs.microsoft.com/learn/modules/serverless-go/"
-                    }
-                ]
-            },
-            { 
-                "type": "module",
-                "name": "Build Serverless APIs with Azure Functions",
-                "url": "https://docs.microsoft.com/learn/modules/build-api-azure-functions/",
-                "image": "https://docs.microsoft.com/learn/achievements/build-api-azure-functions.svg"
-            }
+  {
+    "name": "API Management",
+    "description": "Publish APIs to developers, partners, and employees securely and at scale",
+    "image": "api-management.svg"
+  },
+  {
+    "name": "Analysis Services",
+    "description": "Enterprise-grade analytics engine as a service",
+    "image": "analysis-services.svg"
+  },
+  {
+    "name": "Apache Cassandra MI",
+    "description": "Managed Apache Cassandra instance in the cloud",
+    "image": "managed-instance-apache-cassandra.svg"
+  },
+  {
+    "name": "App Configuration",
+    "description": "Fast, scalable parameter storage for app configuration",
+    "image": "app-configuration.svg"
+  },
+  {
+    "name": "App Service",
+    "description": "Quickly create powerful cloud apps for web and mobile",
+    "image": "app-service.svg"
+  },
+  {
+    "name": "Application Gateway",
+    "description": "Build secure, scalable, and highly available web front ends in Azure",
+    "image": "application-gateway.svg"
+  },
+  {
+    "name": "Applied AI Services",
+    "description": "Specialized services that enable organizations to accelerate time to value in applying AI to solve common scenarios",
+    "image": "azure-applied-ai-services.svg"
+  },
+  {
+    "name": "Automation",
+    "description": "Simplify cloud management with process automation",
+    "image": "automation.svg"
+  },
+  {
+    "name": "Avere vFXT",
+    "description": "Run high-performance, file-based workloads in the cloud",
+    "image": "avere-vfxt.svg"
+  },
+  {
+    "name": "Azure AD B2C",
+    "description": "Consumer identity and access management in the cloud",
+    "image": "active-directory-b2c.svg"
+  },
+  {
+    "name": "Azure AD DS",
+    "description": "Join Azure virtual machines to a domain without domain controllers",
+    "image": "active-directory-ds.svg"
+  },
+  {
+    "name": "Azure Active Directory",
+    "description": "Synchronize on-premises directories and enable single sign-on",
+    "image": "active-directory.svg"
+  },
+  {
+    "name": "Azure Advisor",
+    "description": "Your personalized Azure best practices recommendation engine",
+    "image": "advisor.svg"
+  },
+  {
+    "name": "Azure Arc",
+    "description": "Bring Azure services and management to any infrastructure",
+    "image": "azure-arc.svg"
+  },
+  {
+    "name": "Azure Automanage",
+    "description": "Simplify management of Windows Server virtual machines",
+    "image": "azure-automanage.svg"
+  },
+  {
+    "name": "Azure Backup",
+    "description": "Simplify data protection and protect against ransomware",
+    "image": "backup.svg"
+  },
+  {
+    "name": "Azure Bastion",
+    "description": "Private and fully managed RDP and SSH access to your virtual machines",
+    "image": "azure-bastion.svg"
+  },
+  {
+    "name": "Azure Batch",
+    "description": "Cloud-scale job scheduling and compute management",
+    "image": "batch.svg"
+  },
+  {
+    "name": "Azure Blueprints",
+    "description": "Enabling quick, repeatable creation of governed environments",
+    "image": "blueprints.svg"
+  },
+  {
+    "name": "Azure Cognitive Search",
+    "description": "AI-powered cloud search service for mobile and web app development",
+    "image": "search.svg"
+  },
+  {
+    "name": "Azure DNS",
+    "description": "Host your DNS domain in Azure",
+    "image": "dns.svg"
+  },
+  {
+    "name": "Azure Defender",
+    "description": "Protect hybrid cloud workloads",
+    "image": "azure-defender.svg"
+  },
+  {
+    "name": "Azure DevOps",
+    "description": "Services for teams to share code, track work, and ship software",
+    "image": "azure-devops.svg"
+  },
+  {
+    "name": "Azure Firewall",
+    "description": "Native firewalling capabilities with built-in high availability, unrestricted cloud scalability, and zero maintenance",
+    "image": "azure-firewall.svg"
+  },
+  {
+    "name": "Azure Front Door",
+    "description": "Scalable, security-enhanced delivery point for global, microservice-based web applications",
+    "image": "frontdoor.svg"
+  },
+  {
+    "name": "Azure Functions",
+    "description": "Process events with serverless code",
+    "image": "functions.svg",
+    "relatedServices": [
+      "Static Web App",
+      "Event Hubs",
+      "Azure Storage",
+      "Cosmos DB",
+      "Event Grid",
+      "Service Bus",
+      "Signal Service"
+    ],
+    "azureCLICommand": [
+      "az staticwebapp create \\ ",
+      "  --name my-first-static-web-app \\ ",
+      "  --resource-group my-swa-group \\ ",
+      "  --source https://github.com/$GITHUB_USER_NAME/my-first-static-web-app \\ ",
+      "  --location \"eastus2\" \\ ",
+      "  --branch main \\ ",
+      "  --app-location \"src\" \\ ",
+      "  --login-with-github"
+    ],
+    "documents": [
+      {
+        "name": "What is Azure Static Web Apps?",
+        "url": "https://docs.microsoft.com/azure/static-web-apps/overview"
+      },
+      {
+        "name": "Quickstart: Building your first static site with Azure Static Web Apps",
+        "url": "https://docs.microsoft.com/azure/static-web-apps/getting-started?tabs=vanilla-javascript"
+      },
+      {
+        "name": "Quickstart: Building your first static site using the Azure CLI",
+        "url": "https://docs.microsoft.com/azure/static-web-apps/get-started-cli"
+      }
+    ],
+    "learnContent": [
+      {
+        "type": "path",
+        "name": "AZ-204: Implement Azure Functions",
+        "url": "https://docs.microsoft.com/learn/paths/implement-azure-functions/",
+        "image": "https://docs.microsoft.com/learn/achievements/az-204-implement-azure-functions.svg",
+        "modules": [
+          {
+            "name": "Explore Azure functions",
+            "url": "https://docs.microsoft.com/learn/modules/explore-azure-functions/"
+          },
+          {
+            "name": "Develop Azure Functions",
+            "url": "https://docs.microsoft.com/learn/modules/develop-azure-functions/"
+          },
+          {
+            "name": "Implement Durable Functions",
+            "url": "https://docs.microsoft.com/learn/modules/implement-durable-functions/"
+          }
         ]
-    },
-    {
-        "name": "Azure Key Vault",
-        "description": "Safeguard and maintain control of keys and other secrets",
-        "image": "key-vault.svg",
-        "learnContent": [
-            { 
-                "type": "module",
-                "name": "Manage secrets in your server apps with Azure Key Vault",
-                "url": "https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/",
-                "image": "https://docs.microsoft.com/learn/achievements/manage-secrets-with-azure-key-vault.svg"
-            },
-            { 
-                "type": "module",
-                "name": "Implement Azure Key Vault",
-                "url": "https://docs.microsoft.com/learn/modules/implement-azure-key-vault/",
-                "image": "https://docs.microsoft.com/en-us/learn/achievements/azure-key-vault-implement.svg"
-            },
-            { 
-                "type": "module",
-                "name": "Configure and manage secrets in Azure Key Vault",
-                "url": "https://docs.microsoft.com/learn/modules/configure-and-manage-azure-key-vault/",
-                "image": "https://docs.microsoft.com/en-us/learn/achievements/configure-and-manage-azure-key-vault.svg"
-            },
-            { 
-                "type": "module",
-                "name": "Deploy and secure Azure Key Vault",
-                "url": "https://docs.microsoft.com/learn/modules/azure-key-vault/",
-                "image": "https://docs.microsoft.com/learn/achievements/azure-key-vault.svg"
-            }
+      },
+      {
+        "type": "path",
+        "name": "Create serverless applications",
+        "url": "https://docs.microsoft.com/learn/paths/create-serverless-applications/",
+        "image": "https://docs.microsoft.com/learn/achievements/create-serverless-applications.svg",
+        "modules": [
+          {
+            "name": "Choose the best Azure service to automate your business processes",
+            "url": "https://docs.microsoft.com/learn/modules/choose-azure-service-to-integrate-and-automate-business-processes/"
+          },
+          {
+            "name": "Create serverless logic with Azure Functions",
+            "url": "https://docs.microsoft.com/learn/modules/create-serverless-logic-with-azure-functions/"
+          },
+          {
+            "name": "Execute an Azure Function with triggers",
+            "url": "https://docs.microsoft.com/learn/modules/execute-azure-function-with-triggers/"
+          },
+          {
+            "name": "Chain Azure Functions together using input and output bindings",
+            "url": "https://docs.microsoft.com/learn/modules/chain-azure-functions-data-using-bindings/"
+          },
+          {
+            "name": "Create a long-running serverless workflow with Durable Functions",
+            "url": "https://docs.microsoft.com/learn/modules/create-long-running-serverless-workflow-with-durable-functions/"
+          },
+          {
+            "name": "Develop, test, and deploy an Azure Function with Visual Studio",
+            "url": "https://docs.microsoft.com/learn/modules/develop-test-deploy-azure-functions-with-visual-studio/"
+          },
+          {
+            "name": "Monitor GitHub events by using a webhook with Azure Functions",
+            "url": "https://docs.microsoft.com/learn/modules/monitor-github-events-with-a-function-triggered-by-a-webhook/"
+          },
+          {
+            "name": "Enable automatic updates in a web application using Azure Functions and SignalR Service",
+            "url": "https://docs.microsoft.com/learn/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/"
+          },
+          {
+            "name": "Expose multiple Azure Function apps as a consistent API by using Azure API Management",
+            "url": "https://docs.microsoft.com/learn/modules/build-serverless-api-with-functions-api-management/"
+          },
+          {
+            "name": "Build serverless apps with Go",
+            "url": "https://docs.microsoft.com/learn/modules/serverless-go/"
+          }
         ]
-    },
-    {
-        "name": "Azure Lighthouse",
-        "description": "Empowering service providers to manage customers at scale and with precision",
-        "image": "azure-lighthouse.svg",
-        "learnContent": [
-            { 
-                "type": "module",
-                "name": "Use Azure Lighthouse with your managed service business",
-                "url": "https://docs.microsoft.com/learn/modules/intro-to-azure-lighthouse/",
-                "image": "https://docs.microsoft.com/learn/achievements/generic-badge.svg"
-            },
-            { 
-                "type": "module",
-                "name": "Use Azure Lighthouse to govern, monitor, and secure customer resources",
-                "url": "https://docs.microsoft.com/en-us/learn/modules/govern-monitor-secure-resources-azure-lighthouse/",
-                "image": "https://docs.microsoft.com/learn/achievements/generic-badge.svg"
-            }
+      },
+      {
+        "type": "module",
+        "name": "Build Serverless APIs with Azure Functions",
+        "url": "https://docs.microsoft.com/learn/modules/build-api-azure-functions/",
+        "image": "https://docs.microsoft.com/learn/achievements/build-api-azure-functions.svg"
+      }
+    ]
+  },
+  {
+    "name": "Azure Key Vault",
+    "description": "Safeguard and maintain control of keys and other secrets",
+    "image": "key-vault.svg",
+    "learnContent": [
+      {
+        "type": "module",
+        "name": "Manage secrets in your server apps with Azure Key Vault",
+        "url": "https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/",
+        "image": "https://docs.microsoft.com/learn/achievements/manage-secrets-with-azure-key-vault.svg"
+      },
+      {
+        "type": "module",
+        "name": "Implement Azure Key Vault",
+        "url": "https://docs.microsoft.com/learn/modules/implement-azure-key-vault/",
+        "image": "https://docs.microsoft.com/en-us/learn/achievements/azure-key-vault-implement.svg"
+      },
+      {
+        "type": "module",
+        "name": "Configure and manage secrets in Azure Key Vault",
+        "url": "https://docs.microsoft.com/learn/modules/configure-and-manage-azure-key-vault/",
+        "image": "https://docs.microsoft.com/en-us/learn/achievements/configure-and-manage-azure-key-vault.svg"
+      },
+      {
+        "type": "module",
+        "name": "Deploy and secure Azure Key Vault",
+        "url": "https://docs.microsoft.com/learn/modules/azure-key-vault/",
+        "image": "https://docs.microsoft.com/learn/achievements/azure-key-vault.svg"
+      }
+    ]
+  },
+  {
+    "name": "Azure Lighthouse",
+    "description": "Empowering service providers to manage customers at scale and with precision",
+    "image": "azure-lighthouse.svg",
+    "learnContent": [
+      {
+        "type": "module",
+        "name": "Use Azure Lighthouse with your managed service business",
+        "url": "https://docs.microsoft.com/learn/modules/intro-to-azure-lighthouse/",
+        "image": "https://docs.microsoft.com/learn/achievements/generic-badge.svg"
+      },
+      {
+        "type": "module",
+        "name": "Use Azure Lighthouse to govern, monitor, and secure customer resources",
+        "url": "https://docs.microsoft.com/en-us/learn/modules/govern-monitor-secure-resources-azure-lighthouse/",
+        "image": "https://docs.microsoft.com/learn/achievements/generic-badge.svg"
+      }
+    ]
+  },
+  {
+    "name": "Azure Maps",
+    "description": "Simple and secure location APIs provide geospatial context to data",
+    "image": "azure-maps.svg"
+  },
+  {
+    "name": "Azure Migrate",
+    "description": "Easily discover, assess, right-size, and migrate your on-premises VMs to Azure",
+    "image": "azure-migrate.svg"
+  },
+  {
+    "name": "Azure Monitor",
+    "description": "Full observability into your applications, infrastructure, and network",
+    "image": "monitor.svg"
+  },
+  {
+    "name": "Azure NetApp Files",
+    "description": "Enterprise-grade Azure file shares, powered by NetApp",
+    "image": "netapp-files.svg"
+  },
+  {
+    "name": "Azure Orbital",
+    "description": "Satellite ground station and scheduling service connected to Azure for fast downlinking of data",
+    "image": "azure-orbital.svg"
+  },
+  {
+    "name": "Azure Policy",
+    "description": "Implement corporate governance and standards at scale for Azure resources",
+    "image": "azure-policy.svg"
+  },
+  {
+    "name": "Azure Portal",
+    "description": "Build, manage, and monitor all Azure products in a single, unified console",
+    "image": "azure-portal.svg"
+  },
+  {
+    "name": "Azure Purview",
+    "description": "Maximize business value with unified data governance",
+    "image": "purview.svg"
+  },
+  {
+    "name": "Azure Quantum",
+    "description": "Experience quantum impact today on Azure",
+    "image": "quantum.svg"
+  },
+  {
+    "name": "Azure Red Hat OpenShift",
+    "description": "Fully managed OpenShift service, jointly operated with Red Hat",
+    "image": "openshift.svg"
+  },
+  {
+    "name": "Azure Sentinel",
+    "description": "Standing watch, by your side. Intelligent security analytics for your entire enterprise",
+    "image": "azure-sentinel.svg"
+  },
+  {
+    "name": "Azure Sphere",
+    "description": "Securely connect MCU-powered devices from the silicon to the cloud",
+    "image": "azure-sphere.svg"
+  },
+  {
+    "name": "Azure Spring Cloud",
+    "description": "A fully managed Spring Cloud service, built and operated with Pivotal",
+    "image": "spring-cloud.svg"
+  },
+  {
+    "name": "Azure Storage",
+    "description": "Durable, highly available, and massively scalable cloud storage",
+    "image": "storage.svg"
+  },
+  {
+    "name": "Azure VMware Solution",
+    "description": "Run your VMware workloads natively on Azure",
+    "image": "azure-vmware-solutions.svg"
+  },
+  {
+    "name": "Bot Service",
+    "description": "Intelligent, serverless bot service that scales on demand",
+    "image": "bot-service.svg"
+  },
+  {
+    "name": "CDN",
+    "description": "Ensure secure, reliable content delivery with broad global reach",
+    "image": "cdn.svg"
+  },
+  {
+    "name": "Cloud Services",
+    "description": "Create highly-available, infinitely-scalable cloud applications and APIs",
+    "image": "cloud-services.svg"
+  },
+  {
+    "name": "Cloud Shell",
+    "description": "Streamline Azure administration with a browser-based shell",
+    "image": "cloud-shell.svg"
+  },
+  {
+    "name": "Cognitive Search",
+    "description": "AI-powered cloud search service for mobile and web app development",
+    "image": "search.svg"
+  },
+  {
+    "name": "Communication Services",
+    "description": "Build rich communication experiences with the same secure platform used by Microsoft Teams",
+    "image": "comms-services.svg"
+  },
+  {
+    "name": "Confidential Ledger",
+    "description": "Easily use a REST API managed service to store your unstructured metadata in a blockchain structure",
+    "image": "confidential-ledger.svg"
+  },
+  {
+    "name": "Container Apps",
+    "description": "Build and deploy modern apps and microservices using serverless containers",
+    "image": "container-apps.svg"
+  },
+  {
+    "name": "Container Instances",
+    "description": "Easily run containers on Azure without managing servers",
+    "image": "container-instances.svg"
+  },
+  {
+    "name": "Container Registry",
+    "description": "Store and manage container images across all types of Azure deployments",
+    "image": "container-registry.svg"
+  },
+  {
+    "name": "Cosmos DB",
+    "description": "Globally distributed, multi-model database for any scale",
+    "image": "cosmos-db.svg"
+  },
+  {
+    "name": "Cost Management",
+    "description": "Optimize what you spend on the cloud, while maximizing cloud potential",
+    "image": "cost-management.svg"
+  },
+  {
+    "name": "CycleCloud",
+    "description": "Create, manage, operate, and optimize HPC and big compute clusters of any scale",
+    "image": "cyclecloud.svg"
+  },
+  {
+    "name": "DB Migration Service",
+    "description": "Simplify on-premises database migration to the cloud",
+    "image": "database-migration.svg"
+  },
+  {
+    "name": "DDoS Protection",
+    "description": "Protect your applications from Distributed Denial of Service (DDoS) attacks",
+    "image": "ddos-protection.svg"
+  },
+  {
+    "name": "Data Box",
+    "description": "Appliances and solutions for data transfer to Azure and edge compute",
+    "image": "data-box.svg"
+  },
+  {
+    "name": "Data Catalog",
+    "description": "Get more value from your enterprise data assets",
+    "image": "data-catalog.svg"
+  },
+  {
+    "name": "Data Explorer",
+    "description": "Fast and highly scalable data exploration service",
+    "image": "data-explorer.svg"
+  },
+  {
+    "name": "Data Factory",
+    "description": "Hybrid data integration at enterprise scale, made easy",
+    "image": "data-factory.svg"
+  },
+  {
+    "name": "Data Lake Analytics",
+    "description": "Distributed analytics service that makes big data easy",
+    "image": "data-lake-analytics.svg"
+  },
+  {
+    "name": "Data Lake Storage",
+    "description": "Massively scalable, secure data lake functionality built on Azure Blob Storage",
+    "image": "data-lake-storage.svg"
+  },
+  {
+    "name": "Data Share",
+    "description": "A simple and safe service for sharing big data with external organizations",
+    "image": "data-share.svg"
+  },
+  {
+    "name": "Database for MariaDB",
+    "description": "Managed MariaDB database service for app developers",
+    "image": "mariadb.svg"
+  },
+  {
+    "name": "Database for MySQL",
+    "description": "Managed MySQL database service for app developers",
+    "image": "mysql.svg"
+  },
+  {
+    "name": "Database for PostgreSQL",
+    "description": "Managed PostgreSQL database service for app developers",
+    "image": "postgresql.svg"
+  },
+  {
+    "name": "Databricks",
+    "description": "Fast, easy, and collaborative Apache Spark-based analytics platform",
+    "image": "databricks.svg"
+  },
+  {
+    "name": "Dataverse",
+    "description": "Dataverse lets you securely store and manage data that's used by business applications.",
+    "image": "dataverse.svg"
+  },
+  {
+    "name": "Dedicated HSM",
+    "description": "Manage hardware security modules that you use in the cloud",
+    "image": "dedicated-hsm.svg"
+  },
+  {
+    "name": "Dedicated Host",
+    "description": "A dedicated physical server to host your Azure VMs for Windows and Linux",
+    "image": "dedicated-host.svg"
+  },
+  {
+    "name": "DevTest Labs",
+    "description": "Quickly create environments using reusable templates and artifacts",
+    "image": "devtest-lab.svg"
+  },
+  {
+    "name": "Digital Twins",
+    "description": "Build next-generation IoT spatial intelligence solutions",
+    "image": "digital-twins.svg"
+  },
+  {
+    "name": "Event Grid",
+    "description": "Get reliable event delivery at massive scale",
+    "image": "event-grid.svg"
+  },
+  {
+    "name": "Event Hubs",
+    "description": "Receive telemetry from millions of devices",
+    "image": "event-hubs.svg"
+  },
+  {
+    "name": "ExpressRoute",
+    "description": "Dedicated private network fiber connections to Azure",
+    "image": "expressroute.svg"
+  },
+  {
+    "name": "HDInsight",
+    "description": "Provision cloud Hadoop, Spark, R Server, HBase, and Storm clusters",
+    "image": "hdinsight.svg"
+  },
+  {
+    "name": "HPC Cache",
+    "description": "File caching for high-performance computing (HPC)",
+    "image": "hpc-cache.svg"
+  },
+  {
+    "name": "Healthcare APIs",
+    "description": "Easily create and deploy a FHIR service for health data solutions and interoperability",
+    "image": "azure-api-for-fhir.svg"
+  },
+  {
+    "name": "Information Protection",
+    "description": "Better protect your sensitive information—anytime, anywhere",
+    "image": "information-protection.svg"
+  },
+  {
+    "name": "Internet Analyzer",
+    "description": "Test how networking infrastructure changes will impact your customers performance",
+    "image": "internet-analyzer.svg"
+  },
+  {
+    "name": "IoT Central",
+    "description": "Experience the simplicity of SaaS for IoT, with no cloud expertise required",
+    "image": "iot-central.svg"
+  },
+  {
+    "name": "IoT Edge",
+    "description": "Extend cloud intelligence and analytics to edge devices",
+    "image": "iot-edge.svg"
+  },
+  {
+    "name": "Kubernetes Service",
+    "description": "Simplify the deployment, management, and operations of Kubernetes",
+    "image": "kubernetes-service.svg"
+  },
+  {
+    "name": "Lab Services",
+    "description": "Set up labs for classrooms, trials, development and testing, and other scenarios",
+    "image": "lab-services.svg"
+  },
+  {
+    "name": "Load Balancer",
+    "description": "Deliver high availability and network performance to your applications",
+    "image": "load-balancer.svg"
+  },
+  {
+    "name": "Load Testing",
+    "description": "Optimize app performance with high-scale load testing",
+    "image": "load-testing.svg"
+  },
+  {
+    "name": "Logic Apps",
+    "description": "Automate the access and use of data across clouds without writing code",
+    "image": "logic-apps.svg"
+  },
+  {
+    "name": "Machine Learning",
+    "description": "Bring AI to everyone with an end-to-end, scalable, trusted platform with experimentation and model management",
+    "image": "machine-learning-service.svg"
+  },
+  {
+    "name": "Managed Apps",
+    "description": "Simplify management of cloud offerings",
+    "image": "managed-applications.svg"
+  },
+  {
+    "name": "Managed Disks",
+    "description": "Persistent, secured disk storage for Azure virtual machines",
+    "image": "managed-disks.svg"
+  },
+  {
+    "name": "Media Services",
+    "description": "Encode, store, and stream video and audio at scale",
+    "image": "media-services.svg"
+  },
+  {
+    "name": "Microsoft Genomics",
+    "description": "Power genome sequencing and research insights",
+    "image": "genomics.svg"
+  },
+  {
+    "name": "Microsoft Graph",
+    "description": "Secure, unified API for accessing organizational data and intelligence",
+    "relatedServices": [
+      "Azure Active Directory"
+    ],
+    "image": "microsoft-logo.svg",
+    "documents": [
+      {
+        "name": "What is Microsoft Graph?",
+        "url": "https://docs.microsoft.com/graph/overview"
+      },
+      {
+        "name": "Microsoft Graph SDKs",
+        "url": "https://docs.microsoft.com/graph/sdks/sdks-overview"
+      },
+      {
+        "name": "Microsoft Graph Explorer",
+        "url": "https://developer.microsoft.com/graph/graph-explorer"
+      }
+    ],
+    "learnContent": [
+      {
+        "type": "path",
+        "name": "Microsoft Graph Fundamentals",
+        "url": "https://docs.microsoft.com/learn/paths/m365-msgraph-fundamentals/",
+        "image": "https://docs.microsoft.com/learn/achievements/graph-fundamentals.svg",
+        "modules": [
+          {
+            "name": "What is Microsoft Graph?",
+            "url": "https://docs.microsoft.com/learn/modules/msgraph-intro-overview/"
+          },
+          {
+            "name": "Configure a JavaScript application to retrieve Microsoft 365 data by using Microsoft Graph",
+            "url": "https://docs.microsoft.com/learn/modules/msgraph-javascript-app/"
+          },
+          {
+            "name": "Access user photo information by using Microsoft Graph",
+            "url": "https://docs.microsoft.com/learn/modules/msgraph-user-photo-information/"
+          }
         ]
-    },
-    {
-        "name": "Azure Maps",
-        "description": "Simple and secure location APIs provide geospatial context to data",
-        "image": "azure-maps.svg"
-    },
-    {
-        "name": "Azure Migrate",
-        "description": "Easily discover, assess, right-size, and migrate your on-premises VMs to Azure",
-        "image": "azure-migrate.svg"
-    },
-    {
-        "name": "Azure Monitor",
-        "description": "Full observability into your applications, infrastructure, and network",
-        "image": "monitor.svg"
-    },
-    {
-        "name": "Azure NetApp Files",
-        "description": "Enterprise-grade Azure file shares, powered by NetApp",
-        "image": "netapp-files.svg"
-    },
-    {
-        "name": "Azure Orbital",
-        "description": "Satellite ground station and scheduling service connected to Azure for fast downlinking of data",
-        "image": "azure-orbital.svg"
-    },
-    {
-        "name": "Azure Policy",
-        "description": "Implement corporate governance and standards at scale for Azure resources",
-        "image": "azure-policy.svg"
-    },
-    {
-        "name": "Azure Portal",
-        "description": "Build, manage, and monitor all Azure products in a single, unified console",
-        "image": "azure-portal.svg"
-    },
-    {
-        "name": "Azure Purview",
-        "description": "Maximize business value with unified data governance",
-        "image": "purview.svg"
-    },
-    {
-        "name": "Azure Quantum",
-        "description": "Experience quantum impact today on Azure",
-        "image": "quantum.svg"
-    },
-    {
-        "name": "Azure Red Hat OpenShift",
-        "description": "Fully managed OpenShift service, jointly operated with Red Hat",
-        "image": "openshift.svg"
-    },
-    {
-        "name": "Azure Sentinel",
-        "description": "Standing watch, by your side. Intelligent security analytics for your entire enterprise",
-        "image": "azure-sentinel.svg"
-    },
-    {
-        "name": "Azure Sphere",
-        "description": "Securely connect MCU-powered devices from the silicon to the cloud",
-        "image": "azure-sphere.svg"
-    },
-    {
-        "name": "Azure Spring Cloud",
-        "description": "A fully managed Spring Cloud service, built and operated with Pivotal",
-        "image": "spring-cloud.svg"
-    },
-    {
-        "name": "Azure Storage",
-        "description": "Durable, highly available, and massively scalable cloud storage",
-        "image": "storage.svg"
-    },
-    {
-        "name": "Azure VMware Solution",
-        "description": "Run your VMware workloads natively on Azure",
-        "image": "azure-vmware-solutions.svg"
-    },
-    {
-        "name": "Bot Service",
-        "description": "Intelligent, serverless bot service that scales on demand",
-        "image": "bot-service.svg"
-    },
-    {
-        "name": "CDN",
-        "description": "Ensure secure, reliable content delivery with broad global reach",
-        "image": "cdn.svg"
-    },
-    {
-        "name": "Cloud Services",
-        "description": "Create highly-available, infinitely-scalable cloud applications and APIs",
-        "image": "cloud-services.svg"
-    },
-    {
-        "name": "Cloud Shell",
-        "description": "Streamline Azure administration with a browser-based shell",
-        "image": "cloud-shell.svg"
-    },
-    {
-        "name": "Cognitive Search",
-        "description": "AI-powered cloud search service for mobile and web app development",
-        "image": "search.svg"
-    },
-    {
-        "name": "Communication Services",
-        "description": "Build rich communication experiences with the same secure platform used by Microsoft Teams",
-        "image": "comms-services.svg"
-    },
-    {
-        "name": "Confidential Ledger",
-        "description": "Easily use a REST API managed service to store your unstructured metadata in a blockchain structure",
-        "image": "confidential-ledger.svg"
-    },
-    {
-        "name": "Container Apps",
-        "description": "Build and deploy modern apps and microservices using serverless containers",
-        "image": "container-apps.svg"
-    },
-    {
-        "name": "Container Instances",
-        "description": "Easily run containers on Azure without managing servers",
-        "image": "container-instances.svg"
-    },
-    {
-        "name": "Container Registry",
-        "description": "Store and manage container images across all types of Azure deployments",
-        "image": "container-registry.svg"
-    },
-    {
-        "name": "Cosmos DB",
-        "description": "Globally distributed, multi-model database for any scale",
-        "image": "cosmos-db.svg"
-    },
-    {
-        "name": "Cost Management",
-        "description": "Optimize what you spend on the cloud, while maximizing cloud potential",
-        "image": "cost-management.svg"
-    },
-    {
-        "name": "CycleCloud",
-        "description": "Create, manage, operate, and optimize HPC and big compute clusters of any scale",
-        "image": "cyclecloud.svg"
-    },
-    {
-        "name": "DB Migration Service",
-        "description": "Simplify on-premises database migration to the cloud",
-        "image": "database-migration.svg"
-    },
-    {
-        "name": "DDoS Protection",
-        "description": "Protect your applications from Distributed Denial of Service (DDoS) attacks",
-        "image": "ddos-protection.svg"
-    },
-    {
-        "name": "Data Box",
-        "description": "Appliances and solutions for data transfer to Azure and edge compute",
-        "image": "data-box.svg"
-    },
-    {
-        "name": "Data Catalog",
-        "description": "Get more value from your enterprise data assets",
-        "image": "data-catalog.svg"
-    },
-    {
-        "name": "Data Explorer",
-        "description": "Fast and highly scalable data exploration service",
-        "image": "data-explorer.svg"
-    },
-    {
-        "name": "Data Factory",
-        "description": "Hybrid data integration at enterprise scale, made easy",
-        "image": "data-factory.svg"
-    },
-    {
-        "name": "Data Lake Analytics",
-        "description": "Distributed analytics service that makes big data easy",
-        "image": "data-lake-analytics.svg"
-    },
-    {
-        "name": "Data Lake Storage",
-        "description": "Massively scalable, secure data lake functionality built on Azure Blob Storage",
-        "image": "data-lake-storage.svg"
-    },
-    {
-        "name": "Data Share",
-        "description": "A simple and safe service for sharing big data with external organizations",
-        "image": "data-share.svg"
-    },
-    {
-        "name": "Database for MariaDB",
-        "description": "Managed MariaDB database service for app developers",
-        "image": "mariadb.svg"
-    },
-    {
-        "name": "Database for MySQL",
-        "description": "Managed MySQL database service for app developers",
-        "image": "mysql.svg"
-    },
-    {
-        "name": "Database for PostgreSQL",
-        "description": "Managed PostgreSQL database service for app developers",
-        "image": "postgresql.svg"
-    },
-    {
-        "name": "Databricks",
-        "description": "Fast, easy, and collaborative Apache Spark-based analytics platform",
-        "image": "databricks.svg"
-    },
-    {
-        "name": "Dataverse",
-        "description": "Dataverse lets you securely store and manage data that's used by business applications.",
-        "image": "dataverse.svg"
-    },
-    {
-        "name": "Dedicated HSM",
-        "description": "Manage hardware security modules that you use in the cloud",
-        "image": "dedicated-hsm.svg"
-    },
-    {
-        "name": "Dedicated Host",
-        "description": "A dedicated physical server to host your Azure VMs for Windows and Linux",
-        "image": "dedicated-host.svg"
-    },
-    {
-        "name": "DevTest Labs",
-        "description": "Quickly create environments using reusable templates and artifacts",
-        "image": "devtest-lab.svg"
-    },
-    {
-        "name": "Digital Twins",
-        "description": "Build next-generation IoT spatial intelligence solutions",
-        "image": "digital-twins.svg"
-    },
-    {
-        "name": "Event Grid",
-        "description": "Get reliable event delivery at massive scale",
-        "image": "event-grid.svg"
-    },
-    {
-        "name": "Event Hubs",
-        "description": "Receive telemetry from millions of devices",
-        "image": "event-hubs.svg"
-    },
-    {
-        "name": "ExpressRoute",
-        "description": "Dedicated private network fiber connections to Azure",
-        "image": "expressroute.svg"
-    },
-    {
-        "name": "HDInsight",
-        "description": "Provision cloud Hadoop, Spark, R Server, HBase, and Storm clusters",
-        "image": "hdinsight.svg"
-    },
-    {
-        "name": "HPC Cache",
-        "description": "File caching for high-performance computing (HPC)",
-        "image": "hpc-cache.svg"
-    },
-    {
-        "name": "Healthcare APIs",
-        "description": "Easily create and deploy a FHIR service for health data solutions and interoperability",
-        "image": "azure-api-for-fhir.svg"
-    },
-    {
-        "name": "Information Protection",
-        "description": "Better protect your sensitive information—anytime, anywhere",
-        "image": "information-protection.svg"
-    },
-    {
-        "name": "Internet Analyzer",
-        "description": "Test how networking infrastructure changes will impact your customers performance",
-        "image": "internet-analyzer.svg"
-    },
-    {
-        "name": "IoT Central",
-        "description": "Experience the simplicity of SaaS for IoT, with no cloud expertise required",
-        "image": "iot-central.svg"
-    },
-    {
-        "name": "IoT Edge",
-        "description": "Extend cloud intelligence and analytics to edge devices",
-        "image": "iot-edge.svg"
-    },
-    {
-        "name": "Kubernetes Service",
-        "description": "Simplify the deployment, management, and operations of Kubernetes",
-        "image": "kubernetes-service.svg"
-    },
-    {
-        "name": "Lab Services",
-        "description": "Set up labs for classrooms, trials, development and testing, and other scenarios",
-        "image": "lab-services.svg"
-    },
-    {
-        "name": "Load Balancer",
-        "description": "Deliver high availability and network performance to your applications",
-        "image": "load-balancer.svg"
-    },
-    {
-        "name": "Load Testing",
-        "description": "Optimize app performance with high-scale load testing",
-        "image": "load-testing.svg"
-    },
-    {
-        "name": "Logic Apps",
-        "description": "Automate the access and use of data across clouds without writing code",
-        "image": "logic-apps.svg"
-    },
-    {
-        "name": "Machine Learning",
-        "description": "Bring AI to everyone with an end-to-end, scalable, trusted platform with experimentation and model management",
-        "image": "machine-learning-service.svg"
-    },
-    {
-        "name": "Managed Apps",
-        "description": "Simplify management of cloud offerings",
-        "image": "managed-applications.svg"
-    },
-    {
-        "name": "Managed Disks",
-        "description": "Persistent, secured disk storage for Azure virtual machines",
-        "image": "managed-disks.svg"
-    },
-    {
-        "name": "Media Services",
-        "description": "Encode, store, and stream video and audio at scale",
-        "image": "media-services.svg"
-    },
-    {
-        "name": "Microsoft Genomics",
-        "description": "Power genome sequencing and research insights",
-        "image": "genomics.svg"
-    },
-    {
-        "name": "Microsoft Graph",
-        "description": "Secure, unified API for accessing organizational data and intelligence",
-        "relatedServices": ["Azure Active Directory"],
-        "image": "microsoft-logo.svg",
-        "documents": [
-            {
-                "name": "What is Microsoft Graph?",
-                "url": "https://docs.microsoft.com/graph/overview"
-            },
-            {
-                "name": "Microsoft Graph SDKs",
-                "url": "https://docs.microsoft.com/graph/sdks/sdks-overview"
-            },
-            {
-                "name": "Microsoft Graph Explorer",
-                "url": "https://developer.microsoft.com/graph/graph-explorer"
-            }
-        ],
-        "learnContent": [
-            { 
-                "type": "path",
-                "name": "Microsoft Graph Fundamentals",
-                "url": "https://docs.microsoft.com/learn/paths/m365-msgraph-fundamentals/",
-                "image": "https://docs.microsoft.com/learn/achievements/graph-fundamentals.svg",
-                "modules": [
-                    {
-                        "name": "What is Microsoft Graph?",
-                        "url": "https://docs.microsoft.com/learn/modules/msgraph-intro-overview/"
-                    },
-                    {
-                        "name": "Configure a JavaScript application to retrieve Microsoft 365 data by using Microsoft Graph",
-                        "url": "https://docs.microsoft.com/learn/modules/msgraph-javascript-app/"
-                    },
-                    {
-                        "name": "Access user photo information by using Microsoft Graph",
-                        "url": "https://docs.microsoft.com/learn/modules/msgraph-user-photo-information/"
-                    }
-                ]
-            }
+      }
+    ]
+  },
+  {
+    "name": "Network Watcher",
+    "description": "Network performance monitoring and diagnostics solution",
+    "image": "network-watcher.svg"
+  },
+  {
+    "name": "Notification Hubs",
+    "description": "Send push notifications to any platform from any back end",
+    "image": "notification-hubs.svg"
+  },
+  {
+    "name": "Object Anchors",
+    "description": "Automatically align and anchor 3D content to objects in the physical world",
+    "image": "object-anchors.svg"
+  },
+  {
+    "name": "Open Datasets",
+    "description": "Cloud platform to host and share curated open datasets to accelerate development of machine learning models",
+    "image": "open-datasets.svg"
+  },
+  {
+    "name": "Power Apps",
+    "description": "Power Apps is a suite of apps, services, connectors, and a data platform, that provides a rapid development environment to build custom apps",
+    "image": "power-apps.svg"
+  },
+  {
+    "name": "Power Automate",
+    "description": "Automate business processes, send automatic reminders, and more",
+    "image": "power-automate.svg"
+  },
+  {
+    "name": "Power BI",
+    "description": "Power BI is a collection of software services, apps, and connectors to turn unrelated sources of data into visually interactive insights",
+    "image": "power-bi.svg"
+  },
+  {
+    "name": "Power BI Embedded",
+    "description": "Embed fully interactive, stunning data visualizations in your applications",
+    "image": "power-bi-embedded.svg"
+  },
+  {
+    "name": "Power Virtual Agents",
+    "description": "Power Virtual Agents lets you create powerful chatbots that can answer questions posed by your customers, other employees, or visitors to your website or service",
+    "image": "power-bi-embedded.svg"
+  },
+  {
+    "name": "Private Link",
+    "description": "Private access to services hosted on the Azure platform, keeping your data on the Microsoft network",
+    "image": "private-link.svg"
+  },
+  {
+    "name": "Project Bonsai",
+    "description": "Create intelligent industrial control systems using simulations",
+    "image": "project-bonsai.svg"
+  },
+  {
+    "name": "Redis Cache",
+    "description": "Power applications with high-throughput, low-latency data access",
+    "image": "redis-cache.svg"
+  },
+  {
+    "name": "Remote Rendering",
+    "description": "Render high-quality, interactive 3D content, and stream it to your devices in real time",
+    "image": "remote-rendering.svg"
+  },
+  {
+    "name": "Route Server",
+    "description": "Enable network appliances to exchange routes dynamically with virtual networks in Azure",
+    "image": "route-server.svg"
+  },
+  {
+    "name": "SQL Database",
+    "description": "Managed, intelligent SQL in the cloud",
+    "image": "sql-database.svg"
+  },
+  {
+    "name": "SQL Server Stretch DB",
+    "description": "Dynamically stretch on-premises SQL Server databases to Azure",
+    "image": "sql-server-stretch-database.svg"
+  },
+  {
+    "name": "Scheduler",
+    "description": "Run your jobs on simple or complex recurring schedules",
+    "image": "scheduler.svg"
+  },
+  {
+    "name": "Security Center",
+    "description": "Unify security management and enable advanced threat protection across hybrid cloud workloads",
+    "image": "security-center.svg"
+  },
+  {
+    "name": "Service Bus",
+    "description": "Connect across private and public cloud environments",
+    "image": "service-bus.svg",
+    "learnContent": [
+      {
+        "type": "path",
+        "url": "https://docs.microsoft.com/learn/paths/connect-your-services-together/",
+        "title": "Connect your services together",
+        "image": "https://docs.microsoft.com/learn/achievements/connect-your-services-together.svg",
+        "modules": [
+          {
+            "name": "Choose a messaging model in Azure to loosely connect your services",
+            "url": "https://docs.microsoft.com/learn/modules/choose-a-messaging-model-in-azure-to-connect-your-services/"
+          },
+          {
+            "name": "Implement message-based communication workflows with Azure Service Bus",
+            "url": "https://docs.microsoft.com/learn/modules/implement-message-workflows-with-service-bus/"
+          },
+          {
+            "name": "Communicate between applications with Azure Queue storage",
+            "url": "https://docs.microsoft.com/learn/modules/communicate-between-apps-with-azure-queue-storage/"
+          },
+          {
+            "name": "Enable reliable messaging for Big Data applications using Azure Event Hubs",
+            "url": "https://docs.microsoft.com/learn/modules/enable-reliable-messaging-for-big-data-apps-using-event-hubs/"
+          },
+          {
+            "name": "React to state changes in your Azure services by using Event Grid",
+            "url": "https://docs.microsoft.com/learn/modules/react-to-state-changes-using-event-grid/"
+          }
         ]
-    },
-    {
-        "name": "Network Watcher",
-        "description": "Network performance monitoring and diagnostics solution",
-        "image": "network-watcher.svg"
-    },
-    {
-        "name": "Notification Hubs",
-        "description": "Send push notifications to any platform from any back end",
-        "image": "notification-hubs.svg"
-    },
-    {
-        "name": "Object Anchors",
-        "description": "Automatically align and anchor 3D content to objects in the physical world",
-        "image": "object-anchors.svg"
-    },
-    {
-        "name": "Open Datasets",
-        "description": "Cloud platform to host and share curated open datasets to accelerate development of machine learning models",
-        "image": "open-datasets.svg"
-    },
-    {
-        "name": "Power Apps",
-        "description": "Power Apps is a suite of apps, services, connectors, and a data platform, that provides a rapid development environment to build custom apps",
-        "image": "power-apps.svg"
-    },
-    {
-        "name": "Power Automate",
-        "description": "Automate business processes, send automatic reminders, and more",
-        "image": "power-automate.svg"
-    },
-    {
-        "name": "Power BI",
-        "description": "Power BI is a collection of software services, apps, and connectors to turn unrelated sources of data into visually interactive insights",
-        "image": "power-bi.svg"
-    },
-    {
-        "name": "Power BI Embedded",
-        "description": "Embed fully interactive, stunning data visualizations in your applications",
-        "image": "power-bi-embedded.svg"
-    },
-    {
-        "name": "Power Virtual Agents",
-        "description": "Power Virtual Agents lets you create powerful chatbots that can answer questions posed by your customers, other employees, or visitors to your website or service",
-        "image": "power-bi-embedded.svg"
-    },
-    {
-        "name": "Private Link",
-        "description": "Private access to services hosted on the Azure platform, keeping your data on the Microsoft network",
-        "image": "private-link.svg"
-    },
-    {
-        "name": "Project Bonsai",
-        "description": "Create intelligent industrial control systems using simulations",
-        "image": "project-bonsai.svg"
-    },
-    {
-        "name": "Redis Cache",
-        "description": "Power applications with high-throughput, low-latency data access",
-        "image": "redis-cache.svg"
-    },
-    {
-        "name": "Remote Rendering",
-        "description": "Render high-quality, interactive 3D content, and stream it to your devices in real time",
-        "image": "remote-rendering.svg"
-    },
-    {
-        "name": "Route Server",
-        "description": "Enable network appliances to exchange routes dynamically with virtual networks in Azure",
-        "image": "route-server.svg"
-    },
-    {
-        "name": "SQL Database",
-        "description": "Managed, intelligent SQL in the cloud",
-        "image": "sql-database.svg"
-    },
-    {
-        "name": "SQL Server Stretch DB",
-        "description": "Dynamically stretch on-premises SQL Server databases to Azure",
-        "image": "sql-server-stretch-database.svg"
-    },
-    {
-        "name": "Scheduler",
-        "description": "Run your jobs on simple or complex recurring schedules",
-        "image": "scheduler.svg"
-    },
-    {
-        "name": "Security Center",
-        "description": "Unify security management and enable advanced threat protection across hybrid cloud workloads",
-        "image": "security-center.svg"
-    },
-    {
-        "name": "Service Bus",
-        "description": "Connect across private and public cloud environments",
-        "image": "service-bus.svg",
-        "learnContent": [
-            { 
-                "type": "path",
-                "url": "https://docs.microsoft.com/learn/paths/connect-your-services-together/"
-            }
+      }
+    ]
+  },
+  {
+    "name": "Service Fabric",
+    "description": "Develop microservices and orchestrate containers on Windows or Linux",
+    "image": "service-fabric.svg"
+  },
+  {
+    "name": "SignalR Service",
+    "description": "Add real-time web functionalities easily",
+    "image": "signalr-service.svg"
+  },
+  {
+    "name": "Site Recovery",
+    "description": "Keep your business running with built-in disaster recovery service",
+    "image": "site-recovery.svg"
+  },
+  {
+    "name": "Spatial Anchors",
+    "description": "Create multi-user, spatially aware mixed reality experiences",
+    "image": "spatial-anchors.svg"
+  },
+  {
+    "name": "Static Web Apps",
+    "description": "Streamlined, highly efficient solution to take your static web app from source code to global high availability",
+    "image": "static-apps.svg",
+    "relatedServices": [
+      "Azure Functions",
+      "Cosmos DB"
+    ],
+    "azureCLICommand": [
+      "az staticwebapp create \\ ",
+      "  --name my-first-static-web-app \\ ",
+      "  --resource-group my-swa-group \\ ",
+      "  --source https://github.com/$GITHUB_USER_NAME/my-first-static-web-app \\ ",
+      "  --location \"eastus2\" \\ ",
+      "  --branch main \\ ",
+      "  --app-location \"src\" \\ ",
+      "  --login-with-github"
+    ],
+    "documents": [
+      {
+        "name": "What is Azure Static Web Apps?",
+        "url": "https://docs.microsoft.com/azure/static-web-apps/overview"
+      },
+      {
+        "name": "Quickstart: Building your first static site with Azure Static Web Apps",
+        "url": "https://docs.microsoft.com/azure/static-web-apps/getting-started?tabs=vanilla-javascript"
+      },
+      {
+        "name": "Quickstart: Building your first static site using the Azure CLI",
+        "url": "https://docs.microsoft.com/azure/static-web-apps/get-started-cli"
+      }
+    ],
+    "learnContent": [
+      {
+        "type": "path",
+        "name": "Azure Static Web Apps",
+        "url": "https://docs.microsoft.com/learn/paths/azure-static-web-apps",
+        "image": "https://docs.microsoft.com/learn/achievements/azure-static-web-apps.svg",
+        "modules": [
+          {
+            "name": "Publish an Angular, React, Svelte, or Vue JavaScript app with Azure Static Web Apps",
+            "url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api/"
+          },
+          {
+            "name": "Publish an API to Azure Static Web Apps",
+            "url": "https://docs.microsoft.com/learn/modules/publish-static-web-app-api-preview-url/"
+          },
+          {
+            "name": "Authenticate users with Azure Static Web Apps",
+            "url": "https://docs.microsoft.com/learn/modules/publish-static-web-app-authentication/"
+          },
+          {
+            "name": "Publish a Blazor WebAssembly app and .NET API with Azure Static Web Apps",
+            "url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api-dotnet/"
+          },
+          {
+            "name": "Create and publish a static web app with Gatsby and Azure Static Web Apps",
+            "url": "https://docs.microsoft.com/learn/modules/create-deploy-static-webapp-gatsby-app-service/"
+          }
         ]
-    },
-    {
-        "name": "Service Fabric",
-        "description": "Develop microservices and orchestrate containers on Windows or Linux",
-        "image": "service-fabric.svg"
-    },
-    {
-        "name": "SignalR Service",
-        "description": "Add real-time web functionalities easily",
-        "image": "signalr-service.svg"
-    },
-    {
-        "name": "Site Recovery",
-        "description": "Keep your business running with built-in disaster recovery service",
-        "image": "site-recovery.svg"
-    },
-    {
-        "name": "Spatial Anchors",
-        "description": "Create multi-user, spatially aware mixed reality experiences",
-        "image": "spatial-anchors.svg"
-    },
-    {
-        "name": "Static Web Apps",
-        "description": "Streamlined, highly efficient solution to take your static web app from source code to global high availability",
-        "image": "static-apps.svg",
-        "relatedServices": ["Azure Functions", "Cosmos DB"],
-        "azureCLICommand": [
-            "az staticwebapp create \\ ",
-            "  --name my-first-static-web-app \\ ",
-            "  --resource-group my-swa-group \\ ",
-            "  --source https://github.com/$GITHUB_USER_NAME/my-first-static-web-app \\ ",
-            "  --location \"eastus2\" \\ ",
-            "  --branch main \\ ",
-            "  --app-location \"src\" \\ ",
-            "  --login-with-github"
-        ],
-        "documents": [
-            {
-                "name": "What is Azure Static Web Apps?",
-                "url": "https://docs.microsoft.com/azure/static-web-apps/overview"
-            },
-            {
-                "name": "Quickstart: Building your first static site with Azure Static Web Apps",
-                "url": "https://docs.microsoft.com/azure/static-web-apps/getting-started?tabs=vanilla-javascript"
-            },
-            {
-                "name": "Quickstart: Building your first static site using the Azure CLI",
-                "url": "https://docs.microsoft.com/azure/static-web-apps/get-started-cli"
-            }
-        ],
-        "learnContent": [
-            { 
-                "type": "path",
-                "name": "Azure Static Web Apps",
-                "url": "https://docs.microsoft.com/learn/paths/azure-static-web-apps",
-                "image": "https://docs.microsoft.com/learn/achievements/azure-static-web-apps.svg",
-                "modules": [
-                    {
-                        "name": "Publish an Angular, React, Svelte, or Vue JavaScript app with Azure Static Web Apps",
-                        "url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api/"
-                    },
-                    {
-                        "name": "Publish an API to Azure Static Web Apps",
-                        "url": "https://docs.microsoft.com/learn/modules/publish-static-web-app-api-preview-url/"
-                    },
-                    {
-                        "name": "Authenticate users with Azure Static Web Apps",
-                        "url": "https://docs.microsoft.com/learn/modules/publish-static-web-app-authentication/"
-                    },
-                    {
-                        "name": "Publish a Blazor WebAssembly app and .NET API with Azure Static Web Apps",
-                        "url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api-dotnet/"
-                    },
-                    {
-                        "name": "Create and publish a static web app with Gatsby and Azure Static Web Apps",
-                        "url": "https://docs.microsoft.com/learn/modules/create-deploy-static-webapp-gatsby-app-service/"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "StorSimple",
-        "description": "Lower costs with an enterprise hybrid cloud storage solution",
-        "image": "storsimple.svg"
-    },
-    {
-        "name": "Stream Analytics",
-        "description": "Real-time data stream processing from millions of IoT devices",
-        "image": "stream-analytics.svg"
-    },
-    {
-        "name": "Synapse Analytics",
-        "description": "Limitless analytics service with unmatched time to insight",
-        "image": "synapse-analytics.svg"
-    },
-    {
-        "name": "Time Series Insights",
-        "description": "Explore and analyze time-series data from IoT devices",
-        "image": "time-series-insights.svg"
-    },
-    {
-        "name": "Traffic Manager",
-        "description": "Route incoming traffic for high performance and availability",
-        "image": "traffic-manager.svg"
-    },
-    {
-        "name": "VM Scale Sets",
-        "description": "Manage and scale up to thousands of Linux and Windows virtual machines",
-        "image": "virtual-machine-scale-sets.svg"
-    },
-    {
-        "name": "VNet Manager",
-        "description": "Centrally manage virtual networks in Azure from a single pane of glass",
-        "image": "virtual-network-manager.svg"
-    },
-    {
-        "name": "VPN Gateway",
-        "description": "Establish secure, cross-premises connectivity",
-        "image": "vpn-gateway.svg"
-    },
-    {
-        "name": "Virtual Desktop",
-        "description": "Deliver a virtual desktop experience to any device at cloud scale",
-        "image": "virtual-desktop.svg"
-    },
-    {
-        "name": "Virtual Machines",
-        "description": "Provision Windows and Linux virtual machines in seconds",
-        "image": "virtual-machines.svg"
-    },
-    {
-        "name": "Virtual Network",
-        "description": "Provision private networks, optionally connect to on-premises datacenters",
-        "image": "virtual-network.svg"
-    },
-    {
-        "name": "Virtual WAN",
-        "description": "Optimize and automate branch to branch connectivity through Azure",
-        "image": "virtual-wan.svg"
-    },
-    {
-        "name": "Visual Studio App Center",
-        "description": "Continuously build, test, release, and monitor your apps",
-        "image": "app-center.svg"
-    },
-    {
-        "name": "Web PubSub",
-        "description": "Easily build real-time messaging web applications using WebSockets and the publish-subscribe pattern",
-        "image": "web-pubsub.svg"
-    }
+      }
+    ]
+  },
+  {
+    "name": "StorSimple",
+    "description": "Lower costs with an enterprise hybrid cloud storage solution",
+    "image": "storsimple.svg"
+  },
+  {
+    "name": "Stream Analytics",
+    "description": "Real-time data stream processing from millions of IoT devices",
+    "image": "stream-analytics.svg"
+  },
+  {
+    "name": "Synapse Analytics",
+    "description": "Limitless analytics service with unmatched time to insight",
+    "image": "synapse-analytics.svg"
+  },
+  {
+    "name": "Time Series Insights",
+    "description": "Explore and analyze time-series data from IoT devices",
+    "image": "time-series-insights.svg"
+  },
+  {
+    "name": "Traffic Manager",
+    "description": "Route incoming traffic for high performance and availability",
+    "image": "traffic-manager.svg"
+  },
+  {
+    "name": "VM Scale Sets",
+    "description": "Manage and scale up to thousands of Linux and Windows virtual machines",
+    "image": "virtual-machine-scale-sets.svg"
+  },
+  {
+    "name": "VNet Manager",
+    "description": "Centrally manage virtual networks in Azure from a single pane of glass",
+    "image": "virtual-network-manager.svg"
+  },
+  {
+    "name": "VPN Gateway",
+    "description": "Establish secure, cross-premises connectivity",
+    "image": "vpn-gateway.svg"
+  },
+  {
+    "name": "Virtual Desktop",
+    "description": "Deliver a virtual desktop experience to any device at cloud scale",
+    "image": "virtual-desktop.svg"
+  },
+  {
+    "name": "Virtual Machines",
+    "description": "Provision Windows and Linux virtual machines in seconds",
+    "image": "virtual-machines.svg"
+  },
+  {
+    "name": "Virtual Network",
+    "description": "Provision private networks, optionally connect to on-premises datacenters",
+    "image": "virtual-network.svg"
+  },
+  {
+    "name": "Virtual WAN",
+    "description": "Optimize and automate branch to branch connectivity through Azure",
+    "image": "virtual-wan.svg"
+  },
+  {
+    "name": "Visual Studio App Center",
+    "description": "Continuously build, test, release, and monitor your apps",
+    "image": "app-center.svg"
+  },
+  {
+    "name": "Web PubSub",
+    "description": "Easily build real-time messaging web applications using WebSockets and the publish-subscribe pattern",
+    "image": "web-pubsub.svg"
+  }
 ]

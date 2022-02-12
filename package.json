@@ -24,6 +24,7 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "axios":"^0.25.0",
     "@types/jest": "^27.4.0",
     "@types/node": "^16.11.22",
     "@types/react": "^17.0.38",
