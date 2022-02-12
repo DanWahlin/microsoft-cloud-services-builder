@@ -13,5 +13,7 @@ VOLUME /var/cache/nginx
 COPY --from=node /app/build /usr/share/nginx/html
 COPY ./.docker/nginx.conf /etc/nginx/conf.d/default.conf
 
-# docker build -t nginx-react -f nginx.prod.dockerfile .
+# To build (run from root of project)
+
+# docker build -t nginx-react -f .docker/nginx.prod.dockerfile .
 # docker run -p 8080:80 nginx-react
