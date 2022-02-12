@@ -233,12 +233,52 @@
     {
         "name": "Azure Key Vault",
         "description": "Safeguard and maintain control of keys and other secrets",
-        "image": "key-vault.svg"
+        "image": "key-vault.svg",
+        "learnContent": [
+            { 
+                "type": "module",
+                "name": "Manage secrets in your server apps with Azure Key Vault",
+                "url": "https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/",
+                "image": "https://docs.microsoft.com/learn/achievements/manage-secrets-with-azure-key-vault.svg"
+            },
+            { 
+                "type": "module",
+                "name": "Implement Azure Key Vault",
+                "url": "https://docs.microsoft.com/learn/modules/implement-azure-key-vault/",
+                "image": "https://docs.microsoft.com/en-us/learn/achievements/azure-key-vault-implement.svg"
+            },
+            { 
+                "type": "module",
+                "name": "Configure and manage secrets in Azure Key Vault",
+                "url": "https://docs.microsoft.com/learn/modules/configure-and-manage-azure-key-vault/",
+                "image": "https://docs.microsoft.com/en-us/learn/achievements/configure-and-manage-azure-key-vault.svg"
+            },
+            { 
+                "type": "module",
+                "name": "Deploy and secure Azure Key Vault",
+                "url": "https://docs.microsoft.com/learn/modules/azure-key-vault/",
+                "image": "https://docs.microsoft.com/learn/achievements/azure-key-vault.svg"
+            }
+        ]
     },
     {
         "name": "Azure Lighthouse",
         "description": "Empowering service providers to manage customers at scale and with precision",
-        "image": "azure-lighthouse.svg"
+        "image": "azure-lighthouse.svg",
+        "learnContent": [
+            { 
+                "type": "module",
+                "name": "Use Azure Lighthouse with your managed service business",
+                "url": "https://docs.microsoft.com/learn/modules/intro-to-azure-lighthouse/",
+                "image": "https://docs.microsoft.com/learn/achievements/generic-badge.svg"
+            },
+            { 
+                "type": "module",
+                "name": "Use Azure Lighthouse to govern, monitor, and secure customer resources",
+                "url": "https://docs.microsoft.com/en-us/learn/modules/govern-monitor-secure-resources-azure-lighthouse/",
+                "image": "https://docs.microsoft.com/learn/achievements/generic-badge.svg"
+            }
+        ]
     },
     {
         "name": "Azure Maps",
@@ -705,7 +745,13 @@
     {
         "name": "Service Bus",
         "description": "Connect across private and public cloud environments",
-        "image": "service-bus.svg"
+        "image": "service-bus.svg",
+        "learnContent": [
+            { 
+                "type": "path",
+                "url": "https://docs.microsoft.com/learn/paths/connect-your-services-together/"
+            }
+        ]
     },
     {
         "name": "Service Fabric",
