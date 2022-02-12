@@ -55,7 +55,7 @@
         "type": "path",
         "name": "AZ-204: Create Azure App Service web apps",
         "url": "https://docs.microsoft.com/learn/paths/create-azure-app-service-web-apps/",
-        "title": "AZ-204: Create Azure App Service web apps",
+        "name": "AZ-204: Create Azure App Service web apps",
         "image": "https://docs.microsoft.com/learn/achievements/azure-app-service-create-web-apps.svg",
         "modules": [
           {
@@ -192,14 +192,13 @@
       "Signal Service"
     ],
     "azureCLICommand": [
-      "az staticwebapp create \\ ",
-      "  --name my-first-static-web-app \\ ",
-      "  --resource-group my-swa-group \\ ",
-      "  --source https://github.com/$GITHUB_USER_NAME/my-first-static-web-app \\ ",
-      "  --location \"eastus2\" \\ ",
-      "  --branch main \\ ",
-      "  --app-location \"src\" \\ ",
-      "  --login-with-github"
+      "az functionapp create \\ ",
+      "  --name <functions-app-name> \\ ",
+      "  --resource-group <resource-group-name> \\ ",
+      "  --consumption-plan-location <region> \\ ",
+      "  --runtime dotnet \\ ",
+      "  --functions-version 3 \\ ",
+      "  --storage-account <storage-account-name>"
     ],
     "documents": [
       {
@@ -411,12 +410,34 @@
     "name": "Azure Storage",
     "description": "Durable, highly available, and massively scalable cloud storage",
     "image": "storage.svg",
+    "azureCLICommand": [
+      "az storage account create \\ ",
+      "  --name <storage-account-name> \\ ",
+      "  --resource-group <resource-group-name> \\ ",
+      "  --location westus \\ ",
+      "  --sku Standard_RAGRS \\ ",
+      "  --kind StorageV2"
+    ],
+    "documents": [
+      {
+        "name": "Introduction to the core Azure Storage services",
+        "url": "https://docs.microsoft.com/azure/storage/common/storage-introduction"
+      },
+      {
+        "name": "Create a storage account",
+        "url": "https://docs.microsoft.com/azure/storage/common/storage-account-create"
+      },
+      {
+        "name": "Create a storage blob",
+        "url": "https://docs.microsoft.com/azure/storage/common/storage-blobs-create"
+      }
+    ],
     "learnPaths": "https://docs.microsoft.com/learn/browse/?resource_type=learning%20path&terms=azure%20storage",
     "learnContent": [
       {
         "type": "path",
         "url": "https://docs.microsoft.com/learn/paths/az-104-manage-storage/",
-        "title": "AZ-104: Implement and manage storage in Azure",
+        "name": "AZ-104: Implement and manage storage in Azure",
         "image": "https://docs.microsoft.com/learn/achievements/az-104-manage-storage.svg",
         "modules": [
           {
@@ -456,7 +477,7 @@
       {
         "type": "path",
         "url": "https://docs.microsoft.com/learn/paths/connect-your-services-together/",
-        "title": "Connect your services together",
+        "name": "Connect your services together",
         "image": "https://docs.microsoft.com/learn/achievements/connect-your-services-together.svg",
         "modules": [
           {
@@ -529,9 +550,9 @@
     "image": "container-apps.svg",
     "azureCLICommand": [
       "az containerapp create \\ ",
-      "  --name my-container-app \\ ",
-      "  --resource-group $RESOURCE_GROUP \\ ",
-      "  --environment $CONTAINERAPPS_ENVIRONMENT \\ ",
+      "  --name <container-app-name> \\ ",
+      "  --resource-group <resource-group-name> \\ ",
+      "  --environment <container-app-environment> \\ ",
       "  --image mcr.microsoft.com/azuredocs/containerapps-helloworld:latest \\ ",
       "  --target-port 80 \\ ",
       "  --ingress 'external' \\ ",
@@ -558,8 +579,8 @@
     "image": "container-instances.svg",
     "azureCLICommand": [
       "az container create \\ ",
-      "  --name mycontainer \\ ",
-      "  --resource-group myResourceGroup \\ ",
+      "  --name <container-instances-name> \\ ",
+      "  --resource-group <resource-group-name> \\ ",
       "  --image mcr.microsoft.com/azuredocs/aci-helloworld \\ ",
       "  --dns-name-label aci-demo \\ ",
       "  --ports 80 \\ "
@@ -582,19 +603,19 @@
       {
         "type": "module",
         "url": "https://docs.microsoft.com/learn/modules/create-run-container-images-azure-container-instances/",
-        "title": "Run container images in Azure Container Instances",
+        "name": "Run container images in Azure Container Instances",
         "image": "https://docs.microsoft.com/learn/achievements/azure-container-instances-images.svg"
       },
       {
         "type": "module",
         "url": "https://docs.microsoft.com/learn/modules/run-docker-with-azure-container-instances/",
-        "title": "Run Docker containers with Azure Container Instances",
+        "name": "Run Docker containers with Azure Container Instances",
         "image": "https://docs.microsoft.com/learn/achievements/run-docker-with-azure-container-instances.svg"
       },
       {
         "type": "module",
         "url": "https://docs.microsoft.com/learn/modules/configure-azure-container-instances/",
-        "title": "Configure Azure Container Instances",
+        "name": "Configure Azure Container Instances",
         "image": "https://docs.microsoft.com/learn/achievements/run-docker-with-azure-container-instances.svg"
       }
     ]
@@ -613,7 +634,7 @@
       {
         "type": "path",
         "url": "https://docs.microsoft.com/learn/paths/work-with-nosql-data-in-azure-cosmos-db/",
-        "title": "Work with NoSQL data in Azure Cosmos DB",
+        "name": "Work with NoSQL data in Azure Cosmos DB",
         "image": "https://docs.microsoft.com/learn/achievements/work-with-nosql-data-in-azure-cosmos-db.svg",
         "modules": [
           {
@@ -653,7 +674,7 @@
       {
         "type": "path",
         "url": "https://docs.microsoft.com/learn/paths/az-204-develop-solutions-that-use-azure-cosmos-db/",
-        "title": "AZ-204: Develop solutions that use Azure Cosmos DB",
+        "name": "AZ-204: Develop solutions that use Azure Cosmos DB",
         "image": "https://docs.microsoft.com/learn/achievements/az-204-develop-solutions-that-use-azure-cosmos-db.svg",
         "modules": [
           {
@@ -673,7 +694,7 @@
       {
         "type": "path",
         "url": "https://docs.microsoft.com/learn/paths/get-started-azure-cosmos-db-sql-api/",
-        "title": "Get started with Azure Cosmos DB SQL API",
+        "name": "Get started with Azure Cosmos DB SQL API",
         "image": "https://docs.microsoft.com/learn/achievements/azure-cosmos-db-get-started.svg",
         "modules": [
           {
@@ -689,7 +710,7 @@
       {
         "type": "path",
         "url": "https://docs.microsoft.com/learn/paths/migrate-cassandra-mongo-db-workloads-to-cosmos-db/",
-        "title": "Migrating Cassandra and MongoDB workloads to Cosmos DB",
+        "name": "Migrating Cassandra and MongoDB workloads to Cosmos DB",
         "image": "https://docs.microsoft.com/learn/achievements/migrating-cassandra-and-mongo-db-workloads-to-cosmos-db.svg",
         "modules": [
           {
@@ -791,7 +812,7 @@
       {
         "type": "module",
         "url": "https://docs.microsoft.com/learn/modules/integrate-common-data-service-azure-solutions/",
-        "title": "Integrate Dataverse Azure solutions",
+        "name": "Integrate Dataverse Azure solutions",
         "image": "https://docs.microsoft.com/learn/achievements/integrate-common-data-service-azure-solutions.svg"
       }
     ]
@@ -1087,7 +1108,7 @@
       {
         "type": "path",
         "url": "https://docs.microsoft.com/learn/paths/connect-your-services-together/",
-        "title": "Connect your services together",
+        "name": "Connect your services together",
         "image": "https://docs.microsoft.com/learn/achievements/connect-your-services-together.svg",
         "modules": [
           {
@@ -1115,13 +1136,13 @@
       {
         "type": "module",
         "url": "https://docs.microsoft.com/learn/modules/cloud-scale-messaging-with-jms-service-bus/",
-        "title": "Enable asynchronous messaging in Java apps by using JMS and Azure Service Bus",
+        "name": "Enable asynchronous messaging in Java apps by using JMS and Azure Service Bus",
         "image": "https://docs.microsoft.com/learn/achievements/cloud-scale-messaging-jms-service-bus.svg"
       },
       {
         "type": "module",
         "url": "https://docs.microsoft.com/learn/modules/discover-azure-message-queue/",
-        "title": "Discover Azure message queues",
+        "name": "Discover Azure message queues",
         "image": "https://docs.microsoft.com/learn/achievements/discover-message-queue.svg"
       }
     ]
@@ -1156,8 +1177,8 @@
     ],
     "azureCLICommand": [
       "az staticwebapp create \\ ",
-      "  --name my-first-static-web-app \\ ",
-      "  --resource-group my-swa-group \\ ",
+      "  --name <static-web-app-name> \\ ",
+      "  --resource-group <resource-group-name> \\ ",
       "  --source https://github.com/$GITHUB_USER_NAME/my-first-static-web-app \\ ",
       "  --location \"eastus2\" \\ ",
       "  --branch main \\ ",

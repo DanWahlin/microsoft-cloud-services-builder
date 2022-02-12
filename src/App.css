@@ -64,6 +64,7 @@ div[role=tabpanel] {
   grid-template-rows: auto;
   box-sizing: border-box;
   height: 200px;
+  max-width: 1200px;
   gap: 10px;
   align-items: center;
 }
@@ -85,7 +86,7 @@ div[role=tabpanel] {
   }
 }
 
-.cloud-block-grid {
+.service-picker-item {
   text-align: center;
   font-weight: bold;
   display: grid;
@@ -94,7 +95,7 @@ div[role=tabpanel] {
   justify-content: center;
 }
 
-.cloud-block-size {
+.service-picker-item-size {
   font-size: 13pt;
   width: 225px;
   height: 62px;

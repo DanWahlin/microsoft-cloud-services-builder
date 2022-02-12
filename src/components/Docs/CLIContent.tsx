@@ -18,7 +18,7 @@ export default function CLIContent(props: {selectedServices: IService[]}) {
                                 </div>
                             )}
                             {!service.azureCLICommand && (
-                                <span className="comment"># No Azure CLI command for {service.name}</span>
+                                <span className="comment"></span>
                             )}
                         </div>
                     ))}

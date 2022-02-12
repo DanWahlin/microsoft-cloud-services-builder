@@ -102,7 +102,7 @@ export default function ServicesDiagram(){
                 x: (event.clientX - reactFlowBounds.left) - 120,
                 y: (event.clientY - reactFlowBounds.top) - 40,
             });
-            console.log(event.clientX, reactFlowBounds.left);
+
             const newNode: FlowElement = {
                 id: service.name,
                 position,

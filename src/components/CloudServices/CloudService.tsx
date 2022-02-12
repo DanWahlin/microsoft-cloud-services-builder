@@ -43,7 +43,7 @@ export default function CloudService(props: { serviceCategory: IServiceCategory,
             }
         >
             <div key={service.name} 
-                className={`${serviceCategory.cssClass} cloud-block-grid cloud-block-size cursor-drag-drop`}
+                className={`${serviceCategory.cssClass} service-picker-item service-picker-item-size cursor-drag-drop`}
                 onDragStart={(event) => onDragStart(event, service)} draggable
             >
                 <CloudBlock name={service.name} 
