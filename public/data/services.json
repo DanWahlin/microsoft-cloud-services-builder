@@ -192,7 +192,7 @@
     "description": "Process events with serverless code",
     "image": "functions.svg",
     "relatedServices": [
-      "Static Web App",
+      "Static Web Apps",
       "Event Hubs",
       "Azure Storage",
       "Cosmos DB",
@@ -211,16 +211,12 @@
     ],
     "documents": [
       {
-        "name": "What is Azure Static Web Apps?",
-        "url": "https://docs.microsoft.com/azure/static-web-apps/overview"
+        "name": "Introduction to Azure Functions",
+        "url": "https://docs.microsoft.com/azure/azure-functions/functions-overview"
       },
       {
-        "name": "Quickstart: Building your first static site with Azure Static Web Apps",
-        "url": "https://docs.microsoft.com/azure/static-web-apps/getting-started?tabs=vanilla-javascript"
-      },
-      {
-        "name": "Quickstart: Building your first static site using the Azure CLI",
-        "url": "https://docs.microsoft.com/azure/static-web-apps/get-started-cli"
+        "name": "Getting started with Azure Functions",
+        "url": "https://docs.microsoft.com/azure/azure-functions/functions-get-started"
       }
     ],
     "learnContent": [

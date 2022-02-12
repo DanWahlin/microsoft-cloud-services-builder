@@ -38,7 +38,7 @@ export default function CloudService(props: { serviceCategory: IServiceCategory,
             title={
                 <>
                     <Typography color="inherit">{service.name}</Typography>
-                    <span>{service.description}</span>
+                    <span className="tooltip-description">{service.description}</span>
                 </>
             }
         >
