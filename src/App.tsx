@@ -38,10 +38,10 @@ function App() {
                             </Tabs>
                         </Box>
                         <TabPanel value={value} index={0}>
-                            <CloudServicePicker />
+                            <CloudServicePicker categoryType="categories" />
                         </TabPanel>
                         <TabPanel value={value} index={1}>
-              Scenarios
+                            <CloudServicePicker categoryType="scenarios" />
                         </TabPanel>
                     </div>
                     <div className="app-bottom-row">

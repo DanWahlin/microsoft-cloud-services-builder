@@ -135,7 +135,7 @@ export default function ServicesDiagram(){
                     connectionLineComponent={FloatingConnectionLine}
                     onDrop={onDrop}
                     onDragOver={onDragOver}
-                    defaultZoom={1.5}
+                    defaultZoom={1.3}
                     zoomOnScroll={false}
                 >
                     {/* <Background size={0.5} /> */}

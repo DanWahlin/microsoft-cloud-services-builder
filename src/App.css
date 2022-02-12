@@ -42,7 +42,13 @@ main {
 }
 
 div[role=tabpanel] {
-  min-height: 285px;
+  min-height: 260px;
+}
+
+.back-button-container {
+  position: absolute;
+  top: 105px;
+  left: 38px;
 }
 
 .back-button {
@@ -63,7 +69,8 @@ div[role=tabpanel] {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
   box-sizing: border-box;
-  height: 200px;
+  height: 150px;
+  margin-top: 8px;
   max-width: 1200px;
   gap: 10px;
   align-items: center;

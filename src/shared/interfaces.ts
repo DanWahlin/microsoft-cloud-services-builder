@@ -36,3 +36,5 @@ export interface ICloudBlockData {
 }
 
 export type LearnType = 'path' | 'module';
+
+export type ServiceCategoryType = 'categories' | 'scenarios';

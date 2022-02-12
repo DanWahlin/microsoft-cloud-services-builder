@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Build an API",
+    "cssClass": "bg-int",
+    "serviceNames": [
+      "App Service",
+      "Azure Functions",
+      "API Management"
+    ]
+  },
+  {
+    "name": "Use Containers",
+    "cssClass": "bg-cmp",
+    "serviceNames": [
+      "Container Apps",
+      "Container Instances",
+      "Container Registry",
+      "Kubernetes Service"
+    ]
+  },
+  {
+    "name": "Build a Web App",
+    "cssClass": "bg-web",
+    "serviceNames": [
+      "App Service",
+      "Azure Functions",
+      "Azure Storage",
+      "Cosmos DB",
+      "Database for MariaDB",
+      "Database for MySQL",
+      "Database for PostgreSQL",
+      "Microsoft Graph",
+      "SignalR Service",
+      "Static Web Apps",
+      "SQL Database"
+    ]
+  }
+]

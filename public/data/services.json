@@ -55,7 +55,6 @@
         "type": "path",
         "name": "AZ-204: Create Azure App Service web apps",
         "url": "https://docs.microsoft.com/learn/paths/create-azure-app-service-web-apps/",
-        "name": "AZ-204: Create Azure App Service web apps",
         "image": "https://docs.microsoft.com/learn/achievements/azure-app-service-create-web-apps.svg",
         "modules": [
           {
@@ -75,6 +74,12 @@
             "url": "https://docs.microsoft.com/learn/modules/understand-app-service-deployment-slots/"
           }
         ]
+      },
+      {
+        "type": "module",
+        "name": "Deploy and run a containerized web app with Azure App Service",
+        "url": "https://docs.microsoft.com/learn/modules/deploy-run-container-app-service/",
+        "image": "https://docs.microsoft.com/learn/achievements/deploy-run-container-app-service.svg"
       }
     ]
   },

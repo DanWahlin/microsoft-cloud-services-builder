@@ -1,27 +1,37 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { IService, IServiceCategory } from 'shared/interfaces';
+import { IService, IServiceCategory, ServiceCategoryType } from 'shared/interfaces';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import CloudService from './CloudService';
 import CloudServiceCategory from './CloudServiceCategory';
 
-export default function CloudServicePicker() {
+export default function CloudServicePicker(props: { categoryType: ServiceCategoryType}) {
+    const {categoryType} = props;
+
     const [serviceCategories, setServiceCategories] = useState<IServiceCategory[]>([]);
     const [services, setServices] = useState<IService[]>([]);
     const [serviceCategory, setServiceCategory] = useState<IServiceCategory | null>();
 
     useEffect(() => {
-        const getServiceCategories = async () => {
-            const svcCatsResponse = await axios.get('/data/serviceCategories.json');
-            const svcCats: IServiceCategory[] = svcCatsResponse.data;
-            setServiceCategories(svcCats);
+        const getData = async () => {
+            if (categoryType === 'categories') {
+                const svcCatsResponse = await axios.get('/data/serviceCategories.json');
+                const svcCats: IServiceCategory[] = svcCatsResponse.data;
+                setServiceCategories(svcCats);
+            }
+
+            if (categoryType === 'scenarios') {
+                const svcsScenariosResponse = await axios.get('/data/serviceScenarios.json');
+                const svcsScenarios: IServiceCategory[] = svcsScenariosResponse.data;
+                setServiceCategories(svcsScenarios);
+            }
 
             const svcsResponse = await axios.get('/data/services.json');
             const svcs: IService[] = svcsResponse.data;
             setServices(svcs);
         };
 
-        getServiceCategories();
+        getData();
     }, []);
 
     function filterCategories(event: React.MouseEvent<HTMLDivElement, MouseEvent>, svcCat: IServiceCategory) {
@@ -46,7 +56,7 @@ export default function CloudServicePicker() {
     return (
         <>
             {serviceCategory && (
-                <div onClick={(event) => goBack(event)}>
+                <div onClick={(event) => goBack(event)} className="back-button-container">
                     <ArrowBackIcon className="back-button" />
                 </div>
             )}
