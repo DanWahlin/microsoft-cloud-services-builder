@@ -22,7 +22,61 @@
   {
     "name": "App Service",
     "description": "Quickly create powerful cloud apps for web and mobile",
-    "image": "app-service.svg"
+    "image": "app-service.svg",
+    "azureCLICommand": [
+      "# Create an App Service plan in FREE tier \\ ",
+      "az appservice plan create \\ ",
+      "  --name $webappname \\ ",
+      "  --resource-group myResourceGroup \\ ",
+      "  --sku FREE \\ ",
+      " ",
+      "# Create a web app \\ ",
+      "az webapp create \\ ",
+      "  --name $webappname \\ ",
+      "  --resource-group myResourceGroup \\",
+      "  --plan $webappname \\ "
+    ],
+    "documents": [
+      {
+        "name": "App Service overview",
+        "url": "https://docs.microsoft.com/en-us/azure/app-service/overview"
+      },
+      {
+        "name": "Quickstart: Deploy an ASP.NET web app",
+        "url": "https://docs.microsoft.com/en-us/azure/app-service/quickstart-dotnetcore"
+      },
+      {
+        "name": "Quickstart: Create a Node.js web app in Azure",
+        "url": "https://docs.microsoft.com/en-us/azure/app-service/quickstart-nodejs"
+      }
+    ],
+    "learnContent": [
+      {
+        "type": "path",
+        "name": "AZ-204: Create Azure App Service web apps",
+        "url": "https://docs.microsoft.com/learn/paths/create-azure-app-service-web-apps/",
+        "title": "AZ-204: Create Azure App Service web apps",
+        "image": "https://docs.microsoft.com/learn/achievements/azure-app-service-create-web-apps.svg",
+        "modules": [
+          {
+            "name": "Explore Azure App Service",
+            "url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-app-service/"
+          },
+          {
+            "name": "Configure web app settings",
+            "url": "https://docs.microsoft.com/learn/modules/configure-web-app-settings/"
+          },
+          {
+            "name": "Scale apps in Azure App Service",
+            "url": "https://docs.microsoft.com/learn/modules/scale-apps-app-service/"
+          },
+          {
+            "name": "Explore Azure App Service deployment slots",
+            "url": "https://docs.microsoft.com/learn/modules/understand-app-service-deployment-slots/"
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Application Gateway",
@@ -253,13 +307,13 @@
         "type": "module",
         "name": "Implement Azure Key Vault",
         "url": "https://docs.microsoft.com/learn/modules/implement-azure-key-vault/",
-        "image": "https://docs.microsoft.com/en-us/learn/achievements/azure-key-vault-implement.svg"
+        "image": "https://docs.microsoft.com/learn/achievements/azure-key-vault-implement.svg"
       },
       {
         "type": "module",
         "name": "Configure and manage secrets in Azure Key Vault",
         "url": "https://docs.microsoft.com/learn/modules/configure-and-manage-azure-key-vault/",
-        "image": "https://docs.microsoft.com/en-us/learn/achievements/configure-and-manage-azure-key-vault.svg"
+        "image": "https://docs.microsoft.com/learn/achievements/configure-and-manage-azure-key-vault.svg"
       },
       {
         "type": "module",
@@ -283,7 +337,7 @@
       {
         "type": "module",
         "name": "Use Azure Lighthouse to govern, monitor, and secure customer resources",
-        "url": "https://docs.microsoft.com/en-us/learn/modules/govern-monitor-secure-resources-azure-lighthouse/",
+        "url": "https://docs.microsoft.com/learn/modules/govern-monitor-secure-resources-azure-lighthouse/",
         "image": "https://docs.microsoft.com/learn/achievements/generic-badge.svg"
       }
     ]
@@ -357,10 +411,75 @@
     "name": "Azure Storage",
     "description": "Durable, highly available, and massively scalable cloud storage",
     "image": "storage.svg",
+    "learnPaths": "https://docs.microsoft.com/learn/browse/?resource_type=learning%20path&terms=azure%20storage",
     "learnContent": [
       {
         "type": "path",
-        "url": "https://docs.microsoft.com/learn/paths/connect-your-services-together/"
+        "url": "https://docs.microsoft.com/learn/paths/az-104-manage-storage/",
+        "title": "AZ-104: Implement and manage storage in Azure",
+        "image": "https://docs.microsoft.com/learn/achievements/az-104-manage-storage.svg",
+        "modules": [
+          {
+            "name": "Configure storage accounts",
+            "url": "https://docs.microsoft.com/learn/modules/configure-storage-accounts/"
+          },
+          {
+            "name": "Configure blob storage",
+            "url": "https://docs.microsoft.com/learn/modules/configure-blob-storage/"
+          },
+          {
+            "name": "Configure storage security",
+            "url": "https://docs.microsoft.com/learn/modules/configure-storage-security/"
+          },
+          {
+            "name": "Configure Azure files and Azure File Sync",
+            "url": "https://docs.microsoft.com/learn/modules/configure-azure-files-file-sync/"
+          },
+          {
+            "name": "Configure storage with tools",
+            "url": "https://docs.microsoft.com/learn/modules/configure-storage-tools/"
+          },
+          {
+            "name": "Create an Azure Storage account",
+            "url": "https://docs.microsoft.com/learn/modules/create-azure-storage-account/"
+          },
+          {
+            "name": "Control access to Azure Storage with shared access signatures",
+            "url": "https://docs.microsoft.com/learn/modules/control-access-to-azure-storage-with-sas/"
+          },
+          {
+            "name": "Upload, download, and manage data with Azure Storage Explorer",
+            "url": "https://docs.microsoft.com/learn/modules/upload-download-and-manage-data-with-azure-storage-explorer/"
+          }
+        ]
+      },
+      {
+        "type": "path",
+        "url": "https://docs.microsoft.com/learn/paths/connect-your-services-together/",
+        "title": "Connect your services together",
+        "image": "https://docs.microsoft.com/learn/achievements/connect-your-services-together.svg",
+        "modules": [
+          {
+            "name": "Choose a messaging model in Azure to loosely connect your services",
+            "url": "https://docs.microsoft.com/learn/modules/choose-a-messaging-model-in-azure-to-connect-your-services/"
+          },
+          {
+            "name": "Implement message-based communication workflows with Azure Service Bus",
+            "url": "https://docs.microsoft.com/learn/modules/implement-message-workflows-with-service-bus/"
+          },
+          {
+            "name": "Communicate between applications with Azure Queue storage",
+            "url": "https://docs.microsoft.com/learn/modules/communicate-between-apps-with-azure-queue-storage/"
+          },
+          {
+            "name": "Enable reliable messaging for Big Data applications using Azure Event Hubs",
+            "url": "https://docs.microsoft.com/learn/modules/enable-reliable-messaging-for-big-data-apps-using-event-hubs/"
+          },
+          {
+            "name": "React to state changes in your Azure services by using Event Grid",
+            "url": "https://docs.microsoft.com/learn/modules/react-to-state-changes-using-event-grid/"
+          }
+        ]
       }
     ]
   },
@@ -407,12 +526,78 @@
   {
     "name": "Container Apps",
     "description": "Build and deploy modern apps and microservices using serverless containers",
-    "image": "container-apps.svg"
+    "image": "container-apps.svg",
+    "azureCLICommand": [
+      "az containerapp create \\ ",
+      "  --name my-container-app \\ ",
+      "  --resource-group $RESOURCE_GROUP \\ ",
+      "  --environment $CONTAINERAPPS_ENVIRONMENT \\ ",
+      "  --image mcr.microsoft.com/azuredocs/containerapps-helloworld:latest \\ ",
+      "  --target-port 80 \\ ",
+      "  --ingress 'external' \\ ",
+      "  --query configuration.ingress.fqdn"
+    ],
+    "documents": [
+      {
+        "name": "Azure Container Apps overview",
+        "url": "https://docs.microsoft.com/azure/container-apps/overview"
+      },
+      {
+        "name": "Quickstart: Deploy your first container app using the Azure portal",
+        "url": "https://docs.microsoft.com/azure/container-apps/quickstart-portal"
+      },
+      {
+        "name": "Quickstart: Deploy your first container app",
+        "url": "https://docs.microsoft.com/azure/container-apps/get-started"
+      }
+    ]
   },
   {
     "name": "Container Instances",
     "description": "Easily run containers on Azure without managing servers",
-    "image": "container-instances.svg"
+    "image": "container-instances.svg",
+    "azureCLICommand": [
+      "az container create \\ ",
+      "  --name mycontainer \\ ",
+      "  --resource-group myResourceGroup \\ ",
+      "  --image mcr.microsoft.com/azuredocs/aci-helloworld \\ ",
+      "  --dns-name-label aci-demo \\ ",
+      "  --ports 80 \\ "
+    ],
+    "documents": [
+      {
+        "name": "What is Azure Container Instances?",
+        "url": "https://docs.microsoft.com/azure/container-instances/container-instances-overview"
+      },
+      {
+        "name": "Quickstart: Deploy a container instance in Azure using the Azure portal",
+        "url": "https://docs.microsoft.com/azure/container-instances/container-instances-quickstart-portal"
+      },
+      {
+        "name": "Quickstart: Deploy a container instance in Azure using the Azure CLI",
+        "url": "https://docs.microsoft.com/azure/container-instances/container-instances-quickstart"
+      }
+    ],
+    "learnContent": [
+      {
+        "type": "module",
+        "url": "https://docs.microsoft.com/learn/modules/create-run-container-images-azure-container-instances/",
+        "title": "Run container images in Azure Container Instances",
+        "image": "https://docs.microsoft.com/learn/achievements/azure-container-instances-images.svg"
+      },
+      {
+        "type": "module",
+        "url": "https://docs.microsoft.com/learn/modules/run-docker-with-azure-container-instances/",
+        "title": "Run Docker containers with Azure Container Instances",
+        "image": "https://docs.microsoft.com/learn/achievements/run-docker-with-azure-container-instances.svg"
+      },
+      {
+        "type": "module",
+        "url": "https://docs.microsoft.com/learn/modules/configure-azure-container-instances/",
+        "title": "Configure Azure Container Instances",
+        "image": "https://docs.microsoft.com/learn/achievements/run-docker-with-azure-container-instances.svg"
+      }
+    ]
   },
   {
     "name": "Container Registry",
@@ -422,7 +607,106 @@
   {
     "name": "Cosmos DB",
     "description": "Globally distributed, multi-model database for any scale",
-    "image": "cosmos-db.svg"
+    "image": "cosmos-db.svg",
+    "learnPaths": "https://docs.microsoft.com/learn/browse/?resource_type=learning%20path&terms=cosmos%20db",
+    "learnContent": [
+      {
+        "type": "path",
+        "url": "https://docs.microsoft.com/learn/paths/work-with-nosql-data-in-azure-cosmos-db/",
+        "title": "Work with NoSQL data in Azure Cosmos DB",
+        "image": "https://docs.microsoft.com/learn/achievements/work-with-nosql-data-in-azure-cosmos-db.svg",
+        "modules": [
+          {
+            "name": "Create an Azure Cosmos DB database built to scale",
+            "url": "https://docs.microsoft.com/learn/modules/create-cosmos-db-for-scale/"
+          },
+          {
+            "name": "Choose the appropriate API for Azure Cosmos DB",
+            "url": "https://docs.microsoft.com/learn/modules/choose-api-for-cosmos-db/"
+          },
+          {
+            "name": "Insert and query data in your Azure Cosmos DB database",
+            "url": "https://docs.microsoft.com/learn/modules/access-data-with-cosmos-db-and-sql-api/"
+          },
+          {
+            "name": "Store and access graph data in Azure Cosmos DB with the Graph API",
+            "url": "https://docs.microsoft.com/learn/modules/store-access-data-cosmos-graph-api/"
+          },
+          {
+            "name": "Store and Access NoSQL Data with Azure Cosmos DB and the Table API",
+            "url": "https://docs.microsoft.com/learn/modules/store-access-data-cosmos-table-api/"
+          },
+          {
+            "name": "Build a .NET Core app for Azure Cosmos DB in Visual Studio Code",
+            "url": "https://docs.microsoft.com/learn/modules/build-cosmos-db-app-with-vscode/"
+          },
+          {
+            "name": "Optimize the performance of Azure Cosmos DB by using partitioning and indexing strategies",
+            "url": "https://docs.microsoft.com/learn/modules/monitor-and-scale-cosmos-db/"
+          },
+          {
+            "name": "Distribute your data globally with Azure Cosmos DB",
+            "url": "https://docs.microsoft.com/learn/modules/distribute-data-globally-with-cosmos-db/"
+          }
+        ]
+      },
+      {
+        "type": "path",
+        "url": "https://docs.microsoft.com/learn/paths/az-204-develop-solutions-that-use-azure-cosmos-db/",
+        "title": "AZ-204: Develop solutions that use Azure Cosmos DB",
+        "image": "https://docs.microsoft.com/learn/achievements/az-204-develop-solutions-that-use-azure-cosmos-db.svg",
+        "modules": [
+          {
+            "name": "Explore Azure Cosmos DB",
+            "url": "https://docs.microsoft.com/learn/modules/explore-azure-cosmos-db/"
+          },
+          {
+            "name": "Implement partitioning in Azure Cosmos DB",
+            "url": "https://docs.microsoft.com/learn/modules/implement-partitioning-azure-cosmos-db/"
+          },
+          {
+            "name": "Work with Azure Cosmos DB",
+            "url": "https://docs.microsoft.com/learn/modules/work-with-cosmos-db/"
+          }
+        ]
+      },
+      {
+        "type": "path",
+        "url": "https://docs.microsoft.com/learn/paths/get-started-azure-cosmos-db-sql-api/",
+        "title": "Get started with Azure Cosmos DB SQL API",
+        "image": "https://docs.microsoft.com/learn/achievements/azure-cosmos-db-get-started.svg",
+        "modules": [
+          {
+            "name": "Introduction to Azure Cosmos DB SQL API",
+            "url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-cosmos-db-sql-api/"
+          },
+          {
+            "name": "Try Azure Cosmos DB SQL API",
+            "url": "https://docs.microsoft.com/learn/modules/try-azure-cosmos-db-sql-api/"
+          }
+        ]
+      },
+      {
+        "type": "path",
+        "url": "https://docs.microsoft.com/learn/paths/migrate-cassandra-mongo-db-workloads-to-cosmos-db/",
+        "title": "Migrating Cassandra and MongoDB workloads to Cosmos DB",
+        "image": "https://docs.microsoft.com/learn/achievements/migrating-cassandra-and-mongo-db-workloads-to-cosmos-db.svg",
+        "modules": [
+          {
+            "name": "Introduction to open source database migration to Azure Cosmos DB",
+            "url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/"
+          },
+          {
+            "name": "Migrate Cassandra workloads to Cosmos DB",
+            "url": "https://docs.microsoft.com/learn/modules/migrate-cassandra-workloads-cosmos-db/"
+          },
+          {
+            "name": "Migrate on-premises MongoDB databases to Cosmos DB",
+            "url": "https://docs.microsoft.com/learn/modules/migrate-on-premises-mongodb-databases-azure-database-mongodb/"
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Cost Management",
@@ -749,7 +1033,36 @@
   {
     "name": "SQL Database",
     "description": "Managed, intelligent SQL in the cloud",
-    "image": "sql-database.svg"
+    "image": "sql-database.svg",
+    "azureCLICommand": [
+      "az sql server create \\",
+      "  -l westus -g mygroup -n myserver \\",
+      "  -u myadminuser -p myadminpassword"
+    ],
+    "documents": [
+      {
+        "name": "What is Azure SQL?",
+        "url": "https://docs.microsoft.com/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview"
+      },
+      {
+        "name": "Quickstart: Create an Azure SQL Database single database",
+        "url": "https://docs.microsoft.com/azure/azure-sql/database/single-database-create-quickstart?tabs=azure-portal"
+      }
+    ],
+    "learnContent": [
+      {
+        "type": "module",
+        "name": "Introduction to SQL Server on Linux",
+        "url": "https://docs.microsoft.com/learn/modules/introduction-sql-server-linux/",
+        "image": "https://docs.microsoft.com/learn/achievements/sqlserver/introduction-to-sql-server-on-linux.svg"
+      },
+      {
+        "type": "module",
+        "name": "Deploy and configure servers, instances, and databases for Azure SQL",
+        "url": "https://docs.microsoft.com/learn/modules/azure-sql-deploy-configure/",
+        "image": "https://docs.microsoft.com/learn/achievements/azure-sql-deploy-configure.svg"
+      }
+    ]
   },
   {
     "name": "SQL Server Stretch DB",
