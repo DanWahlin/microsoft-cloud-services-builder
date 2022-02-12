@@ -13,6 +13,8 @@
     "cssClass": "bg-web",
     "serviceNames": [
       "App Service",
+      "Azure Active Directory",
+      "Azure AD B2C",
       "Azure Functions",
       "Azure Storage",
       "Cosmos DB",
@@ -40,6 +42,7 @@
     "name": "Integrate Microsoft 365 Data",
     "cssClass": "bg-365",
     "serviceNames": [
+      "Azure Active Directory",
       "Microsoft Graph",
       "Power Apps",
       "Power BI",
