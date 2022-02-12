@@ -213,6 +213,11 @@ div[role=tabpanel] {
   margin: auto;
 }
 
+.codewithdan-icon {
+  height: 27px;
+  margin: auto;
+}
+
 .icon-react-flow {
   height: 10px;
   width: 10px;
@@ -225,6 +230,14 @@ div[role=tabpanel] {
 
 .react-flow__node-default.selected, .react-flow__node-default.selected:hover {
   box-shadow: 0 0 0 1.5px #000 !important;
+}
+
+.header-image-title-container {
+  display: grid;
+  grid-template-columns: 125px 1fr;
+  align-items: center;
+  justify-items: left;
+  gap: 25px;
 }
 
 .image-title-container {

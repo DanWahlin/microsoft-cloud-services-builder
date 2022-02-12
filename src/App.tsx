@@ -20,9 +20,10 @@ function App() {
             <AppBar position="fixed">
                 <Toolbar className="toolbar">
                     <Typography variant="h6" noWrap component="div">
-                        <div className="image-title-container">
-                            <img src="/images/microsoft-logo.svg" alt="icon" className="icon"></img> 
-                            <span>Microsoft Cloud Services Builder</span>
+                        <div className="header-image-title-container">
+                            {/* <img src="/images/microsoft-logo.svg" alt="icon" className="icon" />  */}
+                            <img src="/images/codeWithDanLogo_white.png" alt="icon" className="codewithdan-icon" />
+                            <span className="header-title">Microsoft Cloud Services Builder</span>
                         </div>
                     </Typography>
                 </Toolbar>
