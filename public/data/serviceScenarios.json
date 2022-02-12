@@ -9,16 +9,6 @@
     ]
   },
   {
-    "name": "Use Containers",
-    "cssClass": "bg-cmp",
-    "serviceNames": [
-      "Container Apps",
-      "Container Instances",
-      "Container Registry",
-      "Kubernetes Service"
-    ]
-  },
-  {
     "name": "Build a Web App",
     "cssClass": "bg-web",
     "serviceNames": [
@@ -33,6 +23,27 @@
       "SignalR Service",
       "Static Web Apps",
       "SQL Database"
+    ]
+  },
+  {
+    "name": "Use Containers",
+    "cssClass": "bg-cmp",
+    "serviceNames": [
+      "App Service",
+      "Container Apps",
+      "Container Instances",
+      "Container Registry",
+      "Kubernetes Service"
+    ]
+  },
+  {
+    "name": "Integrate Microsoft 365 Data",
+    "cssClass": "bg-365",
+    "serviceNames": [
+      "Microsoft Graph",
+      "Power Apps",
+      "Power BI",
+      "Power Automate"
     ]
   }
 ]

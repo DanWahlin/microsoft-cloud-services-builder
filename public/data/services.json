@@ -48,6 +48,10 @@
       {
         "name": "Quickstart: Create a Node.js web app in Azure",
         "url": "https://docs.microsoft.com/en-us/azure/app-service/quickstart-nodejs"
+      },
+      {
+        "name": "Tutorial: Host a RESTful API with CORS in Azure App Service",
+        "url": "https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-rest-api"
       }
     ],
     "learnContent": [
