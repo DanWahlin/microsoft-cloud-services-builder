@@ -56,6 +56,24 @@ div[role=tabpanel] {
   cursor: pointer;
 }
 
+.delete-button-container:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: top;
+}
+
+.delete-button-container {
+  position: absolute;
+  right: -2px;
+  top: 0;
+}
+
+.delete-button {
+  height: 15px !important;
+  cursor: pointer;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }

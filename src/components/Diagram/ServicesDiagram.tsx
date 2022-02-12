@@ -44,11 +44,15 @@ export default function ServicesDiagram(){
         const currentSelectedElement = selectedElement.current;
         if (key === 'Delete' && currentSelectedElement) {
             //eslint-disable-next-line
-      const edges = elements.filter((element: Node | Edge) => isEdge(currentSelectedElement)) as Edge[];
-            const edgesToRemove = getConnectedEdges([currentSelectedElement as Node], edges);
-            onElementsRemove([currentSelectedElement, ...edgesToRemove]);
-            removeServices([currentSelectedElement as Node]);
+            removeService(currentSelectedElement);
         }
+    }
+
+    function removeService(currentSelectedElement: Node<any> | Edge<any>) {
+        const edges = elements.filter((element: Node | Edge) => isEdge(currentSelectedElement)) as Edge[];
+        const edgesToRemove = getConnectedEdges([currentSelectedElement as Node], edges);
+        onElementsRemove([currentSelectedElement, ...edgesToRemove]);
+        removeServices([currentSelectedElement as Node]);
     }
 
     function removeServices(removedSvcs: Node[]) {
@@ -109,7 +113,13 @@ export default function ServicesDiagram(){
                 className: service.cssClass,
                 sourcePosition: Position.Left,
                 targetPosition: Position.Right,
-                data: { label: <CloudBlock name={service.name} description={service.description} image={service.image} /> }
+                data: { 
+                    label: <CloudBlock name={service.name} 
+                        description={service.description} 
+                        image={service.image} 
+                        showDeleteButton={true} 
+                        deleteService={deleteSelectedElement} /> 
+                }
             };
       
             setElements((es) => es.concat(newNode));
@@ -119,6 +129,7 @@ export default function ServicesDiagram(){
 
     function onElementClick(event: React.MouseEvent, element: Node | Edge) {
         selectedElement.current = element;
+        console.log(selectedElement.current);
     }
 
     return (

@@ -32,7 +32,9 @@ export interface ICloudBlockData {
     name: string, 
     cssClass?: string, 
     image?: string, 
-    description?: string 
+    description?: string,
+    showDeleteButton?: boolean
+    deleteService?: (service: string) => void;
 }
 
 export type LearnType = 'path' | 'module';
