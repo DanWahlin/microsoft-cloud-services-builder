@@ -356,7 +356,13 @@
   {
     "name": "Azure Storage",
     "description": "Durable, highly available, and massively scalable cloud storage",
-    "image": "storage.svg"
+    "image": "storage.svg",
+    "learnContent": [
+      {
+        "type": "path",
+        "url": "https://docs.microsoft.com/learn/paths/connect-your-services-together/"
+      }
+    ]
   },
   {
     "name": "Azure VMware Solution",
@@ -496,7 +502,15 @@
   {
     "name": "Dataverse",
     "description": "Dataverse lets you securely store and manage data that's used by business applications.",
-    "image": "dataverse.svg"
+    "image": "dataverse.svg",
+    "learnContent": [
+      {
+        "type": "module",
+        "url": "https://docs.microsoft.com/learn/modules/integrate-common-data-service-azure-solutions/",
+        "title": "Integrate Dataverse Azure solutions",
+        "image": "https://docs.microsoft.com/learn/achievements/integrate-common-data-service-azure-solutions.svg"
+      }
+    ]
   },
   {
     "name": "Dedicated HSM",
@@ -784,6 +798,18 @@
             "url": "https://docs.microsoft.com/learn/modules/react-to-state-changes-using-event-grid/"
           }
         ]
+      },
+      {
+        "type": "module",
+        "url": "https://docs.microsoft.com/learn/modules/cloud-scale-messaging-with-jms-service-bus/",
+        "title": "Enable asynchronous messaging in Java apps by using JMS and Azure Service Bus",
+        "image": "https://docs.microsoft.com/learn/achievements/cloud-scale-messaging-jms-service-bus.svg"
+      },
+      {
+        "type": "module",
+        "url": "https://docs.microsoft.com/learn/modules/discover-azure-message-queue/",
+        "title": "Discover Azure message queues",
+        "image": "https://docs.microsoft.com/learn/achievements/discover-message-queue.svg"
       }
     ]
   },
