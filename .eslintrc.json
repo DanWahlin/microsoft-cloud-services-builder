@@ -2,45 +2,68 @@
     "settings": {
         "react": {
             "version": "17.0.2"
-        }
-    },
-    "env": {
-        "browser": true,
-        "es2021": true
-    },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:@typescript-eslint/recommended"
-    ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
         },
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react",
-        "@typescript-eslint"
-    ],
-    "rules": {
-        // "indent": [
-        //     "error",
-        //     4
-        // ],
-        "linebreak-style": [
-            "error",
-            "unix"
+        "import/parsers": {
+            "@typescript-eslint/parser": [
+                ".ts",
+                ".tsx"
+            ]
+        },
+        "import/resolver": {
+            // https://www.npmjs.com/package/eslint-import-resolver-typescript
+            "typescript": {
+                "alwaysTryTypes": true, 
+                "project": "./tsconfig.json"
+            }
+        },
+        "env": {
+            "browser": true,
+            "es2021": true
+        },
+        "extends": [
+            "eslint:recommended",
+            "plugin:react/recommended",
+            "plugin:@typescript-eslint/recommended",
+            "plugin:import/recommended",
+            "plugin:import/typescript"
         ],
-        "quotes": [
-            "error",
-            "single"
+        "parser": "@typescript-eslint/parser",
+        "parserOptions": {
+            "ecmaFeatures": {
+                "jsx": true
+            },
+            "ecmaVersion": "latest",
+            "sourceType": "module"
+        },
+        "plugins": [
+            "react",
+            "@typescript-eslint",
+            "import"
         ],
-        "semi": [
-            "error",
-            "always"
-        ]
+        "rules": {
+            "indent": [
+                "error",
+                4
+            ],
+            "import/no-unresolved": [
+                2,
+                {
+                    "commonjs": true,
+                    "amd": true
+                }
+            ],
+            "linebreak-style": [
+                "error",
+                "unix"
+            ],
+            "quotes": [
+                "error",
+                "single"
+            ],
+            "semi": [
+                "error",
+                "always"
+            ]
+        }
     }
 }

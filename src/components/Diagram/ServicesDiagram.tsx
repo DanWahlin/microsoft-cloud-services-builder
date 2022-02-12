@@ -32,7 +32,7 @@ const edgeTypes: EdgeTypesType = {
 
 export default function ServicesDiagram(){
     const reactFlowWrapper = useRef<HTMLDivElement>(null);
-    /* eslint-disable @typescript-eslint/no-explicit-any */
+
     const [reactFlowInstance, setReactFlowInstance] = useState<any>(null);
     const [elements, setElements] = useState<Elements>(initialElements);
     // useRef needed since using useState() creates stale closure issue due to keydown binding
