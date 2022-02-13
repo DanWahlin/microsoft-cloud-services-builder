@@ -129,7 +129,6 @@ export default function ServicesDiagram(){
 
     function onElementClick(event: React.MouseEvent, element: Node | Edge) {
         selectedElement.current = element;
-        console.log(selectedElement.current);
     }
 
     return (

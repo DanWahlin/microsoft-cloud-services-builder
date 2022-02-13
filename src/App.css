@@ -252,10 +252,16 @@ div[role=tabpanel] {
 
 .header-image-title-container {
   display: grid;
-  grid-template-columns: 125px 1fr;
-  align-items: center;
+  grid-template-columns: 125px auto auto;
   justify-items: left;
+  width: 100%;
   gap: 25px;
+}
+
+.help-icon {
+  justify-self: end;
+  margin-top: 3px;
+  cursor: pointer;
 }
 
 .image-title-container {
@@ -340,6 +346,10 @@ div[role=tabpanel] {
 
 .azure-cli-command {
   margin-bottom: 15px;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 
