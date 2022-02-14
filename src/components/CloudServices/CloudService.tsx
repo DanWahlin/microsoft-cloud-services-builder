@@ -38,7 +38,10 @@ export default function CloudService(props: { serviceCategory: IServiceCategory,
             title={
                 <>
                     <Typography color="inherit">{service.name}</Typography>
-                    <span className="tooltip-description">{service.description}</span>
+                    <div className="tooltip-description">{service.description}</div>
+                    {service.relatedServices && (
+                        <div className="tooltip-related-services">Related services: {service.relatedServices.join(', ')}</div>
+                    )}
                 </>
             }
         >

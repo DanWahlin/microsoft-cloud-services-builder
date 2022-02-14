@@ -131,6 +131,11 @@ div[role=tabpanel] {
   font-size: 14px;
 }
 
+.tooltip-related-services {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
 .react-flow-container {
   background-color: #f4f4f4;
   border: 1px solid rgba(0, 0, 0, 0.12);
