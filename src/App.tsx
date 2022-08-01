@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Box, Modal, Tab, Tabs, Toolbar, Typography } from '@mui/material';
+import { AppBar, Box, Modal, Tab, Tabs, Toolbar, Typography, Grid } from '@mui/material';
 
 import './App.css';
 import ServicesDiagram from 'components/Diagram/ServicesDiagram';
@@ -8,8 +8,6 @@ import TabPanel from 'shared/TabPanel';
 import DocumentList from 'components/Docs/DocumentList';
 import { RecoilRoot } from 'recoil';
 import HelpIcon from '@mui/icons-material/Help';
-
-declare var introJs: any;
 
 function App() {
     const [value, setValue] = React.useState(0);
@@ -71,8 +69,14 @@ function App() {
                         </TabPanel>
                     </div>
                     <div className="app-bottom-row">
-                        <ServicesDiagram />
-                        <DocumentList />
+                        <Grid container spacing={2}>
+                            <Grid item xs={8}>
+                                <ServicesDiagram />
+                            </Grid>
+                            <Grid item xs={4}>
+                                <DocumentList />
+                            </Grid>
+                        </Grid>
                     </div>
                 </div>
             </RecoilRoot>

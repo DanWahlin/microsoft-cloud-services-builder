@@ -134,7 +134,7 @@ export default function ServicesDiagram(){
     return (
         <>
             <div className="heading">Selected Cloud Services</div>
-            <div className="react-flow-container floatingedges" ref={reactFlowWrapper}>
+            <div className="container floatingedges" ref={reactFlowWrapper}>
                 <ReactFlow
                     elements={elements}
                     snapToGrid

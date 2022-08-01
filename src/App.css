@@ -8,12 +8,15 @@ main {
 
 .heading {
   text-transform: uppercase;
-  color: #1976d2;
+  color: #fff;
   font-weight: 500;
   font-size: 1.1rem;
   line-height: 1.25;
   min-height: 30px;
   margin-top: 5px;
+  padding-top: 10px;
+  padding-left: 5px;
+  background-color: #3a3a3a;
 }
 
 .toolbar {
@@ -136,11 +139,10 @@ div[role=tabpanel] {
   margin-top: 5px;
 }
 
-.react-flow-container {
-  background-color: #f4f4f4;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  height: 35vh;
-  width: 98vw;
+.container {
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  height: 100%;
   margin-bottom: 25px;
 }
 
