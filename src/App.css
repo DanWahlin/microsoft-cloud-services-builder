@@ -42,15 +42,16 @@ main {
 .app-bottom-row {
   grid-column: 1 / 1;
   grid-row: 2 / 2;
+  max-width: 1450px;
 }
 
 div[role=tabpanel] {
-  min-height: 260px;
+  min-height: 300px;
 }
 
 .back-button-container {
   position: absolute;
-  top: 105px;
+  top: 110px;
   left: 38px;
 }
 
@@ -91,7 +92,7 @@ div[role=tabpanel] {
   grid-template-rows: auto;
   box-sizing: border-box;
   height: 150px;
-  margin-top: 8px;
+  margin-top: 18px;
   max-width: 1200px;
   gap: 10px;
   align-items: center;
@@ -140,9 +141,10 @@ div[role=tabpanel] {
 }
 
 .container {
-  background-color: #fafafa;
-  border: 1px solid #ccc;
+  background-color: #fcfcfc;
+  border: 1px solid #e2e2e2;
   height: 100%;
+  min-height: 400px;
   margin-bottom: 25px;
 }
 

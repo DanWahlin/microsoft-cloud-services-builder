@@ -70,10 +70,10 @@ function App() {
                     </div>
                     <div className="app-bottom-row">
                         <Grid container spacing={2}>
-                            <Grid item xs={8}>
+                            <Grid item sm={12} md={8}>
                                 <ServicesDiagram />
                             </Grid>
-                            <Grid item xs={4}>
+                            <Grid item sm={12} md={4}>
                                 <DocumentList />
                             </Grid>
                         </Grid>
